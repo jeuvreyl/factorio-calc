@@ -1,0 +1,31 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.codeLens": false,
+  "editor.renderWhitespace": "none",
+  "editor.autoIndent": true,
+  "editor.fontSize": 14,
+  "editor.fontFamily": "Inconsolata, Fira code",
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": true,
+  "editor.letterSpacing": 1,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "off",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 2000,
+  "files.exclude": {
+      "**/.git": true,
+      "**/.DS_Store": true,
+      "**/*.js": {
+          "when": "$(basename).ts"
+      },
+      "**/*.js.map": {
+          "when": "$(basename)"
+      }
+  },
+  "files.hotExit": "onExit",
+  "files.defaultLanguage": "typescript",
+  "files.trimTrailingWhitespace": true,
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 100,
+}
