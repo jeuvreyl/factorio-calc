@@ -1,1 +1,2 @@
-<app-items [items]="items$ | async"></app-items>
+<app-items [items]="selectableItems$ | async" actions='add'></app-items>
+<app-items [items]="selectedItems$ | async" actions='remove'></app-items>

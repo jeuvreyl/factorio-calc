@@ -8,6 +8,7 @@ import { Item } from '../shared/item.model';
 })
 export class ItemsComponent implements OnInit {
   @Input() items: Item[];
+  @Input() action: string;
 
   columnsToDisplay = ['icon', 'itemName', 'actions'];
 

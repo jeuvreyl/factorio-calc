@@ -9,11 +9,13 @@ import { Item } from './shared/item.model';
   styleUrls: ['./calc.component.css']
 })
 export class CalcComponent implements OnInit {
-  items$: Observable<Item[]>;
+  selectableItems$: Observable<Item[]>;
+  selectedItems$: Observable<Item[]>;
 
   constructor(private itemService: ItemService) {}
 
   ngOnInit() {
-    this.items$ = this.itemService.getItems();
+    this.selectableItems$ = this.itemService.getItems();
+    this.selectedItems$ = this.itemService.getItems();
   }
 }
