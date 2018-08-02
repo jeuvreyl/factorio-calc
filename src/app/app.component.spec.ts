@@ -3,6 +3,8 @@ import { AppComponent } from './app.component';
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
 import { CalcModule } from './calc/calc.module';
+import { StoreModule } from '@ngrx/store';
+import { reducers, metaReducers } from './reducers';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -13,7 +15,8 @@ describe('AppComponent', () => {
         FooterComponent
       ],
       imports: [
-        CalcModule
+        CalcModule,
+        StoreModule.forRoot(reducers, { metaReducers }),
       ]
     }).compileComponents();
   }));

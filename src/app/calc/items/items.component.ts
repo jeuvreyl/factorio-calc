@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Item } from '../shared/item.model';
+import { Store } from '@ngrx/store';
+import { State } from '../../reducers';
+import { SelectItem, DeselectItem } from '../store/item.actions';
 
 @Component({
   selector: 'app-items',
@@ -12,13 +15,17 @@ export class ItemsComponent implements OnInit {
 
   columnsToDisplay = ['icon', 'itemName', 'actions'];
 
-  constructor() {}
+  constructor(private store: Store<State>) {}
 
-  ngOnInit() {
-    console.log(this.items);
+  ngOnInit() {}
+
+  addItem(item: Item) {
+    console.log('Add item');
+    this.store.dispatch(new SelectItem(item));
   }
 
-  addItem(id: string) {}
-
-  removeItem(id: string) {}
+  removeItem(id: string) {
+    console.log('Remove item');
+    this.store.dispatch(new DeselectItem(id));
+  }
 }

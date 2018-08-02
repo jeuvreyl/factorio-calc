@@ -2,8 +2,10 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ItemsComponent } from './items.component';
 import { SharedModule } from '../shared/shared.module';
+import { StoreModule } from '@ngrx/store';
+import { reducers, metaReducers } from '../../reducers';
 
-describe('RecipesComponent', () => {
+describe('ItemsComponent', () => {
   let component: ItemsComponent;
   let fixture: ComponentFixture<ItemsComponent>;
 
@@ -11,7 +13,8 @@ describe('RecipesComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ItemsComponent],
       imports: [
-        SharedModule
+        SharedModule,
+        StoreModule.forRoot(reducers, { metaReducers }),
       ]
     })
     .compileComponents();

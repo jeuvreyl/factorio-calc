@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "factorio-calc"
+  "defaultProject": "factorio-calc",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }

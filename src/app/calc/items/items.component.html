@@ -15,13 +15,13 @@
   <ng-container matColumnDef="actions">
     <th mat-header-cell *matHeaderCellDef> Actions </th>
     <td mat-cell *matCellDef="let item">
-      <button *ngIf="action == 'add'" mat-button (onclick)="addItem(item.id)">
+      <button *ngIf="action == 'add'" mat-button (click)="addItem(item)">
         <i class="material-icons">
           add
         </i>
       </button>
 
-      <button *ngIf="action == 'remove'" mat-button (onclick)=removeItem(item.id)>
+      <button *ngIf="action == 'remove'" mat-button (click)=removeItem(item.id)>
         <i class="material-icons">
           remove
         </i>
