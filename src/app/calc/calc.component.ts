@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ItemService } from './shared/item.service';
 import { Item } from './shared/item.model';
 import { Store, select } from '@ngrx/store';
 import { State } from '../reducers';

@@ -3,6 +3,8 @@ import { Item } from '../shared/item.model';
 import { Store } from '@ngrx/store';
 import { State } from '../../reducers';
 import { SelectItem, DeselectItem } from '../store/item.actions';
+import { MatDialog } from '../../../../node_modules/@angular/material/dialog';
+import { ItemDialogComponent } from '../item-dialog/item-dialog.component';
 
 @Component({
   selector: 'app-items',
@@ -15,12 +17,18 @@ export class ItemsComponent implements OnInit {
 
   columnsToDisplay = ['icon', 'itemName', 'actions'];
 
-  constructor(private store: Store<State>) {}
+  constructor(private dialog: MatDialog, private store: Store<State>) {}
 
   ngOnInit() {}
 
   addItem(item: Item) {
     console.log('Add item');
+    const dialogRef = this.dialog.open(ItemDialogComponent, {
+      width: '250px'
+    });
+
+    dialogRef.afterClosed().subscribe();
+
     this.store.dispatch(new SelectItem(item));
   }
 

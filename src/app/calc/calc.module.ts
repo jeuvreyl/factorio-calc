@@ -5,6 +5,7 @@ import { ItemsComponent } from './items/items.component';
 import { PlanComponent } from './plan/plan.component';
 import { SharedModule } from './shared/shared.module';
 import { ItemService } from './shared/item.service';
+import { ItemDialogComponent } from './item-dialog/item-dialog.component';
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { ItemService } from './shared/item.service';
   declarations: [
     CalcComponent,
     ItemsComponent,
-    PlanComponent
+    PlanComponent,
+    ItemDialogComponent
   ],
   providers: [
     ItemService
