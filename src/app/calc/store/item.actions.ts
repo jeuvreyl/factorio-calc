@@ -2,11 +2,18 @@ import { Action } from '@ngrx/store';
 import { Item } from '../shared/item.model';
 
 export enum ItemActionTypes {
+  ASK_ITEM_QUANTY = '[Item] Ask Item Quantity',
   LOAD_ITEMS = '[Item] Load Items',
   LOAD_ITEMS_SUCCESS = '[Item] Load Items Success',
   LOAD_ITEMS_SUCCESS_FAIL = '[Item] Load Items Fail',
   SELECT_ITEM = '[Item] Select Item',
   DESELECT_ITEM = '[Item] Deselect Item'
+}
+
+export class AskItemQuantiy implements Action {
+  readonly type = ItemActionTypes.ASK_ITEM_QUANTY;
+
+  constructor(public payLoad: Item) {}
 }
 
 export class LoadItems implements Action {
@@ -33,4 +40,10 @@ export class DeselectItem implements Action {
   constructor(public payload: string) {}
 }
 
-export type ItemActions = LoadItems | LoadItemsSuccess | LoadItemsFail | SelectItem | DeselectItem;
+export type ItemActions =
+  | AskItemQuantiy
+  | LoadItems
+  | LoadItemsSuccess
+  | LoadItemsFail
+  | SelectItem
+  | DeselectItem;

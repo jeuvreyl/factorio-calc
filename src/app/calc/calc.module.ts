@@ -6,15 +6,21 @@ import { PlanComponent } from './plan/plan.component';
 import { SharedModule } from './shared/shared.module';
 import { ItemService } from './shared/item.service';
 import { ItemDialogComponent } from './item-dialog/item-dialog.component';
+import { ItemEffects } from './store/item.effects';
+import { EffectsModule } from '../../../node_modules/@ngrx/effects';
 
 @NgModule({
   imports: [
-    SharedModule
+    SharedModule,
+    EffectsModule.forFeature([ItemEffects]),
   ],
   declarations: [
     CalcComponent,
     ItemsComponent,
     PlanComponent,
+    ItemDialogComponent
+  ],
+  entryComponents: [
     ItemDialogComponent
   ],
   providers: [

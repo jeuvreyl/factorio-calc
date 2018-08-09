@@ -1,10 +1,8 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Item } from '../shared/item.model';
+import { Component, Input, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { State } from '../../reducers';
-import { SelectItem, DeselectItem } from '../store/item.actions';
-import { MatDialog } from '../../../../node_modules/@angular/material/dialog';
-import { ItemDialogComponent } from '../item-dialog/item-dialog.component';
+import { Item } from '../shared/item.model';
+import { AskItemQuantiy, DeselectItem } from '../store/item.actions';
 
 @Component({
   selector: 'app-items',
@@ -14,22 +12,21 @@ import { ItemDialogComponent } from '../item-dialog/item-dialog.component';
 export class ItemsComponent implements OnInit {
   @Input() items: Item[];
   @Input() action: string;
+  @Input() withQuantity: boolean;
 
-  columnsToDisplay = ['icon', 'itemName', 'actions'];
+  columnsToDisplay = ['icon', 'name', 'actions'];
 
-  constructor(private dialog: MatDialog, private store: Store<State>) {}
+  constructor(private store: Store<State>) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    if (this.withQuantity) {
+      this.columnsToDisplay.push('quantity');
+    }
+  }
 
   addItem(item: Item) {
     console.log('Add item');
-    const dialogRef = this.dialog.open(ItemDialogComponent, {
-      width: '250px'
-    });
-
-    dialogRef.afterClosed().subscribe();
-
-    this.store.dispatch(new SelectItem(item));
+    this.store.dispatch(new AskItemQuantiy(item));
   }
 
   removeItem(id: string) {

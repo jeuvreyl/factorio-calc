@@ -22,7 +22,8 @@ export function reducer(state = initialState, action: ItemActions): ItemsConfigS
           {
             id: 'test',
             name: 'test item',
-            iconUrl: 'https://wiki.factorio.com/images/Factorio-icon.png'
+            iconUrl: 'https://wiki.factorio.com/images/Factorio-icon.png',
+            quantity: 0
           }
         ]
       };
