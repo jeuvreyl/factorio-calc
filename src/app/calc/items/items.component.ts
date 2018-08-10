@@ -25,12 +25,10 @@ export class ItemsComponent implements OnInit {
   }
 
   addItem(item: Item) {
-    console.log('Add item');
     this.store.dispatch(new AskItemQuantiy(item));
   }
 
   removeItem(id: string) {
-    console.log('Remove item');
     this.store.dispatch(new DeselectItem(id));
   }
 }

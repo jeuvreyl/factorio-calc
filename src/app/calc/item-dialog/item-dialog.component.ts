@@ -10,6 +10,7 @@ import { SelectItem } from '../store/item.actions';
   styleUrls: ['./item-dialog.component.css']
 })
 export class ItemDialogComponent implements OnInit {
+  public currentItem: Item;
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any,
@@ -17,13 +18,16 @@ export class ItemDialogComponent implements OnInit {
     private store: Store<Item>
   ) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    // copy item object
+    this.currentItem = Object.assign({}, this.data.item);
+  }
 
   onNoClick(): void {
     this.dialogRef.close();
   }
 
   pushQuantity() {
-    this.store.dispatch(new SelectItem(this.data.item));
+    this.store.dispatch(new SelectItem(this.currentItem));
   }
 }
