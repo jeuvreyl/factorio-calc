@@ -37,7 +37,7 @@ export class SelectItem implements Action {
 export class DeselectItem implements Action {
   readonly type = ItemActionTypes.DESELECT_ITEM;
 
-  constructor(public payload: string) {}
+  constructor(public payLoad: Item) {}
 }
 
 export type ItemActions =

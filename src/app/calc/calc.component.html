@@ -1,2 +1,8 @@
-<app-items [items]="selectableItems$ | async" [action]='"add"' [withQuantity]=false></app-items>
-<app-items [items]="selectedItems$ | async" [action]='"remove"' [withQuantity]=true></app-items>
+<div id="selection">
+  <div class="content">
+    <app-items [items]="selectableItems$ | async" [action]='"add"' [withQuantity]=false></app-items>
+  </div>
+  <div class="content">
+    <app-items [items]="selectedItems$ | async" [action]='"remove"' [withQuantity]=true></app-items>
+  </div>
+</div>

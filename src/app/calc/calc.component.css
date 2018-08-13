@@ -1,0 +1,10 @@
+#selection {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.content {
+  flex: 1 1 auto;
+  margin : 0em 10em 0em 10em;
+}

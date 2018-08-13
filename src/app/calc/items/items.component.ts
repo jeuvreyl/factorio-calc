@@ -28,7 +28,7 @@ export class ItemsComponent implements OnInit {
     this.store.dispatch(new AskItemQuantiy(item));
   }
 
-  removeItem(id: string) {
-    this.store.dispatch(new DeselectItem(id));
+  removeItem(item: Item) {
+    this.store.dispatch(new DeselectItem(item));
   }
 }

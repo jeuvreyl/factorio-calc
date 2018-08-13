@@ -30,12 +30,14 @@ export function reducer(state = initialState, action: ItemActions): ItemsConfigS
     case ItemActionTypes.SELECT_ITEM:
       return {
         ...state,
-        selectedItems: [...state.selectedItems, action.payLoad]
+        selectedItems: [...state.selectedItems, Object.assign({}, action.payLoad)],
+        items: state.items.filter(item => item.id !== action.payLoad.id)
       };
     case ItemActionTypes.DESELECT_ITEM:
       return {
         ...state,
-        selectedItems: state.selectedItems.filter(item => item.id !== action.payload)
+        selectedItems: state.selectedItems.filter(item => item.id !== action.payLoad.id),
+        items: [...state.items, Object.assign({}, action.payLoad)]
       };
     default:
       return state;
