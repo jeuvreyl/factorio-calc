@@ -1,31 +1,35 @@
 import { Item } from '../shared/item.model';
 import { ItemActionTypes, ItemActions } from './item.actions';
+import { Recipe } from '../shared/recipe.model';
 
 export interface ItemsConfigState {
   items: Item[];
   selectedItems: Item[];
   isLoading: boolean;
+  loaded: boolean;
 }
 
 export const initialState: ItemsConfigState = {
   items: [],
   selectedItems: [],
-  isLoading: false
+  isLoading: false,
+  loaded: false
 };
 
 export function reducer(state = initialState, action: ItemActions): ItemsConfigState {
   switch (action.type) {
-    case ItemActionTypes.LOAD_ITEMS:
+    case ItemActionTypes.LOAD_ITEMS_SUCCESS:
       return {
         ...state,
-        items: [
-          {
-            id: 'test',
-            name: 'test item',
-            iconUrl: 'https://wiki.factorio.com/images/Factorio-icon.png',
-            quantity: 0
-          }
-        ]
+        items: action.payLoad,
+        isLoading: false,
+        loaded: true
+      };
+    case ItemActionTypes.LOAD_ITEMS_SUCCESS_FAIL:
+      return {
+        ...state,
+        isLoading: false,
+        loaded: false
       };
     case ItemActionTypes.SELECT_ITEM:
       return {

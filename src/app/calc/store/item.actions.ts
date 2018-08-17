@@ -22,6 +22,8 @@ export class LoadItems implements Action {
 
 export class LoadItemsSuccess implements Action {
   readonly type = ItemActionTypes.LOAD_ITEMS_SUCCESS;
+
+  constructor(public payLoad: Item[]) {}
 }
 
 export class LoadItemsFail implements Action {

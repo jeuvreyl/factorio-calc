@@ -8,6 +8,9 @@ import { ItemService } from './shared/item.service';
 import { ItemDialogComponent } from './item-dialog/item-dialog.component';
 import { ItemEffects } from './store/item.effects';
 import { EffectsModule } from '../../../node_modules/@ngrx/effects';
+import { RecipesComponent } from './recipes/recipes.component';
+import { RecipeDialogComponent } from './recipe-dialog/recipe-dialog.component';
+import { ItemComponent } from './item/item.component';
 
 @NgModule({
   imports: [
@@ -18,7 +21,10 @@ import { EffectsModule } from '../../../node_modules/@ngrx/effects';
     CalcComponent,
     ItemsComponent,
     PlanComponent,
-    ItemDialogComponent
+    ItemDialogComponent,
+    RecipesComponent,
+    RecipeDialogComponent,
+    ItemComponent
   ],
   entryComponents: [
     ItemDialogComponent

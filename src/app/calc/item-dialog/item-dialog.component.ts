@@ -29,5 +29,6 @@ export class ItemDialogComponent implements OnInit {
 
   pushQuantity() {
     this.store.dispatch(new SelectItem(this.currentItem));
+    this.dialogRef.close();
   }
 }

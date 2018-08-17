@@ -1,19 +1,16 @@
-import {
-  ActionReducer,
-  ActionReducerMap,
-  createFeatureSelector,
-  createSelector,
-  MetaReducer
-} from '@ngrx/store';
+import { ActionReducerMap, MetaReducer } from '@ngrx/store';
 import { environment } from '../../environments/environment';
-import { ItemsConfigState, reducer } from '../calc/store/item.reducer';
+import { ItemsConfigState, reducer as itemReducer } from '../calc/store/item.reducer';
+import { RecipesConfigState, reducer as RecipeReducer } from '../calc/store/recipe.reducers';
 
 export interface State {
   itemsConfig: ItemsConfigState;
+  recipesConfig: RecipesConfigState;
 }
 
 export const reducers: ActionReducerMap<State> = {
-  itemsConfig: reducer
+  itemsConfig: itemReducer,
+  recipesConfig: RecipeReducer
 };
 
 export const metaReducers: MetaReducer<State>[] = !environment.production ? [] : [];
