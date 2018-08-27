@@ -3,15 +3,10 @@ import { Item } from '../shared/item.model';
 import { Recipe } from '../shared/recipe.model';
 
 export enum RecipeActionTypes {
-  LOAD_RECIPES = '[Recipe] Load Recipes',
   LOAD_RECIPES_SUCCESS = '[Item] Load Recipes Success',
   LOAD_RECIPES_SUCCESS_FAIL = '[Item] Load Recipes Fail',
   SELECT_RECIPE = '[Item] Select Recipe',
   DESELECT__RECIPE = '[Item] Deselect Recipe'
-}
-
-export class LoadRecipes implements Action {
-  readonly type = RecipeActionTypes.LOAD_RECIPES;
 }
 
 export class LoadRecipesSuccess implements Action {
@@ -36,9 +31,8 @@ export class DeselecRecipe implements Action {
   constructor(public payLoad: Recipe) {}
 }
 
-export type ItemRecipes =
-  | LoadRecipes
-  | LoadRecipesSuccess
+export type RecipesActions =
+  LoadRecipesSuccess
   | LoadRecipesFail
   | SelectRecipe
   | DeselecRecipe;

@@ -1,16 +1,15 @@
 import { Injectable } from '@angular/core';
-import { Observable, BehaviorSubject } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { Recipe } from './recipe.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RecipeService {
+  constructor() {}
 
-  recipe$: BehaviorSubject<Recipe[]>;
-
-  constructor() {
-    this.recipe$ = new BehaviorSubject([
+  getRecipes(): Observable<Recipe[]> {
+    return of([
       {
         id: 'test',
         name: 'nom test',
@@ -23,9 +22,5 @@ export class RecipeService {
         ]
       } as Recipe
     ]);
-  }
-
-  getRecipes(): Observable<Recipe[]> {
-    return this.recipe$.asObservable();
   }
 }

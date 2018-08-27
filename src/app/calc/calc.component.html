@@ -6,3 +6,7 @@
     <app-items [items]="selectedItems$ | async" [action]='"remove"' [withQuantity]=true></app-items>
   </div>
 </div>
+
+<div class="content recipes">
+  <app-recipes [recipes]="selectedRecipes$ | async"></app-recipes>
+</div>
