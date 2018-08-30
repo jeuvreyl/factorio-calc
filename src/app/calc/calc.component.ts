@@ -43,6 +43,6 @@ export class CalcComponent implements OnInit {
 
     this.selectedItems$ = this.store.select('itemsConfig', 'selectedItems');
     this.selectableItems$ = this.store.select('itemsConfig', 'items');
-    this.selectedRecipes$ = this.store.select('recipesConfig', 'recipes');
+    this.selectedRecipes$ = this.store.select('recipesConfig', 'selectedRecipes');
   }
 }

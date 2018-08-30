@@ -3,6 +3,7 @@ import { Item } from '../shared/item.model';
 
 export enum ItemActionTypes {
   ASK_ITEM_QUANTY = '[Item] Ask Item Quantity',
+  ASK_ITEM_RECIPE = '[Item] Ask Item Recipe',
   LOAD_ITEMS_SUCCESS = '[Item] Load Items Success',
   LOAD_ITEMS_SUCCESS_FAIL = '[Item] Load Items Fail',
   SELECT_ITEM = '[Item] Select Item',
@@ -11,6 +12,12 @@ export enum ItemActionTypes {
 
 export class AskItemQuantiy implements Action {
   readonly type = ItemActionTypes.ASK_ITEM_QUANTY;
+
+  constructor(public payLoad: Item) {}
+}
+
+export class AskForItemRecipe implements Action {
+  readonly type = ItemActionTypes.ASK_ITEM_RECIPE;
 
   constructor(public payLoad: Item) {}
 }
@@ -39,6 +46,7 @@ export class DeselectItem implements Action {
 
 export type ItemActions =
   | AskItemQuantiy
+  | AskForItemRecipe
   | LoadItemsSuccess
   | LoadItemsFail
   | SelectItem

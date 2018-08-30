@@ -11,6 +11,7 @@ import { EffectsModule } from '../../../node_modules/@ngrx/effects';
 import { RecipesComponent } from './recipes/recipes.component';
 import { RecipeDialogComponent } from './recipe-dialog/recipe-dialog.component';
 import { ItemComponent } from './item/item.component';
+import { RecipeComponent } from './recipe/recipe.component';
 
 @NgModule({
   imports: [
@@ -22,12 +23,14 @@ import { ItemComponent } from './item/item.component';
     ItemsComponent,
     PlanComponent,
     ItemDialogComponent,
+    RecipeComponent,
     RecipesComponent,
     RecipeDialogComponent,
     ItemComponent
   ],
   entryComponents: [
-    ItemDialogComponent
+    ItemDialogComponent,
+    RecipeDialogComponent
   ],
   providers: [
     ItemService

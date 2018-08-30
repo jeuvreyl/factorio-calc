@@ -2,7 +2,8 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '../../../../node_modules/@angular/material/dialog';
 import { Store } from '../../../../node_modules/@ngrx/store';
 import { Item } from '../shared/item.model';
-import { SelectItem } from '../store/item.actions';
+import { SelectItem, AskForItemRecipe } from '../store/item.actions';
+import { State } from '../../reducers';
 
 @Component({
   selector: 'app-item-dialog',
@@ -15,7 +16,7 @@ export class ItemDialogComponent implements OnInit {
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any,
     private dialogRef: MatDialogRef<ItemDialogComponent>,
-    private store: Store<Item>
+    private store: Store<State>
   ) {}
 
   ngOnInit() {
@@ -29,6 +30,7 @@ export class ItemDialogComponent implements OnInit {
 
   pushQuantity() {
     this.store.dispatch(new SelectItem(this.currentItem));
+    this.store.dispatch(new AskForItemRecipe(this.currentItem));
     this.dialogRef.close();
   }
 }

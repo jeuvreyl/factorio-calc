@@ -4,7 +4,8 @@ export interface Recipe {
   id: string;
   name: string;
   iconUrl: string;
-  ingredients: Item[];
-  results: Item[];
+  ingredients: string[];
+  results: string[];
   energyRequired: number;
+  category: string;
 }

@@ -1,3 +1,14 @@
-<p>
-  recipe-dialog works!
-</p>
+<div mat-dialog-content>
+  <mat-grid-list cols="5">
+    <mat-grid-tile *ngFor="let category of categories$ | async">
+      <button (click)="selectCategory(category.name)">
+        <img [src]="category.iconUrl" />
+      </button>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <div *ngFor="let recipe of selectableRecipes$ | async">
+    <app-recipe [recipe]="recipe"></app-recipe>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button mat-dialog-close (click)="onNoClick()">Cancel</button>
+  </div>

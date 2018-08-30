@@ -1,7 +1,7 @@
 import { ActionReducerMap, MetaReducer } from '@ngrx/store';
 import { environment } from '../../environments/environment';
 import { ItemsConfigState, reducer as itemReducer } from '../calc/store/item.reducer';
-import { RecipesConfigState, reducer as RecipeReducer } from '../calc/store/recipe.reducers';
+import { RecipesConfigState, reducer as RecipeReducer } from '../calc/store/recipe.reducer';
 
 export interface State {
   itemsConfig: ItemsConfigState;

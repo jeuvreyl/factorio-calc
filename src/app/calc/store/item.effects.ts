@@ -3,7 +3,8 @@ import { Actions, Effect, ofType } from '@ngrx/effects';
 import { map } from 'rxjs/operators';
 import { MatDialog } from '../../../../node_modules/@angular/material/dialog';
 import { ItemDialogComponent } from '../item-dialog/item-dialog.component';
-import { AskItemQuantiy, ItemActionTypes } from './item.actions';
+import { AskItemQuantiy, ItemActionTypes, AskForItemRecipe } from './item.actions';
+import { RecipeDialogComponent } from '../recipe-dialog/recipe-dialog.component';
 
 @Injectable()
 export class ItemEffects {
@@ -15,6 +16,18 @@ export class ItemEffects {
     map(action => action.payLoad),
     map(item =>
       this.dialog.open(ItemDialogComponent, {
+        width: '250px',
+        data: { item: item }
+      })
+    )
+  );
+
+  @Effect({ dispatch: false })
+  askForItemRecipe$ = this.actions$.pipe(
+    ofType<AskForItemRecipe>(ItemActionTypes.ASK_ITEM_RECIPE),
+    map(action => action.payLoad),
+    map(item =>
+      this.dialog.open(RecipeDialogComponent, {
         width: '250px',
         data: { item: item }
       })

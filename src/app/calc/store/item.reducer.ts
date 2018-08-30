@@ -1,6 +1,5 @@
 import { Item } from '../shared/item.model';
 import { ItemActionTypes, ItemActions } from './item.actions';
-import { Recipe } from '../shared/recipe.model';
 
 export interface ItemsConfigState {
   items: Item[];
