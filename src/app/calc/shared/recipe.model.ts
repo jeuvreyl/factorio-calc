@@ -1,11 +1,14 @@
-import { Item } from './item.model';
+import { SimpleQuantifiedItem } from './item.model';
 
-export interface Recipe {
+export interface RecipeObject {
   id: string;
   name: string;
   iconUrl: string;
-  ingredients: string[];
-  results: string[];
+  ingredients: Array<SimpleQuantifiedItem>;
+  results: Array<SimpleQuantifiedItem>;
   energyRequired: number;
-  category: string;
+  subGroup: string;
 }
+
+export type Recipe = Readonly<RecipeObject>;
+export type SimpleRecipe = Pick<RecipeObject, 'name' | 'iconUrl'>;

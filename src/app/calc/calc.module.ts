@@ -14,10 +14,7 @@ import { ItemComponent } from './item/item.component';
 import { RecipeComponent } from './recipe/recipe.component';
 
 @NgModule({
-  imports: [
-    SharedModule,
-    EffectsModule.forFeature([ItemEffects]),
-  ],
+  imports: [SharedModule, EffectsModule.forFeature([ItemEffects])],
   declarations: [
     CalcComponent,
     ItemsComponent,
@@ -30,11 +27,10 @@ import { RecipeComponent } from './recipe/recipe.component';
   ],
   entryComponents: [
     ItemDialogComponent,
-    RecipeDialogComponent
+    RecipeDialogComponent,
+    RecipeComponent
   ],
-  providers: [
-    ItemService
-  ],
+  providers: [ItemService],
   exports: [CalcComponent]
 })
 export class CalcModule {}

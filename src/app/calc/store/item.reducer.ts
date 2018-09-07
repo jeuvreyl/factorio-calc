@@ -1,9 +1,9 @@
-import { Item } from '../shared/item.model';
+import { Item, SimpleItem } from '../shared/item.model';
 import { ItemActionTypes, ItemActions } from './item.actions';
 
 export interface ItemsConfigState {
   items: Item[];
-  selectedItems: Item[];
+  selectedItems: SimpleItem[];
   isLoading: boolean;
   loaded: boolean;
 }
@@ -38,7 +38,7 @@ export function reducer(state = initialState, action: ItemActions): ItemsConfigS
     case ItemActionTypes.DESELECT_ITEM:
       return {
         ...state,
-        selectedItems: state.selectedItems.filter(item => item.id !== action.payLoad.id)
+        selectedItems: state.selectedItems.filter(item => item.name !== action.payLoad.name)
       };
     default:
       return state;

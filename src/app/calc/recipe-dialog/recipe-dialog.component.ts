@@ -3,12 +3,13 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { ItemDialogComponent } from '../item-dialog/item-dialog.component';
 import { Store } from '@ngrx/store';
 import { Item } from '../shared/item.model';
-import { Recipe } from '../shared/recipe.model';
+import { Recipe, SimpleRecipe } from '../shared/recipe.model';
 import { SelectRecipe } from '../store/recipe.actions';
 import { Observable, BehaviorSubject } from 'rxjs';
-import { Category } from '../shared/category.model';
+import { Group } from '../shared/group.model';
 import { map, combineLatest } from 'rxjs/operators';
 import { State } from '../../reducers';
+import { GroupService } from '../shared/group.service';
 
 @Component({
   selector: 'app-recipe-dialog',
@@ -16,37 +17,38 @@ import { State } from '../../reducers';
   styleUrls: ['./recipe-dialog.component.css']
 })
 export class RecipeDialogComponent implements OnInit {
-  categories$: Observable<Set<Category>>;
+  categories$: Observable<Group[]>;
+  items$: Observable<Item[]>;
   recipes$: Observable<Recipe[]>;
-  selectableRecipes$: Observable<Recipe[]>;
-  selectedRecipes$: Observable<Recipe[]>;
+  selectableRecipes$: Observable<SimpleRecipe[]>;
+  selectedRecipes$: Observable<SimpleRecipe[]>;
 
   selectedCategoryName$: BehaviorSubject<string>;
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any,
     private dialogRef: MatDialogRef<ItemDialogComponent>,
-    private store: Store<State>
+    private store: Store<State>,
+    private groupService: GroupService
   ) {}
 
   ngOnInit() {
+    this.items$ = this.store.select('itemsConfig', 'items');
+
     this.recipes$ = this.store.select('recipesConfig', 'recipes');
     this.selectedCategoryName$ = new BehaviorSubject<string>(null);
-    this.categories$ = this.recipes$.pipe(
-      map(recipes => recipes.filter(recipe => this.isItemRecipeResult(recipe, this.data.item))),
-      map(recipes => recipes.map(recipe => recipe.category)),
-      map(categoryNames => this.buildCategories(categoryNames))
-    );
+    this.categories$ = this.groupService.getGroups();
     this.selectedRecipes$ = this.store.select('recipesConfig', 'selectedRecipes');
     this.selectableRecipes$ = this.recipes$.pipe(
       combineLatest(this.selectedCategoryName$, this.selectedRecipes$),
       map(([recipes, categoryName, selectedRecipes]) =>
         recipes
-          .filter(recipe => recipe.category === categoryName)
+          .filter(recipe => recipe.subGroup === categoryName)
           .filter(
             recipe =>
-              selectedRecipes.find(selectedRecipe => selectedRecipe.id === recipe.id) === undefined
+              selectedRecipes.find(selectedRecipe => selectedRecipe.name === recipe.name) === undefined
           )
+          .filter(recipe => this.isItemRecipeResult(recipe, this.data.item))
       )
     );
   }
@@ -64,22 +66,8 @@ export class RecipeDialogComponent implements OnInit {
     this.selectedCategoryName$.next(categoryName);
   }
 
-  private buildCategories(categoryNames: Array<string>): Set<Category> {
-    const result = new Set<Category>();
-    const categoryCreated = new Set<string>();
-    for (const name of categoryNames) {
-      if (!categoryCreated.has(name)) {
-        result.add({
-          name: name,
-          iconUrl: 'https://wiki.factorio.com/images/Factorio-icon.png'
-        });
-      }
-    }
-    return result;
-  }
-
   private isItemRecipeResult(recipe: Recipe, item: Item): boolean {
-    const resultItemNames: Set<string> = new Set<string>(recipe.results);
+    const resultItemNames: Set<string> = new Set<string>(recipe.results.map(result => result.name));
     return resultItemNames.has(item.name);
   }
 }

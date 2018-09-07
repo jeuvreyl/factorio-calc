@@ -1,9 +1,9 @@
-import { Recipe } from '../shared/recipe.model';
+import { Recipe, SimpleRecipe } from '../shared/recipe.model';
 import { RecipeActionTypes, RecipesActions } from './recipe.actions';
 
 export interface RecipesConfigState {
   recipes: Recipe[];
-  selectedRecipes: Recipe[];
+  selectedRecipes: SimpleRecipe[];
   isLoading: boolean;
   loaded: boolean;
 }
@@ -38,7 +38,7 @@ export function reducer(state = initialState, action: RecipesActions): RecipesCo
     case RecipeActionTypes.DESELECT__RECIPE:
       return {
         ...state,
-        selectedRecipes: state.selectedRecipes.filter(recipe => recipe.id !== action.payLoad.id)
+        selectedRecipes: state.selectedRecipes.filter(recipe => recipe.name !== action.payLoad.name)
       };
     default:
       return state;

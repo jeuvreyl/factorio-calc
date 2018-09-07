@@ -7,8 +7,11 @@
     </mat-grid-tile>
   </mat-grid-list>
   <div *ngFor="let recipe of selectableRecipes$ | async">
-    <app-recipe [recipe]="recipe"></app-recipe>
-  </div>
-  <div mat-dialog-actions>
-    <button mat-button mat-dialog-close (click)="onNoClick()">Cancel</button>
-  </div>
+    <mat-grid-list cols="8">
+      <button mat-button (click)="selectRecipe(recipe)">
+        <img [src]="recipe.iconUrl" appTooltip [recipe]="recipe" [items]="items$ | async"  />
+      </button>
+    </mat-grid-list>
+    <div mat-dialog-actions>
+      <button mat-button mat-dialog-close (click)="onNoClick()">Cancel</button>
+    </div>

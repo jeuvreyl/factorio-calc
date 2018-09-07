@@ -13,10 +13,20 @@ export class RecipeService {
       {
         id: 'test',
         name: 'nom test',
-        category: 'test',
-        iconUrl: '',
-        ingredients: ['test item'],
-        results: ['test item']
+        subGroup: 'test',
+        iconUrl: 'https://wiki.factorio.com/images/Factorio-icon.png',
+        ingredients: [
+          {
+            name: 'test item',
+            quantity: 5
+          }
+        ],
+        results: [
+          {
+            name: 'test item',
+            quantity: 5
+          }
+        ]
       } as Recipe
     ]);
   }

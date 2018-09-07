@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Item } from './shared/item.model';
+import { Item, SimpleItem } from './shared/item.model';
 import { Store } from '@ngrx/store';
 import { State } from '../reducers';
 import { LoadItemsSuccess, LoadItemsFail } from './store/item.actions';
 import { LoadRecipesFail, LoadRecipesSuccess } from './store/recipe.actions';
 import { ItemService } from './shared/item.service';
 import { RecipeService } from './shared/recipe.service';
-import { Recipe } from './shared/recipe.model';
+import { Recipe, SimpleRecipe } from './shared/recipe.model';
 
 @Component({
   selector: 'app-calc',
@@ -15,10 +15,10 @@ import { Recipe } from './shared/recipe.model';
   styleUrls: ['./calc.component.css']
 })
 export class CalcComponent implements OnInit {
-  selectableItems$: Observable<Item[]>;
-  selectedItems$: Observable<Item[]>;
+  selectableItems$: Observable<SimpleItem[]>;
+  selectedItems$: Observable<SimpleItem[]>;
 
-  selectedRecipes$: Observable<Recipe[]>;
+  selectedRecipes$: Observable<SimpleRecipe[]>;
 
   constructor(
     private store: Store<State>,
