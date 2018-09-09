@@ -1,0 +1,18 @@
+[
+  {
+    "name": "angels-smelting",
+    "order": "lf",
+    "inventory_order": "lf",
+    "iconUrl": "./assets/graphics/technology/blast-furnace-group.png",
+    "icon_size": 64,
+    "subGroups": [ "angels-chrome"]
+  },
+  {
+    "name": "angels-casting",
+    "order": "lg",
+    "inventory_order": "lg",
+    "iconUrl": "./assets/graphics/technology/induction-furnace-group.png",
+    "icon_size": 64,
+    "subGroups": ["angels-chrome-casting"]
+  }
+]

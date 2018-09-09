@@ -1,0 +1,158 @@
+[
+  {
+    "name": "chrome-ore-processing",
+    "category": "ore-processing",
+    "subGroup": "angels-chrome",
+    "energy_required": 2,
+    "ingredients": [
+      {
+        "name": "chrome-ore",
+        " quantity": 4
+      }
+    ],
+    "results": [{ "name": "processed-chrome", "quantity": 2 }],
+    "icon_size": 32,
+    "order": "aa"
+  },
+  {
+    "name": "chrome-processed-processing",
+    "category": "pellet-pressing",
+    "subGroup": "angels-chrome",
+    "energy_required": 2,
+    "ingredients": [{ "name": "processed-chrome", "quantity": 3 }],
+    "results": [{ "name": "pellet-chrome", "quantity": 4 }],
+    "icon_size": 32,
+    "order": "ab"
+  },
+  {
+    "name": "chrome-ore-smelting",
+    "category": "chemical-smelting",
+    "subGroup": "angels-chrome",
+    "energy_required": 4,
+    "ingredients": [
+      { "name": "chrome-ore", "quantity": 24 },
+      { "name": "solid-carbon", "quantity": 3 }
+    ],
+    "results": [
+      { "name": "ingot-chrome", "quantity": 24 },
+      { "name": "gas-carbon-monoxide", "quantity": 60 }
+    ],
+    "main_product": "ingot-chrome",
+    "icon_size": 32,
+    "order": "ac"
+  },
+  {
+    "name": "processed-chrome-smelting",
+    "category": "blast-smelting",
+    "subGroup": "angels-chrome",
+    "energy_required": 4,
+    "ingredients": [
+      { "name": "processed-chrome", "quantity": 8 },
+      { "name": "solid-carbon", "quantity": 3 }
+    ],
+    "results": [
+      { "name": "ingot-chrome", "quantity": 24 },
+      { "name": "gas-carbon-monoxide", "quantity": 60 }
+    ],
+    "main_product": "ingot-chrome",
+    "icon_size": 32,
+    "order": "ad"
+  },
+  {
+    "name": "pellet-chrome-smelting",
+    "category": "blast-smelting",
+    "subGroup": "angels-chrome",
+    "energy_required": 4,
+    "ingredients": [
+      { "name": "pellet-chrome", "quantity": 8 },
+      { "name": "solid-sodium-carbonate", "quantity": 6 },
+      { "name": "gas-oxygen", "quantity": 60 }
+    ],
+    "results": [{ "name": "solid-chromate", "quantity": 24 }],
+    "icon_size": 32,
+    "order": "ae"
+  },
+  {
+    "name": "solid-chromate-smelting",
+    "category": "liquifying",
+    "subGroup": "angels-chrome",
+    "energy_required": 4,
+    "ingredients": [
+      { "name": "solid-chromate", "quantity": 12 },
+      { "name": "liquid-sulfuric-acid", "quantity": 30 }
+    ],
+    "results": [
+      { "name": "solid-dichromate", "quantity": 12 },
+      { "name": "solid-sodium-sulfate", "quantity": 1 },
+      { "name": "water-purified", "quantity": 30 }
+    ],
+    "main_product": "solid-dichromate",
+    "icon_size": 32,
+    "order": "af"
+  },
+  {
+    "name": "solid-dichromate-smelting",
+    "category": "chemical-smelting",
+    "subGroup": "angels-chrome",
+    "energy_required": 4,
+    "ingredients": [
+      { "name": "solid-dichromate", "quantity": 24 },
+      { "name": "solid-carbon", "quantity": 3 }
+    ],
+    "results": [
+      { "name": "solid-chrome-oxide", "quantity": 24 },
+      { "name": "solid-sodium-carbonate", "quantity": 3 },
+      { "name": "gas-carbon-monoxide", "quantity": 30 }
+    ],
+    "main_product": "solid-chrome-oxide",
+    "icon_size": 32,
+    "order": "ag"
+  },
+  {
+    "name": "solid-chrome-oxide-smelting",
+    "category": "blast-smelting",
+    "subGroup": "angels-chrome",
+    "energy_required": 4,
+    "ingredients": [
+      { "name": "solid-chrome-oxide", "quantity": 24 },
+      { "name": "ingot-aluminium", "quantity": 6 }
+    ],
+    "results": [
+      { "name": "ingot-chrome", "quantity": 24 },
+      { "name": "solid-aluminium-oxide", "quantity": 6 }
+    ],
+    "main_product": "ingot-chrome",
+    "icon_size": 32,
+    "order": "ah"
+  },
+  {
+    "name": "molten-chrome-smelting",
+    "category": "induction-smelting",
+    "subGroup": "angels-chrome-casting",
+    "energy_required": 4,
+    "ingredients": [{ "name": "ingot-chrome", "quantity": 12 }],
+    "results": [{ "name": "liquid-molten-chrome", "quantity": 120 }],
+    "icon_size": 32,
+    "order": "ba"
+  },
+  {
+    "name": "angels-plate-chrome",
+    "category": "casting",
+    "subGroup": "angels-chrome-casting",
+    "energy_required": 4,
+    "ingredients": [{ "name": "liquid-molten-chrome", "quantity": 40 }],
+    "results": [{ "name": "angels-plate-chrome", "quantity": 4 }],
+    "icon_size": 32,
+    "order": "d"
+  },
+  {
+    "name": "powder-chrome",
+    "category": "advanced-crafting",
+    "subGroup": "angels-chrome-casting",
+    "energy_required": 0.5,
+    "ingredients": [{ "name": "ingot-chrome", "quantity": 1 }],
+    "results": [{ "name": "powder-chrome", "quantity": 1 }],
+    "icon_size": 32,
+    "order": "c"
+  }
+]

@@ -1,33 +1,15 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable} from 'rxjs';
 import { Recipe } from './recipe.model';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RecipeService {
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   getRecipes(): Observable<Recipe[]> {
-    return of([
-      {
-        id: 'test',
-        name: 'nom test',
-        subGroup: 'test',
-        iconUrl: 'https://wiki.factorio.com/images/Factorio-icon.png',
-        ingredients: [
-          {
-            name: 'test item',
-            quantity: 5
-          }
-        ],
-        results: [
-          {
-            name: 'test item',
-            quantity: 5
-          }
-        ]
-      } as Recipe
-    ]);
+    return this.http.get<Recipe[]>('./assets/dataset/recipes.json');
   }
 }

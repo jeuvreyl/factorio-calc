@@ -5,7 +5,7 @@ import { Store } from '@ngrx/store';
 import { Item } from '../shared/item.model';
 import { Recipe, SimpleRecipe } from '../shared/recipe.model';
 import { SelectRecipe } from '../store/recipe.actions';
-import { Observable, BehaviorSubject } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 import { Group } from '../shared/group.model';
 import { map, combineLatest } from 'rxjs/operators';
 import { State } from '../../reducers';
@@ -23,7 +23,7 @@ export class RecipeDialogComponent implements OnInit {
   selectableRecipes$: Observable<SimpleRecipe[]>;
   selectedRecipes$: Observable<SimpleRecipe[]>;
 
-  selectedCategoryName$: BehaviorSubject<string>;
+  selectedCategoryName$: Subject<string>;
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any,
@@ -36,17 +36,19 @@ export class RecipeDialogComponent implements OnInit {
     this.items$ = this.store.select('itemsConfig', 'items');
 
     this.recipes$ = this.store.select('recipesConfig', 'recipes');
-    this.selectedCategoryName$ = new BehaviorSubject<string>(null);
+    this.selectedCategoryName$ = new Subject<string>();
     this.categories$ = this.groupService.getGroups();
     this.selectedRecipes$ = this.store.select('recipesConfig', 'selectedRecipes');
+
     this.selectableRecipes$ = this.recipes$.pipe(
-      combineLatest(this.selectedCategoryName$, this.selectedRecipes$),
-      map(([recipes, categoryName, selectedRecipes]) =>
+      combineLatest(this.selectedCategoryName$, this.selectedRecipes$, this.categories$),
+      map(([recipes, categoryName, selectedRecipes, categories]) =>
         recipes
-          .filter(recipe => recipe.subGroup === categoryName)
+          .filter(recipe => this.isRecipeInSelectedCategory(recipe, categoryName, categories))
           .filter(
             recipe =>
-              selectedRecipes.find(selectedRecipe => selectedRecipe.name === recipe.name) === undefined
+              selectedRecipes.find(selectedRecipe => selectedRecipe.name === recipe.name) ===
+              undefined
           )
           .filter(recipe => this.isItemRecipeResult(recipe, this.data.item))
       )
@@ -69,5 +71,16 @@ export class RecipeDialogComponent implements OnInit {
   private isItemRecipeResult(recipe: Recipe, item: Item): boolean {
     const resultItemNames: Set<string> = new Set<string>(recipe.results.map(result => result.name));
     return resultItemNames.has(item.name);
+  }
+
+  private isRecipeInSelectedCategory(recipe: Recipe, categoryName, categories: Group[]) {
+
+    const selectedCategory = categories.find(category => category.name === categoryName);
+
+    if (selectedCategory) {
+      return selectedCategory.subGroups.find(subgroup => subgroup === recipe.subGroup) !== undefined;
+    }
+
+    return false;
   }
 }

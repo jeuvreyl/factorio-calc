@@ -1,0 +1,77 @@
+[
+  {
+    "name": "chrome-ore",
+    "iconUrl": "./assets/graphics/icons/ore-chrome.png",
+    "icon_size": 32,
+    "subgroup": "angels-chrome",
+    "order": "a"
+  },
+  {
+    "name": "processed-chrome",
+    "iconUrl": "./assets/graphics/icons/processed-chrome.png",
+    "icon_size": 32,
+    "subgroup": "angels-chrome",
+    "order": "b"
+  },
+  {
+    "name": "pellet-chrome",
+    "iconUrl": "./assets/graphics/icons/pellet-chrome.png",
+    "icon_size": 32,
+    "subgroup": "angels-chrome",
+    "order": "c"
+  },
+  {
+    "name": "solid-chromate",
+    "iconUrl": "./assets/graphics/icons/solid-chromate.png",
+    "icon_size": 32,
+    "subgroup": "angels-chrome",
+    "order": "d"
+  },
+  {
+    "name": "solid-dichromate",
+    "iconUrl": "./assets/graphics/icons/solid-dichromate.png",
+    "icon_size": 32,
+    "subgroup": "angels-chrome",
+    "order": "e"
+  },
+  {
+    "name": "solid-chrome-oxide",
+    "iconUrl": "./assets/graphics/icons/solid-chrome-oxide.png",
+    "icon_size": 32,
+    "subgroup": "angels-chrome",
+    "order": "f"
+  },
+  {
+    "name": "ingot-chrome",
+    "iconUrl": "./assets/graphics/icons/ingot-chrome.png",
+    "icon_size": 32,
+    "subgroup": "angels-chrome",
+    "order": "g"
+  },
+  {
+    "name": "liquid-molten-chrome",
+    "iconUrl": "./assets/graphics/icons/molten-chrome.png",
+    "icon_size": 32
+  },
+  {
+    "name": "angels-plate-chrome",
+    "iconUrl": "./assets/graphics/icons/plate-chrome.png",
+    "icon_size": 32,
+    "subgroup": "angels-chrome-casting",
+    "order": "h"
+  },
+  {
+    "name": "powder-chrome",
+    "iconUrl": "./assets/graphics/icons/powder-chrome.png",
+    "icon_size": 32,
+    "subgroup": "angels-chrome-casting",
+    "order": "i"
+  },
+  {
+    "name": "angels-roll-chrome",
+    "iconUrl": "./assets/graphics/icons/roll-chrome.png",
+    "icon_size": 32,
+    "subgroup": "angels-chrome-casting",
+    "order": "j"
+  }
+]

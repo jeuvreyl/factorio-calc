@@ -25,7 +25,7 @@ import { TooltipDirective } from './tooltip.directive';
     BrowserAnimationsModule
   ],
   declarations: [
-    TooltipDirective,
+    TooltipDirective
   ],
   exports: [
     CommonModule,

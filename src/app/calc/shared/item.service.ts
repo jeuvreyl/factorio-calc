@@ -1,20 +1,16 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Item } from './item.model';
+import { map } from 'rxjs/operators';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ItemService {
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   getItems(): Observable<Item[]> {
-    return of([
-      {
-        id: 'test',
-        name: 'test item',
-        iconUrl: 'https://wiki.factorio.com/images/Factorio-icon.png'
-      }
-    ] as Item[]);
+    return this.http.get<Item[]>('./assets/dataset/items.json');
   }
 }
