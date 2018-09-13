@@ -1,14 +1,16 @@
-  <mat-card>
+  <mat-card  class="recipe-detail">
     <mat-card-title>{{recipe.name}}</mat-card-title>
-    <mat-card-content class="detail">
-      <div class="ingredient" *ngFor="let ingredient of ingredients">
-        <div class="content">
-          <img mat-card-image [src]="ingredient.iconUrl" /> {{ingredient.quantity}}
+    <mat-card-content>
+      <mat-card-subtitle>Ingredients: </mat-card-subtitle>
+      <div class="detail ingredient">
+        <div class="content"  *ngFor="let ingredient of ingredients">
+          <img [src]="ingredient.iconUrl" />{{ingredient.quantity}}
         </div>
       </div>
-      <div class="result" *ngFor="let result of results">
-        <div class="content">
-          <img mat-card-image [src]="result.iconUrl" />{{result.quantity}}
+      <mat-card-subtitle class="subtitle">Results: </mat-card-subtitle>
+      <div class="detail result">
+        <div class="content" *ngFor="let result of results">
+          <img [src]="result.iconUrl" />{{result.quantity}}
         </div>
       </div>
     </mat-card-content>

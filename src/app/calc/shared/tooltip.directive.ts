@@ -16,8 +16,14 @@ export class TooltipDirective {
   @Input()
   items: Item[];
 
-  constructor(private elmentRef: ElementRef, private overlay: Overlay, private tooltipService: TooltipService) {
+  constructor(
+    private elmentRef: ElementRef,
+    private overlay: Overlay,
+    private tooltipService: TooltipService
+  ) {
     this.overlayRef = this.overlay.create({
+      maxHeight: '100%,',
+      maxWidth: '100%',
       positionStrategy: this.overlay
         .position()
         .connectedTo(

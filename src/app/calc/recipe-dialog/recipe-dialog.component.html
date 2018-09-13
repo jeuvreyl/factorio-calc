@@ -12,6 +12,7 @@
         <img [src]="recipe.iconUrl" appTooltip [recipe]="recipe" [items]="items$ | async"  />
       </button>
     </mat-grid-list>
+    </div>
     <div mat-dialog-actions>
       <button mat-button mat-dialog-close (click)="onNoClick()">Cancel</button>
     </div>

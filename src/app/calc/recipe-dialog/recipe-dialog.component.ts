@@ -74,13 +74,10 @@ export class RecipeDialogComponent implements OnInit {
   }
 
   private isRecipeInSelectedCategory(recipe: Recipe, categoryName, categories: Group[]) {
-
     const selectedCategory = categories.find(category => category.name === categoryName);
-
     if (selectedCategory) {
       return selectedCategory.subGroups.find(subgroup => subgroup === recipe.subGroup) !== undefined;
     }
-
     return false;
   }
 }

@@ -12,7 +12,8 @@
     ],
     "results": [{ "name": "processed-chrome", "quantity": 2 }],
     "icon_size": 32,
-    "order": "aa"
+    "order": "aa",
+    "iconUrl": "./assets/graphics/icons/processed-chrome.png"
   },
   {
     "name": "chrome-processed-processing",
@@ -22,7 +23,8 @@
     "ingredients": [{ "name": "processed-chrome", "quantity": 3 }],
     "results": [{ "name": "pellet-chrome", "quantity": 4 }],
     "icon_size": 32,
-    "order": "ab"
+    "order": "ab",
+    "iconUrl": "./assets/graphics/icons/pellet-chrome.png"
   },
   {
     "name": "chrome-ore-smelting",
@@ -39,7 +41,8 @@
     ],
     "main_product": "ingot-chrome",
     "icon_size": 32,
-    "order": "ac"
+    "order": "ac",
+    "iconUrl": "./assets/graphics/icons/ingot-chrome.png"
   },
   {
     "name": "processed-chrome-smelting",
@@ -56,7 +59,8 @@
     ],
     "main_product": "ingot-chrome",
     "icon_size": 32,
-    "order": "ad"
+    "order": "ad",
+    "iconUrl": "./assets/graphics/icons/ingot-chrome.png"
   },
   {
     "name": "pellet-chrome-smelting",
@@ -70,7 +74,8 @@
     ],
     "results": [{ "name": "solid-chromate", "quantity": 24 }],
     "icon_size": 32,
-    "order": "ae"
+    "order": "ae",
+    "iconUrl": "./assets/graphics/icons/solid-chromate.png"
   },
   {
     "name": "solid-chromate-smelting",
@@ -88,7 +93,8 @@
     ],
     "main_product": "solid-dichromate",
     "icon_size": 32,
-    "order": "af"
+    "order": "af",
+    "iconUrl": "./assets/graphics/icons/solid-dichromate.png"
   },
   {
     "name": "solid-dichromate-smelting",
@@ -106,7 +112,8 @@
     ],
     "main_product": "solid-chrome-oxide",
     "icon_size": 32,
-    "order": "ag"
+    "order": "ag",
+    "iconUrl": "./assets/graphics/icons/solid-chrome-oxide.png"
   },
   {
     "name": "solid-chrome-oxide-smelting",
@@ -123,7 +130,8 @@
     ],
     "main_product": "ingot-chrome",
     "icon_size": 32,
-    "order": "ah"
+    "order": "ah",
+    "iconUrl": "./assets/graphics/icons/ingot-chrome.png"
   },
   {
     "name": "molten-chrome-smelting",
@@ -133,7 +141,8 @@
     "ingredients": [{ "name": "ingot-chrome", "quantity": 12 }],
     "results": [{ "name": "liquid-molten-chrome", "quantity": 120 }],
     "icon_size": 32,
-    "order": "ba"
+    "order": "ba",
+    "iconUrl": "./assets/graphics/icons/molten-chrome.png"
   },
   {
     "name": "angels-plate-chrome",
@@ -143,7 +152,8 @@
     "ingredients": [{ "name": "liquid-molten-chrome", "quantity": 40 }],
     "results": [{ "name": "angels-plate-chrome", "quantity": 4 }],
     "icon_size": 32,
-    "order": "d"
+    "order": "d",
+    "iconUrl": "./assets/graphics/icons/plate-chrome.png"
   },
   {
     "name": "powder-chrome",
@@ -153,6 +163,7 @@
     "ingredients": [{ "name": "ingot-chrome", "quantity": 1 }],
     "results": [{ "name": "powder-chrome", "quantity": 1 }],
     "icon_size": 32,
-    "order": "c"
+    "order": "c",
+    "iconUrl": "./assets/graphics/icons/powder-chrome.png"
   }
 ]
