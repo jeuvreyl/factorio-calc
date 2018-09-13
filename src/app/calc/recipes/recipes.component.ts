@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Recipe } from '../shared/recipe.model';
+import { Store } from '@ngrx/store';
+import { State } from '../../reducers';
+import { DeselecRecipe } from '../store/recipe.actions';
 
 @Component({
   selector: 'app-recipes',
@@ -12,9 +15,11 @@ export class RecipesComponent implements OnInit {
 
   columnsToDisplay = ['icon', 'name', 'ingredients', 'actions'];
 
-  constructor() {}
+  constructor(private store: Store<State>) {}
 
   ngOnInit() {}
 
-  removeRecipe(recipe: Recipe) {}
+  removeRecipe(recipe: Recipe) {
+    this.store.dispatch(new DeselecRecipe(recipe));
+  }
 }
