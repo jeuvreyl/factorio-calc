@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { Item } from '../shared/item.model';
+import { Item, QuantifiedItem } from '../shared/item.model';
 
 export enum ItemActionTypes {
   ASK_ITEM_QUANTY = '[Item] Ask Item Quantity',
@@ -19,7 +19,7 @@ export class AskItemQuantiy implements Action {
 export class AskForItemRecipe implements Action {
   readonly type = ItemActionTypes.ASK_ITEM_RECIPE;
 
-  constructor(public payLoad: Item) {}
+  constructor(public payLoad: Item[]) {}
 }
 
 export class LoadItemsSuccess implements Action {
@@ -35,7 +35,7 @@ export class LoadItemsFail implements Action {
 export class SelectItem implements Action {
   readonly type = ItemActionTypes.SELECT_ITEM;
 
-  constructor(public payLoad: Item) {}
+  constructor(public payLoad: QuantifiedItem) {}
 }
 
 export class DeselectItem implements Action {

@@ -1,0 +1,12 @@
+.detail{
+  display: flex;
+}
+
+.ingredient {
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+  font-weight: bold;
+  font-size: 1em;
+}

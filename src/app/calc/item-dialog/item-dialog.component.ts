@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '../../../../node_modules/@angular/material/dialog';
 import { Store } from '../../../../node_modules/@ngrx/store';
-import { Item } from '../shared/item.model';
+import { Item, QuantifiedItem } from '../shared/item.model';
 import { SelectItem, AskForItemRecipe } from '../store/item.actions';
 import { State } from '../../reducers';
 
@@ -11,7 +11,7 @@ import { State } from '../../reducers';
   styleUrls: ['./item-dialog.component.css']
 })
 export class ItemDialogComponent implements OnInit {
-  public currentItem: Item;
+  public currentItem: QuantifiedItem;
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any,
@@ -21,7 +21,7 @@ export class ItemDialogComponent implements OnInit {
 
   ngOnInit() {
     // copy item object
-    this.currentItem = Object.assign({}, this.data.item);
+    this.currentItem = { ...this.data.item };
   }
 
   onNoClick(): void {
@@ -30,7 +30,7 @@ export class ItemDialogComponent implements OnInit {
 
   pushQuantity() {
     this.store.dispatch(new SelectItem(this.currentItem));
-    this.store.dispatch(new AskForItemRecipe(this.currentItem));
+    this.store.dispatch(new AskForItemRecipe([{ ...this.currentItem } as Item]));
     this.dialogRef.close();
   }
 }

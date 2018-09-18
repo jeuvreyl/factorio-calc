@@ -26,10 +26,10 @@ export class ItemEffects {
   askForItemRecipe$ = this.actions$.pipe(
     ofType<AskForItemRecipe>(ItemActionTypes.ASK_ITEM_RECIPE),
     map(action => action.payLoad),
-    map(item =>
+    map(items =>
       this.dialog.open(RecipeDialogComponent, {
         width: '250px',
-        data: { item: item }
+        data: { items: items }
       })
     )
   );

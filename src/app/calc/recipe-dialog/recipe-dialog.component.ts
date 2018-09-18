@@ -50,7 +50,7 @@ export class RecipeDialogComponent implements OnInit {
               selectedRecipes.find(selectedRecipe => selectedRecipe.name === recipe.name) ===
               undefined
           )
-          .filter(recipe => this.isItemRecipeResult(recipe, this.data.item))
+          .filter(recipe => this.isItemRecipeResult(recipe, this.data.items))
       )
     );
   }
@@ -68,15 +68,23 @@ export class RecipeDialogComponent implements OnInit {
     this.selectedCategoryName$.next(categoryName);
   }
 
-  private isItemRecipeResult(recipe: Recipe, item: Item): boolean {
-    const resultItemNames: Set<string> = new Set<string>(recipe.results.map(result => result.name));
-    return resultItemNames.has(item.name);
+  private isItemRecipeResult(recipe: Recipe, items: Item[]): boolean {
+    const resultItemNames: Set<string> = new Set<string>(recipe.results.map(recipeResult => recipeResult.name));
+    let result = false;
+    items.forEach(item => {
+      if (resultItemNames.has(item.name)) {
+        result =  true;
+      }
+    });
+    return result;
   }
 
   private isRecipeInSelectedCategory(recipe: Recipe, categoryName, categories: Group[]) {
     const selectedCategory = categories.find(category => category.name === categoryName);
     if (selectedCategory) {
-      return selectedCategory.subGroups.find(subgroup => subgroup === recipe.subGroup) !== undefined;
+      return (
+        selectedCategory.subGroups.find(subgroup => subgroup === recipe.subGroup) !== undefined
+      );
     }
     return false;
   }
