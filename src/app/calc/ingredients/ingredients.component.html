@@ -1,3 +1,5 @@
-<div class="content ingredient" *ngFor="let item of items">
-  <img [src]="item.iconUrl" />{{item.quantity}}
+<div class=" ingredient">
+  <div *ngFor="let item of items">
+    <img [src]="item.iconUrl" /><span>{{item.quantity}}</span>
+  </div>
 </div>

@@ -1,12 +1,22 @@
-.detail{
-  display: flex;
-}
 
 .ingredient {
-  flex-direction: column;
-  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin-bottom: 1em;
   font-weight: bold;
   font-size: 1em;
+}
+
+.ingredient div{
+  background: rgb(85, 77, 77, 1);
+  background: rgba(85, 77, 77, 1);
+  padding: 3px;
+}
+
+.ingredient div span{
+  margin-left: -1em;
+  color: white;
 }
