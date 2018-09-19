@@ -1,18 +1,38 @@
-[
-  {
-    "name": "angels-smelting",
-    "order": "lf",
-    "inventory_order": "lf",
-    "iconUrl": "./assets/graphics/technology/blast-furnace-group.png",
-    "icon_size": 64,
-    "subGroups": [ "angels-chrome"]
+{
+  "intermediate-products": {
+    "name": "intermediate-products",
+    "iconUrl": "base/graphics/item-group/intermediate-products.png"
   },
-  {
-    "name": "angels-casting",
-    "order": "lg",
-    "inventory_order": "lg",
-    "iconUrl": "./assets/graphics/technology/induction-furnace-group.png",
-    "icon_size": 64,
-    "subGroups": ["angels-chrome-casting"]
+  "other": {
+    "name": "other",
+    "iconUrl": "core/graphics/questionmark.png"
+  },
+  "environment": {
+    "name": "environment",
+    "iconUrl": "core/graphics/treex64-provisional.png"
+  },
+  "signals": {
+    "name": "signals",
+    "iconUrl": "base/graphics/item-group/signals.png"
+  },
+  "production": {
+    "name": "production",
+    "iconUrl": "base/graphics/item-group/production.png"
+  },
+  "logistics": {
+    "name": "logistics",
+    "iconUrl": "base/graphics/item-group/logistics.png"
+  },
+  "combat": {
+    "name": "combat",
+    "iconUrl": "base/graphics/item-group/military.png"
+  },
+  "enemies": {
+    "name": "enemies",
+    "iconUrl": "core/graphics/enemy-force-icon.png"
+  },
+  "fluids": {
+    "name": "fluids",
+    "iconUrl": "base/graphics/item-group/fluids.png"
   }
-]
+}
