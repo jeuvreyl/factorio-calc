@@ -1,12 +1,16 @@
-.detail{
-  display: flex;
-}
-
 .result {
+  display: flex;
+  align-items: flex-start;
   flex-direction: column;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 1em;
   font-weight: bold;
   font-size: 1em;
+}
+
+.result div{
+  background: rgb(85, 77, 77, 1);
+  background: rgba(85, 77, 77, 1);
+  padding: 3px;
 }

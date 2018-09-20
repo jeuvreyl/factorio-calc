@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { map, combineLatest } from 'rxjs/operators';
-import { SimpleItem } from './shared/item.model';
-import { Store } from '@ngrx/store';
-import { State } from '../reducers';
+import { map } from 'rxjs/operators';
+import { SimpleItem, Item } from './shared/item.model';
+import { Store, select } from '@ngrx/store';
+import { State, getSelectedItems, getSelectableItems, getItems } from '../reducers';
 import { LoadItemsSuccess, LoadItemsFail } from './store/item.actions';
 import { LoadRecipesFail, LoadRecipesSuccess } from './store/recipe.actions';
 import { ItemService } from './shared/item.service';
 import { RecipeService } from './shared/recipe.service';
-import { SimpleRecipe } from './shared/recipe.model';
 
 @Component({
   selector: 'app-calc',
@@ -18,7 +17,7 @@ import { SimpleRecipe } from './shared/recipe.model';
 export class CalcComponent implements OnInit {
   selectableItems$: Observable<SimpleItem[]>;
   selectedItems$: Observable<SimpleItem[]>;
-  selectedRecipes$: Observable<SimpleRecipe[]>;
+  items$: Observable<{ [name: string]: Item }>;
 
   constructor(
     private store: Store<State>,
@@ -41,14 +40,11 @@ export class CalcComponent implements OnInit {
         error => this.store.dispatch(new LoadRecipesFail())
       );
 
-    this.selectedItems$ = this.store.select('itemsConfig', 'selectedItems');
-    this.selectableItems$ = this.store.select('itemsConfig', 'items')
-      .pipe(
-      combineLatest(this.selectedItems$),
-      map(([items, selectedItems]) => {
-        const selectedItemNames = new Set<string>(selectedItems.map(item => item.name));
-        return items.filter(item => !selectedItemNames.has(item.name));
-      }));
-    this.selectedRecipes$ = this.store.select('recipesConfig', 'selectedRecipes');
+    this.selectedItems$ = this.store.pipe(select(getSelectedItems));
+    this.selectableItems$ = this.store.pipe(
+      select(getSelectableItems),
+      map(items => items.map(item => item as SimpleItem))
+    );
+    this.items$ = this.store.pipe(select(getItems));
   }
 }

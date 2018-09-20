@@ -2,3891 +2,4901 @@
   "processing-unit": {
     "name": "processing-unit",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "electronic-circuit",
-      "amount": 20
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 2
-    },
-    {
-      "name": "sulfuric-acid",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "processing-unit",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/processing-unit.png"
+    "ingredients": [
+      {
+        "name": "electronic-circuit",
+        "amount": 20
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 2
+      },
+      {
+        "name": "sulfuric-acid",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "processing-unit",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/processing-unit.png",
+    "craftingCategory": "crafting-with-fluid"
   },
   "rocket": {
     "name": "rocket",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "electronic-circuit",
-      "amount": 1
-    },
-    {
-      "name": "explosives",
-      "amount": 1
-    },
-    {
-      "name": "iron-plate",
-      "amount": 2
-    }],
-    "results": [{
-      "name": "rocket",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/rocket.png"
+    "ingredients": [
+      {
+        "name": "electronic-circuit",
+        "amount": 1
+      },
+      {
+        "name": "explosives",
+        "amount": 1
+      },
+      {
+        "name": "iron-plate",
+        "amount": 2
+      }
+    ],
+    "results": [
+      {
+        "name": "rocket",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/rocket.png",
+    "craftingCategory": "crafting"
   },
   "wooden-chest": {
     "name": "wooden-chest",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "wood",
-      "amount": 4
-    }],
-    "results": [{
-      "name": "wooden-chest",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/wooden-chest.png"
+    "ingredients": [
+      {
+        "name": "wood",
+        "amount": 4
+      }
+    ],
+    "results": [
+      {
+        "name": "wooden-chest",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/wooden-chest.png",
+    "craftingCategory": "crafting"
   },
   "battery-mk2-equipment": {
     "name": "battery-mk2-equipment",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "battery-equipment",
-      "amount": 10
-    },
-    {
-      "name": "processing-unit",
-      "amount": 20
-    }],
-    "results": [{
-      "name": "battery-mk2-equipment",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/battery-mk2-equipment.png"
+    "ingredients": [
+      {
+        "name": "battery-equipment",
+        "amount": 10
+      },
+      {
+        "name": "processing-unit",
+        "amount": 20
+      }
+    ],
+    "results": [
+      {
+        "name": "battery-mk2-equipment",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/battery-mk2-equipment.png",
+    "craftingCategory": "crafting"
   },
   "rocket-launcher": {
     "name": "rocket-launcher",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "iron-plate",
-      "amount": 5
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 5
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "rocket-launcher",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/rocket-launcher.png"
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 5
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 5
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "rocket-launcher",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/rocket-launcher.png",
+    "craftingCategory": "crafting"
   },
   "steel-chest": {
     "name": "steel-chest",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 8
-    }],
-    "results": [{
-      "name": "steel-chest",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/steel-chest.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 8
+      }
+    ],
+    "results": [
+      {
+        "name": "steel-chest",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/steel-chest.png",
+    "craftingCategory": "crafting"
   },
   "power-armor-mk2": {
     "name": "power-armor-mk2",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "effectivity-module-3",
-      "amount": 5
-    },
-    {
-      "name": "speed-module-3",
-      "amount": 5
-    },
-    {
-      "name": "processing-unit",
-      "amount": 40
-    },
-    {
-      "name": "steel-plate",
-      "amount": 40
-    }],
-    "results": [{
-      "name": "power-armor-mk2",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/power-armor-mk2.png"
+    "ingredients": [
+      {
+        "name": "effectivity-module-3",
+        "amount": 5
+      },
+      {
+        "name": "speed-module-3",
+        "amount": 5
+      },
+      {
+        "name": "processing-unit",
+        "amount": 40
+      },
+      {
+        "name": "steel-plate",
+        "amount": 40
+      }
+    ],
+    "results": [
+      {
+        "name": "power-armor-mk2",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/power-armor-mk2.png",
+    "craftingCategory": "crafting"
   },
   "green-wire": {
     "name": "green-wire",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "electronic-circuit",
-      "amount": 1
-    },
-    {
-      "name": "copper-cable",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "green-wire",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/green-wire.png"
+    "ingredients": [
+      {
+        "name": "electronic-circuit",
+        "amount": 1
+      },
+      {
+        "name": "copper-cable",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "green-wire",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/green-wire.png",
+    "craftingCategory": "crafting"
   },
   "steam-engine": {
     "name": "steam-engine",
     "groupName": "production",
-    "ingredients": [{
-      "name": "iron-gear-wheel",
-      "amount": 8
-    },
-    {
-      "name": "pipe",
-      "amount": 5
-    },
-    {
-      "name": "iron-plate",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "steam-engine",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/steam-engine.png"
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel",
+        "amount": 8
+      },
+      {
+        "name": "pipe",
+        "amount": 5
+      },
+      {
+        "name": "iron-plate",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "steam-engine",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/steam-engine.png",
+    "craftingCategory": "crafting"
   },
   "sulfur": {
     "name": "sulfur",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "water",
-      "amount": 30
-    },
-    {
-      "name": "petroleum-gas",
-      "amount": 30
-    }],
-    "results": [{
-      "name": "sulfur",
-      "amount": 2
-    }],
-    "iconUrl": "base/graphics/icons/sulfur.png"
+    "ingredients": [
+      {
+        "name": "water",
+        "amount": 30
+      },
+      {
+        "name": "petroleum-gas",
+        "amount": 30
+      }
+    ],
+    "results": [
+      {
+        "name": "sulfur",
+        "amount": 2
+      }
+    ],
+    "iconUrl": "base/graphics/icons/sulfur.png",
+    "craftingCategory": "chemistry"
   },
   "express-transport-belt": {
     "name": "express-transport-belt",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "iron-gear-wheel",
-      "amount": 10
-    },
-    {
-      "name": "fast-transport-belt",
-      "amount": 1
-    },
-    {
-      "name": "lubricant",
-      "amount": 20
-    }],
-    "results": [{
-      "name": "express-transport-belt",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/express-transport-belt.png"
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel",
+        "amount": 10
+      },
+      {
+        "name": "fast-transport-belt",
+        "amount": 1
+      },
+      {
+        "name": "lubricant",
+        "amount": 20
+      }
+    ],
+    "results": [
+      {
+        "name": "express-transport-belt",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/express-transport-belt.png",
+    "craftingCategory": "crafting-with-fluid"
   },
   "refined-hazard-concrete": {
     "name": "refined-hazard-concrete",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "refined-concrete",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "refined-hazard-concrete",
-      "amount": 10
-    }],
-    "iconUrl": "base/graphics/icons/refined-hazard-concrete.png"
+    "ingredients": [
+      {
+        "name": "refined-concrete",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "refined-hazard-concrete",
+        "amount": 10
+      }
+    ],
+    "iconUrl": "base/graphics/icons/refined-hazard-concrete.png",
+    "craftingCategory": "crafting"
   },
   "fusion-reactor-equipment": {
     "name": "fusion-reactor-equipment",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "processing-unit",
-      "amount": 250
-    }],
-    "results": [{
-      "name": "fusion-reactor-equipment",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/fusion-reactor-equipment.png"
+    "ingredients": [
+      {
+        "name": "processing-unit",
+        "amount": 250
+      }
+    ],
+    "results": [
+      {
+        "name": "fusion-reactor-equipment",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/fusion-reactor-equipment.png",
+    "craftingCategory": "crafting"
   },
   "power-armor": {
     "name": "power-armor",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "processing-unit",
-      "amount": 40
-    },
-    {
-      "name": "electric-engine-unit",
-      "amount": 20
-    },
-    {
-      "name": "steel-plate",
-      "amount": 40
-    }],
-    "results": [{
-      "name": "power-armor",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/power-armor.png"
+    "ingredients": [
+      {
+        "name": "processing-unit",
+        "amount": 40
+      },
+      {
+        "name": "electric-engine-unit",
+        "amount": 20
+      },
+      {
+        "name": "steel-plate",
+        "amount": 40
+      }
+    ],
+    "results": [
+      {
+        "name": "power-armor",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/power-armor.png",
+    "craftingCategory": "crafting"
   },
   "speed-module-3": {
     "name": "speed-module-3",
     "groupName": "production",
-    "ingredients": [{
-      "name": "speed-module-2",
-      "amount": 5
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 5
-    },
-    {
-      "name": "processing-unit",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "speed-module-3",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/speed-module-3.png"
+    "ingredients": [
+      {
+        "name": "speed-module-2",
+        "amount": 5
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 5
+      },
+      {
+        "name": "processing-unit",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "speed-module-3",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/speed-module-3.png",
+    "craftingCategory": "crafting"
   },
   "logistic-chest-buffer": {
     "name": "logistic-chest-buffer",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "steel-chest",
-      "amount": 1
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 3
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "logistic-chest-buffer",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/logistic-chest-buffer.png"
+    "ingredients": [
+      {
+        "name": "steel-chest",
+        "amount": 1
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 3
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "logistic-chest-buffer",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/logistic-chest-buffer.png",
+    "craftingCategory": "crafting"
   },
   "rocket-control-unit": {
     "name": "rocket-control-unit",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "processing-unit",
-      "amount": 1
-    },
-    {
-      "name": "speed-module",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "rocket-control-unit",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/rocket-control-unit.png"
+    "ingredients": [
+      {
+        "name": "processing-unit",
+        "amount": 1
+      },
+      {
+        "name": "speed-module",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "rocket-control-unit",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/rocket-control-unit.png",
+    "craftingCategory": "crafting"
   },
   "rail-signal": {
     "name": "rail-signal",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "electronic-circuit",
-      "amount": 1
-    },
-    {
-      "name": "iron-plate",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "rail-signal",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/rail-signal.png"
+    "ingredients": [
+      {
+        "name": "electronic-circuit",
+        "amount": 1
+      },
+      {
+        "name": "iron-plate",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "rail-signal",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/rail-signal.png",
+    "craftingCategory": "crafting"
   },
   "sulfuric-acid": {
     "name": "sulfuric-acid",
     "groupName": "fluid-recipes",
-    "ingredients": [{
-      "name": "sulfur",
-      "amount": 5
-    },
-    {
-      "name": "iron-plate",
-      "amount": 1
-    },
-    {
-      "name": "water",
-      "amount": 100
-    }],
-    "results": [{
-      "name": "sulfuric-acid",
-      "amount": 50
-    }],
-    "iconUrl": "base/graphics/icons/fluid/sulfuric-acid.png"
+    "ingredients": [
+      {
+        "name": "sulfur",
+        "amount": 5
+      },
+      {
+        "name": "iron-plate",
+        "amount": 1
+      },
+      {
+        "name": "water",
+        "amount": 100
+      }
+    ],
+    "results": [
+      {
+        "name": "sulfuric-acid",
+        "amount": 50
+      }
+    ],
+    "iconUrl": "base/graphics/icons/fluid/sulfuric-acid.png",
+    "craftingCategory": "chemistry"
   },
   "explosive-cannon-shell": {
     "name": "explosive-cannon-shell",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 2
-    },
-    {
-      "name": "plastic-bar",
-      "amount": 2
-    },
-    {
-      "name": "explosives",
-      "amount": 2
-    }],
-    "results": [{
-      "name": "explosive-cannon-shell",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/explosive-cannon-shell.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 2
+      },
+      {
+        "name": "plastic-bar",
+        "amount": 2
+      },
+      {
+        "name": "explosives",
+        "amount": 2
+      }
+    ],
+    "results": [
+      {
+        "name": "explosive-cannon-shell",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/explosive-cannon-shell.png",
+    "craftingCategory": "crafting"
   },
   "speed-module-2": {
     "name": "speed-module-2",
     "groupName": "production",
-    "ingredients": [{
-      "name": "speed-module",
-      "amount": 4
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 5
-    },
-    {
-      "name": "processing-unit",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "speed-module-2",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/speed-module-2.png"
+    "ingredients": [
+      {
+        "name": "speed-module",
+        "amount": 4
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 5
+      },
+      {
+        "name": "processing-unit",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "speed-module-2",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/speed-module-2.png",
+    "craftingCategory": "crafting"
   },
   "heat-exchanger": {
     "name": "heat-exchanger",
     "groupName": "production",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 10
-    },
-    {
-      "name": "copper-plate",
-      "amount": 100
-    },
-    {
-      "name": "pipe",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "heat-exchanger",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/heat-boiler.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 10
+      },
+      {
+        "name": "copper-plate",
+        "amount": 100
+      },
+      {
+        "name": "pipe",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "heat-exchanger",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/heat-boiler.png",
+    "craftingCategory": "crafting"
   },
   "red-wire": {
     "name": "red-wire",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "electronic-circuit",
-      "amount": 1
-    },
-    {
-      "name": "copper-cable",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "red-wire",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/red-wire.png"
+    "ingredients": [
+      {
+        "name": "electronic-circuit",
+        "amount": 1
+      },
+      {
+        "name": "copper-cable",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "red-wire",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/red-wire.png",
+    "craftingCategory": "crafting"
   },
   "coal-liquefaction": {
     "name": "coal-liquefaction",
     "groupName": "fluid-recipes",
-    "ingredients": [{
-      "name": "coal",
-      "amount": 10
-    },
-    {
-      "name": "heavy-oil",
-      "amount": 25
-    },
-    {
-      "name": "steam",
-      "amount": 50
-    }],
-    "results": [{
-      "name": "heavy-oil",
-      "amount": 35
-    },
-    {
-      "name": "light-oil",
-      "amount": 15
-    },
-    {
-      "name": "petroleum-gas",
-      "amount": 20
-    }],
-    "iconUrl": "base/graphics/icons/fluid/coal-liquefaction.png"
+    "ingredients": [
+      {
+        "name": "coal",
+        "amount": 10
+      },
+      {
+        "name": "heavy-oil",
+        "amount": 25
+      },
+      {
+        "name": "steam",
+        "amount": 50
+      }
+    ],
+    "results": [
+      {
+        "name": "heavy-oil",
+        "amount": 35
+      },
+      {
+        "name": "light-oil",
+        "amount": 15
+      },
+      {
+        "name": "petroleum-gas",
+        "amount": 20
+      }
+    ],
+    "iconUrl": "base/graphics/icons/fluid/coal-liquefaction.png",
+    "craftingCategory": "oil-processing"
   },
   "electric-engine-unit": {
     "name": "electric-engine-unit",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "engine-unit",
-      "amount": 1
-    },
-    {
-      "name": "lubricant",
-      "amount": 15
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 2
-    }],
-    "results": [{
-      "name": "electric-engine-unit",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/electric-engine-unit.png"
+    "ingredients": [
+      {
+        "name": "engine-unit",
+        "amount": 1
+      },
+      {
+        "name": "lubricant",
+        "amount": 15
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 2
+      }
+    ],
+    "results": [
+      {
+        "name": "electric-engine-unit",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/electric-engine-unit.png",
+    "craftingCategory": "crafting-with-fluid"
   },
   "iron-stick": {
     "name": "iron-stick",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "iron-plate",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "iron-stick",
-      "amount": 2
-    }],
-    "iconUrl": "base/graphics/icons/iron-stick.png"
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "iron-stick",
+        "amount": 2
+      }
+    ],
+    "iconUrl": "base/graphics/icons/iron-stick.png",
+    "craftingCategory": "crafting"
   },
   "solid-fuel-from-heavy-oil": {
     "name": "solid-fuel-from-heavy-oil",
     "groupName": "fluid-recipes",
-    "ingredients": [{
-      "name": "heavy-oil",
-      "amount": 20
-    }],
-    "results": [{
-      "name": "solid-fuel",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/solid-fuel-from-heavy-oil.png"
+    "ingredients": [
+      {
+        "name": "heavy-oil",
+        "amount": 20
+      }
+    ],
+    "results": [
+      {
+        "name": "solid-fuel",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/solid-fuel-from-heavy-oil.png",
+    "craftingCategory": "chemistry"
   },
   "solid-fuel-from-petroleum-gas": {
     "name": "solid-fuel-from-petroleum-gas",
     "groupName": "fluid-recipes",
-    "ingredients": [{
-      "name": "petroleum-gas",
-      "amount": 20
-    }],
-    "results": [{
-      "name": "solid-fuel",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/solid-fuel-from-petroleum-gas.png"
+    "ingredients": [
+      {
+        "name": "petroleum-gas",
+        "amount": 20
+      }
+    ],
+    "results": [
+      {
+        "name": "solid-fuel",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/solid-fuel-from-petroleum-gas.png",
+    "craftingCategory": "chemistry"
   },
   "programmable-speaker": {
     "name": "programmable-speaker",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "iron-plate",
-      "amount": 5
-    },
-    {
-      "name": "copper-cable",
-      "amount": 5
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 4
-    }],
-    "results": [{
-      "name": "programmable-speaker",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/programmable-speaker.png"
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 5
+      },
+      {
+        "name": "copper-cable",
+        "amount": 5
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 4
+      }
+    ],
+    "results": [
+      {
+        "name": "programmable-speaker",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/programmable-speaker.png",
+    "craftingCategory": "crafting"
   },
   "artillery-targeting-remote": {
     "name": "artillery-targeting-remote",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "processing-unit",
-      "amount": 1
-    },
-    {
-      "name": "radar",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "artillery-targeting-remote",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/artillery-targeting-remote.png"
+    "ingredients": [
+      {
+        "name": "processing-unit",
+        "amount": 1
+      },
+      {
+        "name": "radar",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "artillery-targeting-remote",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/artillery-targeting-remote.png",
+    "craftingCategory": "crafting"
   },
   "storage-tank": {
     "name": "storage-tank",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "iron-plate",
-      "amount": 20
-    },
-    {
-      "name": "steel-plate",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "storage-tank",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/storage-tank.png"
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 20
+      },
+      {
+        "name": "steel-plate",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "storage-tank",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/storage-tank.png",
+    "craftingCategory": "crafting"
   },
   "train-stop": {
     "name": "train-stop",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "electronic-circuit",
-      "amount": 5
-    },
-    {
-      "name": "iron-plate",
-      "amount": 10
-    },
-    {
-      "name": "steel-plate",
-      "amount": 3
-    }],
-    "results": [{
-      "name": "train-stop",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/train-stop.png"
+    "ingredients": [
+      {
+        "name": "electronic-circuit",
+        "amount": 5
+      },
+      {
+        "name": "iron-plate",
+        "amount": 10
+      },
+      {
+        "name": "steel-plate",
+        "amount": 3
+      }
+    ],
+    "results": [
+      {
+        "name": "train-stop",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/train-stop.png",
+    "craftingCategory": "crafting"
   },
   "electric-energy-interface": {
     "name": "electric-energy-interface",
     "groupName": "production",
-    "ingredients": [{
-      "name": "iron-plate",
-      "amount": 2
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "electric-energy-interface",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/accumulator.png"
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 2
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "electric-energy-interface",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/accumulator.png",
+    "craftingCategory": "crafting"
   },
   "slowdown-capsule": {
     "name": "slowdown-capsule",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 2
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 2
-    },
-    {
-      "name": "coal",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "slowdown-capsule",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/slowdown-capsule.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 2
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 2
+      },
+      {
+        "name": "coal",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "slowdown-capsule",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/slowdown-capsule.png",
+    "craftingCategory": "crafting"
   },
   "pipe-to-ground": {
     "name": "pipe-to-ground",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "pipe",
-      "amount": 10
-    },
-    {
-      "name": "iron-plate",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "pipe-to-ground",
-      "amount": 2
-    }],
-    "iconUrl": "base/graphics/icons/pipe-to-ground.png"
+    "ingredients": [
+      {
+        "name": "pipe",
+        "amount": 10
+      },
+      {
+        "name": "iron-plate",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "pipe-to-ground",
+        "amount": 2
+      }
+    ],
+    "iconUrl": "base/graphics/icons/pipe-to-ground.png",
+    "craftingCategory": "crafting"
   },
   "productivity-module-3": {
     "name": "productivity-module-3",
     "groupName": "production",
-    "ingredients": [{
-      "name": "productivity-module-2",
-      "amount": 5
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 5
-    },
-    {
-      "name": "processing-unit",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "productivity-module-3",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/productivity-module-3.png"
+    "ingredients": [
+      {
+        "name": "productivity-module-2",
+        "amount": 5
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 5
+      },
+      {
+        "name": "processing-unit",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "productivity-module-3",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/productivity-module-3.png",
+    "craftingCategory": "crafting"
   },
   "productivity-module-2": {
     "name": "productivity-module-2",
     "groupName": "production",
-    "ingredients": [{
-      "name": "productivity-module",
-      "amount": 4
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 5
-    },
-    {
-      "name": "processing-unit",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "productivity-module-2",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/productivity-module-2.png"
+    "ingredients": [
+      {
+        "name": "productivity-module",
+        "amount": 4
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 5
+      },
+      {
+        "name": "processing-unit",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "productivity-module-2",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/productivity-module-2.png",
+    "craftingCategory": "crafting"
   },
   "combat-shotgun": {
     "name": "combat-shotgun",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 15
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 5
-    },
-    {
-      "name": "copper-plate",
-      "amount": 10
-    },
-    {
-      "name": "wood",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "combat-shotgun",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/combat-shotgun.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 15
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 5
+      },
+      {
+        "name": "copper-plate",
+        "amount": 10
+      },
+      {
+        "name": "wood",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "combat-shotgun",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/combat-shotgun.png",
+    "craftingCategory": "crafting"
   },
   "battery": {
     "name": "battery",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "sulfuric-acid",
-      "amount": 20
-    },
-    {
-      "name": "iron-plate",
-      "amount": 1
-    },
-    {
-      "name": "copper-plate",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "battery",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/battery.png"
+    "ingredients": [
+      {
+        "name": "sulfuric-acid",
+        "amount": 20
+      },
+      {
+        "name": "iron-plate",
+        "amount": 1
+      },
+      {
+        "name": "copper-plate",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "battery",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/battery.png",
+    "craftingCategory": "chemistry"
   },
   "express-splitter": {
     "name": "express-splitter",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "fast-splitter",
-      "amount": 1
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 10
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 10
-    },
-    {
-      "name": "lubricant",
-      "amount": 80
-    }],
-    "results": [{
-      "name": "express-splitter",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/express-splitter.png"
+    "ingredients": [
+      {
+        "name": "fast-splitter",
+        "amount": 1
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 10
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 10
+      },
+      {
+        "name": "lubricant",
+        "amount": 80
+      }
+    ],
+    "results": [
+      {
+        "name": "express-splitter",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/express-splitter.png",
+    "craftingCategory": "crafting-with-fluid"
   },
   "landfill": {
     "name": "landfill",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "stone",
-      "amount": 20
-    }],
-    "results": [{
-      "name": "landfill",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/landfill.png"
+    "ingredients": [
+      {
+        "name": "stone",
+        "amount": 20
+      }
+    ],
+    "results": [
+      {
+        "name": "landfill",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/landfill.png",
+    "craftingCategory": "crafting"
   },
   "small-lamp": {
     "name": "small-lamp",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "electronic-circuit",
-      "amount": 1
-    },
-    {
-      "name": "iron-stick",
-      "amount": 3
-    },
-    {
-      "name": "iron-plate",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "small-lamp",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/small-lamp.png"
+    "ingredients": [
+      {
+        "name": "electronic-circuit",
+        "amount": 1
+      },
+      {
+        "name": "iron-stick",
+        "amount": 3
+      },
+      {
+        "name": "iron-plate",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "small-lamp",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/small-lamp.png",
+    "craftingCategory": "crafting"
   },
   "underground-belt": {
     "name": "underground-belt",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "iron-plate",
-      "amount": 10
-    },
-    {
-      "name": "transport-belt",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "underground-belt",
-      "amount": 2
-    }],
-    "iconUrl": "base/graphics/icons/underground-belt.png"
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 10
+      },
+      {
+        "name": "transport-belt",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "underground-belt",
+        "amount": 2
+      }
+    ],
+    "iconUrl": "base/graphics/icons/underground-belt.png",
+    "craftingCategory": "crafting"
   },
   "nuclear-fuel-reprocessing": {
     "name": "nuclear-fuel-reprocessing",
     "groupName": "intermediate-product",
-    "ingredients": [{
-      "name": "used-up-uranium-fuel-cell",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "uranium-238",
-      "amount": 3
-    }],
-    "iconUrl": "base/graphics/icons/nuclear-fuel-reprocessing.png"
+    "ingredients": [
+      {
+        "name": "used-up-uranium-fuel-cell",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "uranium-238",
+        "amount": 3
+      }
+    ],
+    "iconUrl": "base/graphics/icons/nuclear-fuel-reprocessing.png",
+    "craftingCategory": "centrifuging"
   },
   "express-underground-belt": {
     "name": "express-underground-belt",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "iron-gear-wheel",
-      "amount": 80
-    },
-    {
-      "name": "fast-underground-belt",
-      "amount": 2
-    },
-    {
-      "name": "lubricant",
-      "amount": 40
-    }],
-    "results": [{
-      "name": "express-underground-belt",
-      "amount": 2
-    }],
-    "iconUrl": "base/graphics/icons/express-underground-belt.png"
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel",
+        "amount": 80
+      },
+      {
+        "name": "fast-underground-belt",
+        "amount": 2
+      },
+      {
+        "name": "lubricant",
+        "amount": 40
+      }
+    ],
+    "results": [
+      {
+        "name": "express-underground-belt",
+        "amount": 2
+      }
+    ],
+    "iconUrl": "base/graphics/icons/express-underground-belt.png",
+    "craftingCategory": "crafting-with-fluid"
   },
   "nuclear-fuel": {
     "name": "nuclear-fuel",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "uranium-235",
-      "amount": 1
-    },
-    {
-      "name": "rocket-fuel",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "nuclear-fuel",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/nuclear-fuel.png"
+    "ingredients": [
+      {
+        "name": "uranium-235",
+        "amount": 1
+      },
+      {
+        "name": "rocket-fuel",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "nuclear-fuel",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/nuclear-fuel.png",
+    "craftingCategory": "centrifuging"
   },
   "pump": {
     "name": "pump",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "engine-unit",
-      "amount": 1
-    },
-    {
-      "name": "steel-plate",
-      "amount": 1
-    },
-    {
-      "name": "pipe",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "pump",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/pump.png"
+    "ingredients": [
+      {
+        "name": "engine-unit",
+        "amount": 1
+      },
+      {
+        "name": "steel-plate",
+        "amount": 1
+      },
+      {
+        "name": "pipe",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "pump",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/pump.png",
+    "craftingCategory": "crafting"
   },
   "pumpjack": {
     "name": "pumpjack",
     "groupName": "production",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 5
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 10
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 5
-    },
-    {
-      "name": "pipe",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "pumpjack",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/pumpjack.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 5
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 10
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 5
+      },
+      {
+        "name": "pipe",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "pumpjack",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/pumpjack.png",
+    "craftingCategory": "crafting"
   },
   "flying-robot-frame": {
     "name": "flying-robot-frame",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "electric-engine-unit",
-      "amount": 1
-    },
-    {
-      "name": "battery",
-      "amount": 2
-    },
-    {
-      "name": "steel-plate",
-      "amount": 1
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 3
-    }],
-    "results": [{
-      "name": "flying-robot-frame",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/flying-robot-frame.png"
+    "ingredients": [
+      {
+        "name": "electric-engine-unit",
+        "amount": 1
+      },
+      {
+        "name": "battery",
+        "amount": 2
+      },
+      {
+        "name": "steel-plate",
+        "amount": 1
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 3
+      }
+    ],
+    "results": [
+      {
+        "name": "flying-robot-frame",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/flying-robot-frame.png",
+    "craftingCategory": "crafting"
   },
   "fast-loader": {
     "name": "fast-loader",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "fast-transport-belt",
-      "amount": 5
-    },
-    {
-      "name": "loader",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "fast-loader",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/fast-loader.png"
+    "ingredients": [
+      {
+        "name": "fast-transport-belt",
+        "amount": 5
+      },
+      {
+        "name": "loader",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "fast-loader",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/fast-loader.png",
+    "craftingCategory": "crafting"
   },
   "logistic-chest-requester": {
     "name": "logistic-chest-requester",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "steel-chest",
-      "amount": 1
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 3
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "logistic-chest-requester",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/logistic-chest-requester.png"
+    "ingredients": [
+      {
+        "name": "steel-chest",
+        "amount": 1
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 3
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "logistic-chest-requester",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/logistic-chest-requester.png",
+    "craftingCategory": "crafting"
   },
   "distractor-capsule": {
     "name": "distractor-capsule",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "defender-capsule",
-      "amount": 4
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 3
-    }],
-    "results": [{
-      "name": "distractor-capsule",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/distractor.png"
+    "ingredients": [
+      {
+        "name": "defender-capsule",
+        "amount": 4
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 3
+      }
+    ],
+    "results": [
+      {
+        "name": "distractor-capsule",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/distractor.png",
+    "craftingCategory": "crafting"
   },
   "railgun": {
     "name": "railgun",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 15
-    },
-    {
-      "name": "copper-plate",
-      "amount": 15
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 10
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "railgun",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/railgun.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 15
+      },
+      {
+        "name": "copper-plate",
+        "amount": 15
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 10
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "railgun",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/railgun.png",
+    "craftingCategory": "crafting"
   },
   "pistol": {
     "name": "pistol",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "copper-plate",
-      "amount": 5
-    },
-    {
-      "name": "iron-plate",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "pistol",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/pistol.png"
+    "ingredients": [
+      {
+        "name": "copper-plate",
+        "amount": 5
+      },
+      {
+        "name": "iron-plate",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "pistol",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/pistol.png",
+    "craftingCategory": "crafting"
   },
   "arithmetic-combinator": {
     "name": "arithmetic-combinator",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "copper-cable",
-      "amount": 5
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "arithmetic-combinator",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/arithmetic-combinator.png"
+    "ingredients": [
+      {
+        "name": "copper-cable",
+        "amount": 5
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "arithmetic-combinator",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/arithmetic-combinator.png",
+    "craftingCategory": "crafting"
   },
   "empty-barrel": {
     "name": "empty-barrel",
     "groupName": "intermediate-product",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "empty-barrel",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/fluid/barreling/empty-barrel.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "empty-barrel",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/fluid/barreling/empty-barrel.png",
+    "craftingCategory": "crafting"
   },
   "stone-furnace": {
     "name": "stone-furnace",
     "groupName": "production",
-    "ingredients": [{
-      "name": "stone",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "stone-furnace",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/stone-furnace.png"
+    "ingredients": [
+      {
+        "name": "stone",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "stone-furnace",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/stone-furnace.png",
+    "craftingCategory": "crafting"
   },
   "explosive-uranium-cannon-shell": {
     "name": "explosive-uranium-cannon-shell",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "explosive-cannon-shell",
-      "amount": 1
-    },
-    {
-      "name": "uranium-238",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "explosive-uranium-cannon-shell",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/explosive-uranium-cannon-shell.png"
+    "ingredients": [
+      {
+        "name": "explosive-cannon-shell",
+        "amount": 1
+      },
+      {
+        "name": "uranium-238",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "explosive-uranium-cannon-shell",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/explosive-uranium-cannon-shell.png",
+    "craftingCategory": "crafting"
   },
   "modular-armor": {
     "name": "modular-armor",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "advanced-circuit",
-      "amount": 30
-    },
-    {
-      "name": "steel-plate",
-      "amount": 50
-    }],
-    "results": [{
-      "name": "modular-armor",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/modular-armor.png"
+    "ingredients": [
+      {
+        "name": "advanced-circuit",
+        "amount": 30
+      },
+      {
+        "name": "steel-plate",
+        "amount": 50
+      }
+    ],
+    "results": [
+      {
+        "name": "modular-armor",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/modular-armor.png",
+    "craftingCategory": "crafting"
   },
   "heavy-armor": {
     "name": "heavy-armor",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "copper-plate",
-      "amount": 100
-    },
-    {
-      "name": "steel-plate",
-      "amount": 50
-    }],
-    "results": [{
-      "name": "heavy-armor",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/heavy-armor.png"
+    "ingredients": [
+      {
+        "name": "copper-plate",
+        "amount": 100
+      },
+      {
+        "name": "steel-plate",
+        "amount": 50
+      }
+    ],
+    "results": [
+      {
+        "name": "heavy-armor",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/heavy-armor.png",
+    "craftingCategory": "crafting"
   },
   "nuclear-reactor": {
     "name": "nuclear-reactor",
     "groupName": "production",
-    "ingredients": [{
-      "name": "concrete",
-      "amount": 500
-    },
-    {
-      "name": "steel-plate",
-      "amount": 500
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 500
-    },
-    {
-      "name": "copper-plate",
-      "amount": 500
-    }],
-    "results": [{
-      "name": "nuclear-reactor",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/nuclear-reactor.png"
+    "ingredients": [
+      {
+        "name": "concrete",
+        "amount": 500
+      },
+      {
+        "name": "steel-plate",
+        "amount": 500
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 500
+      },
+      {
+        "name": "copper-plate",
+        "amount": 500
+      }
+    ],
+    "results": [
+      {
+        "name": "nuclear-reactor",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/nuclear-reactor.png",
+    "craftingCategory": "crafting"
   },
   "stack-filter-inserter": {
     "name": "stack-filter-inserter",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "stack-inserter",
-      "amount": 1
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "stack-filter-inserter",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/stack-filter-inserter.png"
+    "ingredients": [
+      {
+        "name": "stack-inserter",
+        "amount": 1
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "stack-filter-inserter",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/stack-filter-inserter.png",
+    "craftingCategory": "crafting"
   },
   "loader": {
     "name": "loader",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "inserter",
-      "amount": 5
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 5
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 5
-    },
-    {
-      "name": "iron-plate",
-      "amount": 5
-    },
-    {
-      "name": "transport-belt",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "loader",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/loader.png"
+    "ingredients": [
+      {
+        "name": "inserter",
+        "amount": 5
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 5
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 5
+      },
+      {
+        "name": "iron-plate",
+        "amount": 5
+      },
+      {
+        "name": "transport-belt",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "loader",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/loader.png",
+    "craftingCategory": "crafting"
   },
   "steel-furnace": {
     "name": "steel-furnace",
     "groupName": "production",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 6
-    },
-    {
-      "name": "stone-brick",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "steel-furnace",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/steel-furnace.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 6
+      },
+      {
+        "name": "stone-brick",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "steel-furnace",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/steel-furnace.png",
+    "craftingCategory": "crafting"
   },
   "engine-unit": {
     "name": "engine-unit",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 1
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 1
-    },
-    {
-      "name": "pipe",
-      "amount": 2
-    }],
-    "results": [{
-      "name": "engine-unit",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/engine-unit.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 1
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 1
+      },
+      {
+        "name": "pipe",
+        "amount": 2
+      }
+    ],
+    "results": [
+      {
+        "name": "engine-unit",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/engine-unit.png",
+    "craftingCategory": "advanced-crafting"
   },
   "shotgun-shell": {
     "name": "shotgun-shell",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "copper-plate",
-      "amount": 2
-    },
-    {
-      "name": "iron-plate",
-      "amount": 2
-    }],
-    "results": [{
-      "name": "shotgun-shell",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/shotgun-shell.png"
+    "ingredients": [
+      {
+        "name": "copper-plate",
+        "amount": 2
+      },
+      {
+        "name": "iron-plate",
+        "amount": 2
+      }
+    ],
+    "results": [
+      {
+        "name": "shotgun-shell",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/shotgun-shell.png",
+    "craftingCategory": "crafting"
   },
   "railgun-dart": {
     "name": "railgun-dart",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 5
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "railgun-dart",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/railgun-ammo.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 5
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "railgun-dart",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/railgun-ammo.png",
+    "craftingCategory": "crafting"
   },
   "small-electric-pole": {
     "name": "small-electric-pole",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "wood",
-      "amount": 2
-    },
-    {
-      "name": "copper-cable",
-      "amount": 2
-    }],
-    "results": [{
-      "name": "small-electric-pole",
-      "amount": 2
-    }],
-    "iconUrl": "base/graphics/icons/small-electric-pole.png"
+    "ingredients": [
+      {
+        "name": "wood",
+        "amount": 2
+      },
+      {
+        "name": "copper-cable",
+        "amount": 2
+      }
+    ],
+    "results": [
+      {
+        "name": "small-electric-pole",
+        "amount": 2
+      }
+    ],
+    "iconUrl": "base/graphics/icons/small-electric-pole.png",
+    "craftingCategory": "crafting"
   },
   "locomotive": {
     "name": "locomotive",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "engine-unit",
-      "amount": 20
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 10
-    },
-    {
-      "name": "steel-plate",
-      "amount": 30
-    }],
-    "results": [{
-      "name": "locomotive",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/diesel-locomotive.png"
+    "ingredients": [
+      {
+        "name": "engine-unit",
+        "amount": 20
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 10
+      },
+      {
+        "name": "steel-plate",
+        "amount": 30
+      }
+    ],
+    "results": [
+      {
+        "name": "locomotive",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/diesel-locomotive.png",
+    "craftingCategory": "crafting"
   },
   "long-handed-inserter": {
     "name": "long-handed-inserter",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "iron-gear-wheel",
-      "amount": 1
-    },
-    {
-      "name": "iron-plate",
-      "amount": 1
-    },
-    {
-      "name": "inserter",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "long-handed-inserter",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/long-handed-inserter.png"
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel",
+        "amount": 1
+      },
+      {
+        "name": "iron-plate",
+        "amount": 1
+      },
+      {
+        "name": "inserter",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "long-handed-inserter",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/long-handed-inserter.png",
+    "craftingCategory": "crafting"
   },
   "wood": {
     "name": "wood",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "raw-wood",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "wood",
-      "amount": 2
-    }],
-    "iconUrl": "base/graphics/icons/wood.png"
+    "ingredients": [
+      {
+        "name": "raw-wood",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "wood",
+        "amount": 2
+      }
+    ],
+    "iconUrl": "base/graphics/icons/wood.png",
+    "craftingCategory": "crafting"
   },
   "iron-plate": {
     "name": "iron-plate",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "iron-ore",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "iron-plate",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/iron-plate.png"
+    "ingredients": [
+      {
+        "name": "iron-ore",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "iron-plate",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/iron-plate.png",
+    "craftingCategory": "smelting"
   },
   "fast-splitter": {
     "name": "fast-splitter",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "splitter",
-      "amount": 1
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 10
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "fast-splitter",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/fast-splitter.png"
+    "ingredients": [
+      {
+        "name": "splitter",
+        "amount": 1
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 10
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "fast-splitter",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/fast-splitter.png",
+    "craftingCategory": "crafting"
   },
   "advanced-circuit": {
     "name": "advanced-circuit",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "electronic-circuit",
-      "amount": 2
-    },
-    {
-      "name": "plastic-bar",
-      "amount": 2
-    },
-    {
-      "name": "copper-cable",
-      "amount": 4
-    }],
-    "results": [{
-      "name": "advanced-circuit",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/advanced-circuit.png"
+    "ingredients": [
+      {
+        "name": "electronic-circuit",
+        "amount": 2
+      },
+      {
+        "name": "plastic-bar",
+        "amount": 2
+      },
+      {
+        "name": "copper-cable",
+        "amount": 4
+      }
+    ],
+    "results": [
+      {
+        "name": "advanced-circuit",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/advanced-circuit.png",
+    "craftingCategory": "crafting"
   },
   "stone-wall": {
     "name": "stone-wall",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "stone-brick",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "stone-wall",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/stone-wall.png"
+    "ingredients": [
+      {
+        "name": "stone-brick",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "stone-wall",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/stone-wall.png",
+    "craftingCategory": "crafting"
   },
   "beacon": {
     "name": "beacon",
     "groupName": "production",
-    "ingredients": [{
-      "name": "electronic-circuit",
-      "amount": 20
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 20
-    },
-    {
-      "name": "steel-plate",
-      "amount": 10
-    },
-    {
-      "name": "copper-cable",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "beacon",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/beacon.png"
+    "ingredients": [
+      {
+        "name": "electronic-circuit",
+        "amount": 20
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 20
+      },
+      {
+        "name": "steel-plate",
+        "amount": 10
+      },
+      {
+        "name": "copper-cable",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "beacon",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/beacon.png",
+    "craftingCategory": "crafting"
   },
   "energy-shield-equipment": {
     "name": "energy-shield-equipment",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "advanced-circuit",
-      "amount": 5
-    },
-    {
-      "name": "steel-plate",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "energy-shield-equipment",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/energy-shield-equipment.png"
+    "ingredients": [
+      {
+        "name": "advanced-circuit",
+        "amount": 5
+      },
+      {
+        "name": "steel-plate",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "energy-shield-equipment",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/energy-shield-equipment.png",
+    "craftingCategory": "crafting"
   },
   "centrifuge": {
     "name": "centrifuge",
     "groupName": "production",
-    "ingredients": [{
-      "name": "concrete",
-      "amount": 100
-    },
-    {
-      "name": "steel-plate",
-      "amount": 50
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 100
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 100
-    }],
-    "results": [{
-      "name": "centrifuge",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/centrifuge.png"
+    "ingredients": [
+      {
+        "name": "concrete",
+        "amount": 100
+      },
+      {
+        "name": "steel-plate",
+        "amount": 50
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 100
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 100
+      }
+    ],
+    "results": [
+      {
+        "name": "centrifuge",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/centrifuge.png",
+    "craftingCategory": "crafting"
   },
   "gun-turret": {
     "name": "gun-turret",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "iron-gear-wheel",
-      "amount": 10
-    },
-    {
-      "name": "copper-plate",
-      "amount": 10
-    },
-    {
-      "name": "iron-plate",
-      "amount": 20
-    }],
-    "results": [{
-      "name": "gun-turret",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/gun-turret.png"
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel",
+        "amount": 10
+      },
+      {
+        "name": "copper-plate",
+        "amount": 10
+      },
+      {
+        "name": "iron-plate",
+        "amount": 20
+      }
+    ],
+    "results": [
+      {
+        "name": "gun-turret",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/gun-turret.png",
+    "craftingCategory": "crafting"
   },
   "advanced-oil-processing": {
     "name": "advanced-oil-processing",
     "groupName": "fluid-recipes",
-    "ingredients": [{
-      "name": "water",
-      "amount": 50
-    },
-    {
-      "name": "crude-oil",
-      "amount": 100
-    }],
-    "results": [{
-      "name": "heavy-oil",
-      "amount": 10
-    },
-    {
-      "name": "light-oil",
-      "amount": 45
-    },
-    {
-      "name": "petroleum-gas",
-      "amount": 55
-    }],
-    "iconUrl": "base/graphics/icons/fluid/advanced-oil-processing.png"
+    "ingredients": [
+      {
+        "name": "water",
+        "amount": 50
+      },
+      {
+        "name": "crude-oil",
+        "amount": 100
+      }
+    ],
+    "results": [
+      {
+        "name": "heavy-oil",
+        "amount": 10
+      },
+      {
+        "name": "light-oil",
+        "amount": 45
+      },
+      {
+        "name": "petroleum-gas",
+        "amount": 55
+      }
+    ],
+    "iconUrl": "base/graphics/icons/fluid/advanced-oil-processing.png",
+    "craftingCategory": "oil-processing"
   },
   "electric-mining-drill": {
     "name": "electric-mining-drill",
     "groupName": "production",
-    "ingredients": [{
-      "name": "electronic-circuit",
-      "amount": 3
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 5
-    },
-    {
-      "name": "iron-plate",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "electric-mining-drill",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/electric-mining-drill.png"
+    "ingredients": [
+      {
+        "name": "electronic-circuit",
+        "amount": 3
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 5
+      },
+      {
+        "name": "iron-plate",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "electric-mining-drill",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/electric-mining-drill.png",
+    "craftingCategory": "crafting"
   },
   "artillery-turret": {
     "name": "artillery-turret",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 60
-    },
-    {
-      "name": "concrete",
-      "amount": 60
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 40
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 20
-    }],
-    "results": [{
-      "name": "artillery-turret",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/artillery-turret.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 60
+      },
+      {
+        "name": "concrete",
+        "amount": 60
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 40
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 20
+      }
+    ],
+    "results": [
+      {
+        "name": "artillery-turret",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/artillery-turret.png",
+    "craftingCategory": "crafting"
   },
   "effectivity-module": {
     "name": "effectivity-module",
     "groupName": "production",
-    "ingredients": [{
-      "name": "advanced-circuit",
-      "amount": 5
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "effectivity-module",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/effectivity-module.png"
+    "ingredients": [
+      {
+        "name": "advanced-circuit",
+        "amount": 5
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "effectivity-module",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/effectivity-module.png",
+    "craftingCategory": "crafting"
   },
   "piercing-shotgun-shell": {
     "name": "piercing-shotgun-shell",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "shotgun-shell",
-      "amount": 2
-    },
-    {
-      "name": "copper-plate",
-      "amount": 5
-    },
-    {
-      "name": "steel-plate",
-      "amount": 2
-    }],
-    "results": [{
-      "name": "piercing-shotgun-shell",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/piercing-shotgun-shell.png"
+    "ingredients": [
+      {
+        "name": "shotgun-shell",
+        "amount": 2
+      },
+      {
+        "name": "copper-plate",
+        "amount": 5
+      },
+      {
+        "name": "steel-plate",
+        "amount": 2
+      }
+    ],
+    "results": [
+      {
+        "name": "piercing-shotgun-shell",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/piercing-shotgun-shell.png",
+    "craftingCategory": "crafting"
   },
   "cluster-grenade": {
     "name": "cluster-grenade",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "grenade",
-      "amount": 7
-    },
-    {
-      "name": "explosives",
-      "amount": 5
-    },
-    {
-      "name": "steel-plate",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "cluster-grenade",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/cluster-grenade.png"
+    "ingredients": [
+      {
+        "name": "grenade",
+        "amount": 7
+      },
+      {
+        "name": "explosives",
+        "amount": 5
+      },
+      {
+        "name": "steel-plate",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "cluster-grenade",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/cluster-grenade.png",
+    "craftingCategory": "crafting"
   },
   "refined-concrete": {
     "name": "refined-concrete",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "concrete",
-      "amount": 20
-    },
-    {
-      "name": "iron-stick",
-      "amount": 8
-    },
-    {
-      "name": "steel-plate",
-      "amount": 1
-    },
-    {
-      "name": "water",
-      "amount": 100
-    }],
-    "results": [{
-      "name": "refined-concrete",
-      "amount": 10
-    }],
-    "iconUrl": "base/graphics/icons/refined-concrete.png"
+    "ingredients": [
+      {
+        "name": "concrete",
+        "amount": 20
+      },
+      {
+        "name": "iron-stick",
+        "amount": 8
+      },
+      {
+        "name": "steel-plate",
+        "amount": 1
+      },
+      {
+        "name": "water",
+        "amount": 100
+      }
+    ],
+    "results": [
+      {
+        "name": "refined-concrete",
+        "amount": 10
+      }
+    ],
+    "iconUrl": "base/graphics/icons/refined-concrete.png",
+    "craftingCategory": "crafting-with-fluid"
   },
   "solid-fuel-from-light-oil": {
     "name": "solid-fuel-from-light-oil",
     "groupName": "fluid-recipes",
-    "ingredients": [{
-      "name": "light-oil",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "solid-fuel",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/solid-fuel-from-light-oil.png"
+    "ingredients": [
+      {
+        "name": "light-oil",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "solid-fuel",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/solid-fuel-from-light-oil.png",
+    "craftingCategory": "chemistry"
   },
   "satellite": {
     "name": "satellite",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "low-density-structure",
-      "amount": 100
-    },
-    {
-      "name": "solar-panel",
-      "amount": 100
-    },
-    {
-      "name": "accumulator",
-      "amount": 100
-    },
-    {
-      "name": "radar",
-      "amount": 5
-    },
-    {
-      "name": "processing-unit",
-      "amount": 100
-    },
-    {
-      "name": "rocket-fuel",
-      "amount": 50
-    }],
-    "results": [{
-      "name": "satellite",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/satellite.png"
+    "ingredients": [
+      {
+        "name": "low-density-structure",
+        "amount": 100
+      },
+      {
+        "name": "solar-panel",
+        "amount": 100
+      },
+      {
+        "name": "accumulator",
+        "amount": 100
+      },
+      {
+        "name": "radar",
+        "amount": 5
+      },
+      {
+        "name": "processing-unit",
+        "amount": 100
+      },
+      {
+        "name": "rocket-fuel",
+        "amount": 50
+      }
+    ],
+    "results": [
+      {
+        "name": "satellite",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/satellite.png",
+    "craftingCategory": "crafting"
   },
   "tank": {
     "name": "tank",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "engine-unit",
-      "amount": 32
-    },
-    {
-      "name": "steel-plate",
-      "amount": 50
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 15
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "tank",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/tank.png"
+    "ingredients": [
+      {
+        "name": "engine-unit",
+        "amount": 32
+      },
+      {
+        "name": "steel-plate",
+        "amount": 50
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 15
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "tank",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/tank.png",
+    "craftingCategory": "crafting"
   },
   "exoskeleton-equipment": {
     "name": "exoskeleton-equipment",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "processing-unit",
-      "amount": 10
-    },
-    {
-      "name": "electric-engine-unit",
-      "amount": 30
-    },
-    {
-      "name": "steel-plate",
-      "amount": 20
-    }],
-    "results": [{
-      "name": "exoskeleton-equipment",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/exoskeleton-equipment.png"
+    "ingredients": [
+      {
+        "name": "processing-unit",
+        "amount": 10
+      },
+      {
+        "name": "electric-engine-unit",
+        "amount": 30
+      },
+      {
+        "name": "steel-plate",
+        "amount": 20
+      }
+    ],
+    "results": [
+      {
+        "name": "exoskeleton-equipment",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/exoskeleton-equipment.png",
+    "craftingCategory": "crafting"
   },
   "laser-turret": {
     "name": "laser-turret",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 20
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 20
-    },
-    {
-      "name": "battery",
-      "amount": 12
-    }],
-    "results": [{
-      "name": "laser-turret",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/laser-turret.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 20
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 20
+      },
+      {
+        "name": "battery",
+        "amount": 12
+      }
+    ],
+    "results": [
+      {
+        "name": "laser-turret",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/laser-turret.png",
+    "craftingCategory": "crafting"
   },
   "repair-pack": {
     "name": "repair-pack",
     "groupName": "production",
-    "ingredients": [{
-      "name": "electronic-circuit",
-      "amount": 2
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 2
-    }],
-    "results": [{
-      "name": "repair-pack",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/repair-pack.png"
+    "ingredients": [
+      {
+        "name": "electronic-circuit",
+        "amount": 2
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 2
+      }
+    ],
+    "results": [
+      {
+        "name": "repair-pack",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/repair-pack.png",
+    "craftingCategory": "crafting"
   },
   "battery-equipment": {
     "name": "battery-equipment",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "battery",
-      "amount": 5
-    },
-    {
-      "name": "steel-plate",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "battery-equipment",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/battery-equipment.png"
+    "ingredients": [
+      {
+        "name": "battery",
+        "amount": 5
+      },
+      {
+        "name": "steel-plate",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "battery-equipment",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/battery-equipment.png",
+    "craftingCategory": "crafting"
   },
   "destroyer-capsule": {
     "name": "destroyer-capsule",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "distractor-capsule",
-      "amount": 4
-    },
-    {
-      "name": "speed-module",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "destroyer-capsule",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/destroyer.png"
+    "ingredients": [
+      {
+        "name": "distractor-capsule",
+        "amount": 4
+      },
+      {
+        "name": "speed-module",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "destroyer-capsule",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/destroyer.png",
+    "craftingCategory": "crafting"
   },
   "heat-pipe": {
     "name": "heat-pipe",
     "groupName": "production",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 10
-    },
-    {
-      "name": "copper-plate",
-      "amount": 20
-    }],
-    "results": [{
-      "name": "heat-pipe",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/heat-pipe.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 10
+      },
+      {
+        "name": "copper-plate",
+        "amount": 20
+      }
+    ],
+    "results": [
+      {
+        "name": "heat-pipe",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/heat-pipe.png",
+    "craftingCategory": "crafting"
   },
   "logistic-robot": {
     "name": "logistic-robot",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "flying-robot-frame",
-      "amount": 1
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 2
-    }],
-    "results": [{
-      "name": "logistic-robot",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/logistic-robot.png"
+    "ingredients": [
+      {
+        "name": "flying-robot-frame",
+        "amount": 1
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 2
+      }
+    ],
+    "results": [
+      {
+        "name": "logistic-robot",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/logistic-robot.png",
+    "craftingCategory": "crafting"
   },
   "oil-refinery": {
     "name": "oil-refinery",
     "groupName": "production",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 15
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 10
-    },
-    {
-      "name": "stone-brick",
-      "amount": 10
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 10
-    },
-    {
-      "name": "pipe",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "oil-refinery",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/oil-refinery.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 15
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 10
+      },
+      {
+        "name": "stone-brick",
+        "amount": 10
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 10
+      },
+      {
+        "name": "pipe",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "oil-refinery",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/oil-refinery.png",
+    "craftingCategory": "crafting"
   },
   "light-oil-cracking": {
     "name": "light-oil-cracking",
     "groupName": "fluid-recipes",
-    "ingredients": [{
-      "name": "water",
-      "amount": 30
-    },
-    {
-      "name": "light-oil",
-      "amount": 30
-    }],
-    "results": [{
-      "name": "petroleum-gas",
-      "amount": 20
-    }],
-    "iconUrl": "base/graphics/icons/fluid/light-oil-cracking.png"
+    "ingredients": [
+      {
+        "name": "water",
+        "amount": 30
+      },
+      {
+        "name": "light-oil",
+        "amount": 30
+      }
+    ],
+    "results": [
+      {
+        "name": "petroleum-gas",
+        "amount": 20
+      }
+    ],
+    "iconUrl": "base/graphics/icons/fluid/light-oil-cracking.png",
+    "craftingCategory": "chemistry"
   },
   "uranium-fuel-cell": {
     "name": "uranium-fuel-cell",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "iron-plate",
-      "amount": 10
-    },
-    {
-      "name": "uranium-235",
-      "amount": 1
-    },
-    {
-      "name": "uranium-238",
-      "amount": 19
-    }],
-    "results": [{
-      "name": "uranium-fuel-cell",
-      "amount": 10
-    }],
-    "iconUrl": "base/graphics/icons/uranium-fuel-cell.png"
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 10
+      },
+      {
+        "name": "uranium-235",
+        "amount": 1
+      },
+      {
+        "name": "uranium-238",
+        "amount": 19
+      }
+    ],
+    "results": [
+      {
+        "name": "uranium-fuel-cell",
+        "amount": 10
+      }
+    ],
+    "iconUrl": "base/graphics/icons/uranium-fuel-cell.png",
+    "craftingCategory": "crafting"
   },
   "cliff-explosives": {
     "name": "cliff-explosives",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "explosives",
-      "amount": 10
-    },
-    {
-      "name": "grenade",
-      "amount": 1
-    },
-    {
-      "name": "empty-barrel",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "cliff-explosives",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/cliff-explosives.png"
+    "ingredients": [
+      {
+        "name": "explosives",
+        "amount": 10
+      },
+      {
+        "name": "grenade",
+        "amount": 1
+      },
+      {
+        "name": "empty-barrel",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "cliff-explosives",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/cliff-explosives.png",
+    "craftingCategory": "crafting"
   },
   "explosive-rocket": {
     "name": "explosive-rocket",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "rocket",
-      "amount": 1
-    },
-    {
-      "name": "explosives",
-      "amount": 2
-    }],
-    "results": [{
-      "name": "explosive-rocket",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/explosive-rocket.png"
+    "ingredients": [
+      {
+        "name": "rocket",
+        "amount": 1
+      },
+      {
+        "name": "explosives",
+        "amount": 2
+      }
+    ],
+    "results": [
+      {
+        "name": "explosive-rocket",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/explosive-rocket.png",
+    "craftingCategory": "crafting"
   },
   "logistic-chest-active-provider": {
     "name": "logistic-chest-active-provider",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "steel-chest",
-      "amount": 1
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 3
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "logistic-chest-active-provider",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/logistic-chest-active-provider.png"
+    "ingredients": [
+      {
+        "name": "steel-chest",
+        "amount": 1
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 3
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "logistic-chest-active-provider",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/logistic-chest-active-provider.png",
+    "craftingCategory": "crafting"
   },
   "gate": {
     "name": "gate",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "stone-wall",
-      "amount": 1
-    },
-    {
-      "name": "steel-plate",
-      "amount": 2
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 2
-    }],
-    "results": [{
-      "name": "gate",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/gate.png"
+    "ingredients": [
+      {
+        "name": "stone-wall",
+        "amount": 1
+      },
+      {
+        "name": "steel-plate",
+        "amount": 2
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 2
+      }
+    ],
+    "results": [
+      {
+        "name": "gate",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/gate.png",
+    "craftingCategory": "crafting"
   },
   "rail-chain-signal": {
     "name": "rail-chain-signal",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "electronic-circuit",
-      "amount": 1
-    },
-    {
-      "name": "iron-plate",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "rail-chain-signal",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/rail-chain-signal.png"
+    "ingredients": [
+      {
+        "name": "electronic-circuit",
+        "amount": 1
+      },
+      {
+        "name": "iron-plate",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "rail-chain-signal",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/rail-chain-signal.png",
+    "craftingCategory": "crafting"
   },
   "electronic-circuit": {
     "name": "electronic-circuit",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "iron-plate",
-      "amount": 1
-    },
-    {
-      "name": "copper-cable",
-      "amount": 3
-    }],
-    "results": [{
-      "name": "electronic-circuit",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/electronic-circuit.png"
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 1
+      },
+      {
+        "name": "copper-cable",
+        "amount": 3
+      }
+    ],
+    "results": [
+      {
+        "name": "electronic-circuit",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/electronic-circuit.png",
+    "craftingCategory": "crafting"
   },
   "artillery-wagon": {
     "name": "artillery-wagon",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "engine-unit",
-      "amount": 64
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 10
-    },
-    {
-      "name": "steel-plate",
-      "amount": 40
-    },
-    {
-      "name": "pipe",
-      "amount": 16
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 20
-    }],
-    "results": [{
-      "name": "artillery-wagon",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/artillery-wagon.png"
+    "ingredients": [
+      {
+        "name": "engine-unit",
+        "amount": 64
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 10
+      },
+      {
+        "name": "steel-plate",
+        "amount": 40
+      },
+      {
+        "name": "pipe",
+        "amount": 16
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 20
+      }
+    ],
+    "results": [
+      {
+        "name": "artillery-wagon",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/artillery-wagon.png",
+    "craftingCategory": "crafting"
   },
   "submachine-gun": {
     "name": "submachine-gun",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "iron-gear-wheel",
-      "amount": 10
-    },
-    {
-      "name": "copper-plate",
-      "amount": 5
-    },
-    {
-      "name": "iron-plate",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "submachine-gun",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/submachine-gun.png"
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel",
+        "amount": 10
+      },
+      {
+        "name": "copper-plate",
+        "amount": 5
+      },
+      {
+        "name": "iron-plate",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "submachine-gun",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/submachine-gun.png",
+    "craftingCategory": "crafting"
   },
   "rocket-silo": {
     "name": "rocket-silo",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 1000
-    },
-    {
-      "name": "concrete",
-      "amount": 1000
-    },
-    {
-      "name": "pipe",
-      "amount": 100
-    },
-    {
-      "name": "processing-unit",
-      "amount": 200
-    },
-    {
-      "name": "electric-engine-unit",
-      "amount": 200
-    }],
-    "results": [{
-      "name": "rocket-silo",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/rocket-silo.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 1000
+      },
+      {
+        "name": "concrete",
+        "amount": 1000
+      },
+      {
+        "name": "pipe",
+        "amount": 100
+      },
+      {
+        "name": "processing-unit",
+        "amount": 200
+      },
+      {
+        "name": "electric-engine-unit",
+        "amount": 200
+      }
+    ],
+    "results": [
+      {
+        "name": "rocket-silo",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/rocket-silo.png",
+    "craftingCategory": "crafting"
   },
   "stack-inserter": {
     "name": "stack-inserter",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "iron-gear-wheel",
-      "amount": 15
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 15
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 1
-    },
-    {
-      "name": "fast-inserter",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "stack-inserter",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/stack-inserter.png"
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel",
+        "amount": 15
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 15
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 1
+      },
+      {
+        "name": "fast-inserter",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "stack-inserter",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/stack-inserter.png",
+    "craftingCategory": "crafting"
   },
   "flamethrower-ammo": {
     "name": "flamethrower-ammo",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 5
-    },
-    {
-      "name": "light-oil",
-      "amount": 50
-    },
-    {
-      "name": "heavy-oil",
-      "amount": 50
-    }],
-    "results": [{
-      "name": "flamethrower-ammo",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/flamethrower-ammo.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 5
+      },
+      {
+        "name": "light-oil",
+        "amount": 50
+      },
+      {
+        "name": "heavy-oil",
+        "amount": 50
+      }
+    ],
+    "results": [
+      {
+        "name": "flamethrower-ammo",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/flamethrower-ammo.png",
+    "craftingCategory": "chemistry"
   },
   "electric-furnace": {
     "name": "electric-furnace",
     "groupName": "production",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 10
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 5
-    },
-    {
-      "name": "stone-brick",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "electric-furnace",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/electric-furnace.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 10
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 5
+      },
+      {
+        "name": "stone-brick",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "electric-furnace",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/electric-furnace.png",
+    "craftingCategory": "crafting"
   },
   "copper-plate": {
     "name": "copper-plate",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "copper-ore",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "copper-plate",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/copper-plate.png"
+    "ingredients": [
+      {
+        "name": "copper-ore",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "copper-plate",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/copper-plate.png",
+    "craftingCategory": "smelting"
   },
   "uranium-processing": {
     "name": "uranium-processing",
     "groupName": "raw-material",
-    "ingredients": [{
-      "name": "uranium-ore",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "uranium-235",
-      "amount": 1
-    },
-    {
-      "name": "uranium-238",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/uranium-processing.png"
+    "ingredients": [
+      {
+        "name": "uranium-ore",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "uranium-235",
+        "amount": 1
+      },
+      {
+        "name": "uranium-238",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/uranium-processing.png",
+    "craftingCategory": "centrifuging"
   },
   "piercing-rounds-magazine": {
     "name": "piercing-rounds-magazine",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "firearm-magazine",
-      "amount": 1
-    },
-    {
-      "name": "steel-plate",
-      "amount": 1
-    },
-    {
-      "name": "copper-plate",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "piercing-rounds-magazine",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/piercing-rounds-magazine.png"
+    "ingredients": [
+      {
+        "name": "firearm-magazine",
+        "amount": 1
+      },
+      {
+        "name": "steel-plate",
+        "amount": 1
+      },
+      {
+        "name": "copper-plate",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "piercing-rounds-magazine",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/piercing-rounds-magazine.png",
+    "craftingCategory": "crafting"
   },
   "small-plane": {
     "name": "small-plane",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "plastic-bar",
-      "amount": 100
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 200
-    },
-    {
-      "name": "electric-engine-unit",
-      "amount": 20
-    },
-    {
-      "name": "battery",
-      "amount": 100
-    }],
-    "results": [{
-      "name": "small-plane",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/small-plane.png"
+    "ingredients": [
+      {
+        "name": "plastic-bar",
+        "amount": 100
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 200
+      },
+      {
+        "name": "electric-engine-unit",
+        "amount": 20
+      },
+      {
+        "name": "battery",
+        "amount": 100
+      }
+    ],
+    "results": [
+      {
+        "name": "small-plane",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/small-plane.png",
+    "craftingCategory": "crafting"
   },
   "hazard-concrete": {
     "name": "hazard-concrete",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "concrete",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "hazard-concrete",
-      "amount": 10
-    }],
-    "iconUrl": "base/graphics/icons/hazard-concrete.png"
+    "ingredients": [
+      {
+        "name": "concrete",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "hazard-concrete",
+        "amount": 10
+      }
+    ],
+    "iconUrl": "base/graphics/icons/hazard-concrete.png",
+    "craftingCategory": "crafting"
   },
   "personal-laser-defense-equipment": {
     "name": "personal-laser-defense-equipment",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "processing-unit",
-      "amount": 1
-    },
-    {
-      "name": "steel-plate",
-      "amount": 5
-    },
-    {
-      "name": "laser-turret",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "personal-laser-defense-equipment",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/personal-laser-defense-equipment.png"
+    "ingredients": [
+      {
+        "name": "processing-unit",
+        "amount": 1
+      },
+      {
+        "name": "steel-plate",
+        "amount": 5
+      },
+      {
+        "name": "laser-turret",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "personal-laser-defense-equipment",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/personal-laser-defense-equipment.png",
+    "craftingCategory": "crafting"
   },
   "iron-chest": {
     "name": "iron-chest",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "iron-plate",
-      "amount": 8
-    }],
-    "results": [{
-      "name": "iron-chest",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/iron-chest.png"
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 8
+      }
+    ],
+    "results": [
+      {
+        "name": "iron-chest",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/iron-chest.png",
+    "craftingCategory": "crafting"
   },
   "flamethrower-turret": {
     "name": "flamethrower-turret",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 30
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 15
-    },
-    {
-      "name": "pipe",
-      "amount": 10
-    },
-    {
-      "name": "engine-unit",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "flamethrower-turret",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/flamethrower-turret.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 30
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 15
+      },
+      {
+        "name": "pipe",
+        "amount": 10
+      },
+      {
+        "name": "engine-unit",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "flamethrower-turret",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/flamethrower-turret.png",
+    "craftingCategory": "crafting"
   },
   "shotgun": {
     "name": "shotgun",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "iron-plate",
-      "amount": 15
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 5
-    },
-    {
-      "name": "copper-plate",
-      "amount": 10
-    },
-    {
-      "name": "wood",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "shotgun",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/shotgun.png"
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 15
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 5
+      },
+      {
+        "name": "copper-plate",
+        "amount": 10
+      },
+      {
+        "name": "wood",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "shotgun",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/shotgun.png",
+    "craftingCategory": "crafting"
   },
   "transport-belt": {
     "name": "transport-belt",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "iron-plate",
-      "amount": 1
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "transport-belt",
-      "amount": 2
-    }],
-    "iconUrl": "base/graphics/icons/transport-belt.png"
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 1
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "transport-belt",
+        "amount": 2
+      }
+    ],
+    "iconUrl": "base/graphics/icons/transport-belt.png",
+    "craftingCategory": "crafting"
   },
   "logistic-chest-passive-provider": {
     "name": "logistic-chest-passive-provider",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "steel-chest",
-      "amount": 1
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 3
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "logistic-chest-passive-provider",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/logistic-chest-passive-provider.png"
+    "ingredients": [
+      {
+        "name": "steel-chest",
+        "amount": 1
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 3
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "logistic-chest-passive-provider",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/logistic-chest-passive-provider.png",
+    "craftingCategory": "crafting"
   },
   "speed-module": {
     "name": "speed-module",
     "groupName": "production",
-    "ingredients": [{
-      "name": "advanced-circuit",
-      "amount": 5
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "speed-module",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/speed-module.png"
+    "ingredients": [
+      {
+        "name": "advanced-circuit",
+        "amount": 5
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "speed-module",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/speed-module.png",
+    "craftingCategory": "crafting"
   },
   "logistic-chest-storage": {
     "name": "logistic-chest-storage",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "steel-chest",
-      "amount": 1
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 3
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "logistic-chest-storage",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/logistic-chest-storage.png"
+    "ingredients": [
+      {
+        "name": "steel-chest",
+        "amount": 1
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 3
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "logistic-chest-storage",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/logistic-chest-storage.png",
+    "craftingCategory": "crafting"
   },
   "copper-cable": {
     "name": "copper-cable",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "copper-plate",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "copper-cable",
-      "amount": 2
-    }],
-    "iconUrl": "base/graphics/icons/copper-cable.png"
+    "ingredients": [
+      {
+        "name": "copper-plate",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "copper-cable",
+        "amount": 2
+      }
+    ],
+    "iconUrl": "base/graphics/icons/copper-cable.png",
+    "craftingCategory": "crafting"
   },
   "plastic-bar": {
     "name": "plastic-bar",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "petroleum-gas",
-      "amount": 20
-    },
-    {
-      "name": "coal",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "plastic-bar",
-      "amount": 2
-    }],
-    "iconUrl": "base/graphics/icons/plastic-bar.png"
+    "ingredients": [
+      {
+        "name": "petroleum-gas",
+        "amount": 20
+      },
+      {
+        "name": "coal",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "plastic-bar",
+        "amount": 2
+      }
+    ],
+    "iconUrl": "base/graphics/icons/plastic-bar.png",
+    "craftingCategory": "chemistry"
   },
   "power-switch": {
     "name": "power-switch",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "iron-plate",
-      "amount": 5
-    },
-    {
-      "name": "copper-cable",
-      "amount": 5
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 2
-    }],
-    "results": [{
-      "name": "power-switch",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/power-switch.png"
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 5
+      },
+      {
+        "name": "copper-cable",
+        "amount": 5
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 2
+      }
+    ],
+    "results": [
+      {
+        "name": "power-switch",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/power-switch.png",
+    "craftingCategory": "crafting"
   },
   "cannon-shell": {
     "name": "cannon-shell",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 2
-    },
-    {
-      "name": "plastic-bar",
-      "amount": 2
-    },
-    {
-      "name": "explosives",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "cannon-shell",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/cannon-shell.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 2
+      },
+      {
+        "name": "plastic-bar",
+        "amount": 2
+      },
+      {
+        "name": "explosives",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "cannon-shell",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/cannon-shell.png",
+    "craftingCategory": "crafting"
   },
   "boiler": {
     "name": "boiler",
     "groupName": "production",
-    "ingredients": [{
-      "name": "stone-furnace",
-      "amount": 1
-    },
-    {
-      "name": "pipe",
-      "amount": 4
-    }],
-    "results": [{
-      "name": "boiler",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/boiler.png"
+    "ingredients": [
+      {
+        "name": "stone-furnace",
+        "amount": 1
+      },
+      {
+        "name": "pipe",
+        "amount": 4
+      }
+    ],
+    "results": [
+      {
+        "name": "boiler",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/boiler.png",
+    "craftingCategory": "crafting"
   },
   "decider-combinator": {
     "name": "decider-combinator",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "copper-cable",
-      "amount": 5
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "decider-combinator",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/decider-combinator.png"
+    "ingredients": [
+      {
+        "name": "copper-cable",
+        "amount": 5
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "decider-combinator",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/decider-combinator.png",
+    "craftingCategory": "crafting"
   },
   "science-pack-3": {
     "name": "science-pack-3",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "advanced-circuit",
-      "amount": 1
-    },
-    {
-      "name": "engine-unit",
-      "amount": 1
-    },
-    {
-      "name": "electric-mining-drill",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "science-pack-3",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/science-pack-3.png"
+    "ingredients": [
+      {
+        "name": "advanced-circuit",
+        "amount": 1
+      },
+      {
+        "name": "engine-unit",
+        "amount": 1
+      },
+      {
+        "name": "electric-mining-drill",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "science-pack-3",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/science-pack-3.png",
+    "craftingCategory": "crafting"
   },
   "chemical-plant": {
     "name": "chemical-plant",
     "groupName": "production",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 5
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 5
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 5
-    },
-    {
-      "name": "pipe",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "chemical-plant",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/chemical-plant.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 5
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 5
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 5
+      },
+      {
+        "name": "pipe",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "chemical-plant",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/chemical-plant.png",
+    "craftingCategory": "crafting"
   },
   "science-pack-2": {
     "name": "science-pack-2",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "inserter",
-      "amount": 1
-    },
-    {
-      "name": "transport-belt",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "science-pack-2",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/science-pack-2.png"
+    "ingredients": [
+      {
+        "name": "inserter",
+        "amount": 1
+      },
+      {
+        "name": "transport-belt",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "science-pack-2",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/science-pack-2.png",
+    "craftingCategory": "crafting"
   },
   "science-pack-1": {
     "name": "science-pack-1",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "copper-plate",
-      "amount": 1
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "science-pack-1",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/science-pack-1.png"
+    "ingredients": [
+      {
+        "name": "copper-plate",
+        "amount": 1
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "science-pack-1",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/science-pack-1.png",
+    "craftingCategory": "crafting"
   },
   "burner-inserter": {
     "name": "burner-inserter",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "iron-plate",
-      "amount": 1
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "burner-inserter",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/burner-inserter.png"
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 1
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "burner-inserter",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/burner-inserter.png",
+    "craftingCategory": "crafting"
   },
   "poison-capsule": {
     "name": "poison-capsule",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 3
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 3
-    },
-    {
-      "name": "coal",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "poison-capsule",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/poison-capsule.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 3
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 3
+      },
+      {
+        "name": "coal",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "poison-capsule",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/poison-capsule.png",
+    "craftingCategory": "crafting"
   },
   "medium-electric-pole": {
     "name": "medium-electric-pole",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 2
-    },
-    {
-      "name": "copper-plate",
-      "amount": 2
-    }],
-    "results": [{
-      "name": "medium-electric-pole",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/medium-electric-pole.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 2
+      },
+      {
+        "name": "copper-plate",
+        "amount": 2
+      }
+    ],
+    "results": [
+      {
+        "name": "medium-electric-pole",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/medium-electric-pole.png",
+    "craftingCategory": "crafting"
   },
   "inserter": {
     "name": "inserter",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "electronic-circuit",
-      "amount": 1
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 1
-    },
-    {
-      "name": "iron-plate",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "inserter",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/inserter.png"
+    "ingredients": [
+      {
+        "name": "electronic-circuit",
+        "amount": 1
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 1
+      },
+      {
+        "name": "iron-plate",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "inserter",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/inserter.png",
+    "craftingCategory": "crafting"
   },
   "firearm-magazine": {
     "name": "firearm-magazine",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "iron-plate",
-      "amount": 4
-    }],
-    "results": [{
-      "name": "firearm-magazine",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/firearm-magazine.png"
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 4
+      }
+    ],
+    "results": [
+      {
+        "name": "firearm-magazine",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/firearm-magazine.png",
+    "craftingCategory": "crafting"
   },
   "roboport": {
     "name": "roboport",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 45
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 45
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 45
-    }],
-    "results": [{
-      "name": "roboport",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/roboport.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 45
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 45
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 45
+      }
+    ],
+    "results": [
+      {
+        "name": "roboport",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/roboport.png",
+    "craftingCategory": "crafting"
   },
   "radar": {
     "name": "radar",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "electronic-circuit",
-      "amount": 5
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 5
-    },
-    {
-      "name": "iron-plate",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "radar",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/radar.png"
+    "ingredients": [
+      {
+        "name": "electronic-circuit",
+        "amount": 5
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 5
+      },
+      {
+        "name": "iron-plate",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "radar",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/radar.png",
+    "craftingCategory": "crafting"
   },
   "kovarex-enrichment-process": {
     "name": "kovarex-enrichment-process",
     "groupName": "intermediate-product",
-    "ingredients": [{
-      "name": "uranium-235",
-      "amount": 40
-    },
-    {
-      "name": "uranium-238",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "uranium-235",
-      "amount": 41
-    },
-    {
-      "name": "uranium-238",
-      "amount": 2
-    }],
-    "iconUrl": "base/graphics/icons/kovarex-enrichment-process.png"
+    "ingredients": [
+      {
+        "name": "uranium-235",
+        "amount": 40
+      },
+      {
+        "name": "uranium-238",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "uranium-235",
+        "amount": 41
+      },
+      {
+        "name": "uranium-238",
+        "amount": 2
+      }
+    ],
+    "iconUrl": "base/graphics/icons/kovarex-enrichment-process.png",
+    "craftingCategory": "centrifuging"
   },
   "stone-brick": {
     "name": "stone-brick",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "stone",
-      "amount": 2
-    }],
-    "results": [{
-      "name": "stone-brick",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/stone-brick.png"
+    "ingredients": [
+      {
+        "name": "stone",
+        "amount": 2
+      }
+    ],
+    "results": [
+      {
+        "name": "stone-brick",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/stone-brick.png",
+    "craftingCategory": "smelting"
   },
   "personal-roboport-equipment": {
     "name": "personal-roboport-equipment",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "advanced-circuit",
-      "amount": 10
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 40
-    },
-    {
-      "name": "steel-plate",
-      "amount": 20
-    },
-    {
-      "name": "battery",
-      "amount": 45
-    }],
-    "results": [{
-      "name": "personal-roboport-equipment",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/personal-roboport-equipment.png"
+    "ingredients": [
+      {
+        "name": "advanced-circuit",
+        "amount": 10
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 40
+      },
+      {
+        "name": "steel-plate",
+        "amount": 20
+      },
+      {
+        "name": "battery",
+        "amount": 45
+      }
+    ],
+    "results": [
+      {
+        "name": "personal-roboport-equipment",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/personal-roboport-equipment.png",
+    "craftingCategory": "crafting"
   },
   "express-loader": {
     "name": "express-loader",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "express-transport-belt",
-      "amount": 5
-    },
-    {
-      "name": "fast-loader",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "express-loader",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/express-loader.png"
+    "ingredients": [
+      {
+        "name": "express-transport-belt",
+        "amount": 5
+      },
+      {
+        "name": "fast-loader",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "express-loader",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/express-loader.png",
+    "craftingCategory": "crafting"
   },
   "defender-capsule": {
     "name": "defender-capsule",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "piercing-rounds-magazine",
-      "amount": 1
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 2
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 3
-    }],
-    "results": [{
-      "name": "defender-capsule",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/defender.png"
+    "ingredients": [
+      {
+        "name": "piercing-rounds-magazine",
+        "amount": 1
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 2
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 3
+      }
+    ],
+    "results": [
+      {
+        "name": "defender-capsule",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/defender.png",
+    "craftingCategory": "crafting"
   },
   "fast-transport-belt": {
     "name": "fast-transport-belt",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "iron-gear-wheel",
-      "amount": 5
-    },
-    {
-      "name": "transport-belt",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "fast-transport-belt",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/fast-transport-belt.png"
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel",
+        "amount": 5
+      },
+      {
+        "name": "transport-belt",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "fast-transport-belt",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/fast-transport-belt.png",
+    "craftingCategory": "crafting"
   },
   "cargo-wagon": {
     "name": "cargo-wagon",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "iron-gear-wheel",
-      "amount": 10
-    },
-    {
-      "name": "iron-plate",
-      "amount": 20
-    },
-    {
-      "name": "steel-plate",
-      "amount": 20
-    }],
-    "results": [{
-      "name": "cargo-wagon",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/cargo-wagon.png"
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel",
+        "amount": 10
+      },
+      {
+        "name": "iron-plate",
+        "amount": 20
+      },
+      {
+        "name": "steel-plate",
+        "amount": 20
+      }
+    ],
+    "results": [
+      {
+        "name": "cargo-wagon",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/cargo-wagon.png",
+    "craftingCategory": "crafting"
   },
   "basic-oil-processing": {
     "name": "basic-oil-processing",
     "groupName": "fluid-recipes",
-    "ingredients": [{
-      "name": "crude-oil",
-      "amount": 100
-    }],
-    "results": [{
-      "name": "heavy-oil",
-      "amount": 30
-    },
-    {
-      "name": "light-oil",
-      "amount": 30
-    },
-    {
-      "name": "petroleum-gas",
-      "amount": 40
-    }],
-    "iconUrl": "base/graphics/icons/fluid/basic-oil-processing.png"
+    "ingredients": [
+      {
+        "name": "crude-oil",
+        "amount": 100
+      }
+    ],
+    "results": [
+      {
+        "name": "heavy-oil",
+        "amount": 30
+      },
+      {
+        "name": "light-oil",
+        "amount": 30
+      },
+      {
+        "name": "petroleum-gas",
+        "amount": 40
+      }
+    ],
+    "iconUrl": "base/graphics/icons/fluid/basic-oil-processing.png",
+    "craftingCategory": "oil-processing"
   },
   "effectivity-module-2": {
     "name": "effectivity-module-2",
     "groupName": "production",
-    "ingredients": [{
-      "name": "effectivity-module",
-      "amount": 4
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 5
-    },
-    {
-      "name": "processing-unit",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "effectivity-module-2",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/effectivity-module-2.png"
+    "ingredients": [
+      {
+        "name": "effectivity-module",
+        "amount": 4
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 5
+      },
+      {
+        "name": "processing-unit",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "effectivity-module-2",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/effectivity-module-2.png",
+    "craftingCategory": "crafting"
   },
   "land-mine": {
     "name": "land-mine",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 1
-    },
-    {
-      "name": "explosives",
-      "amount": 2
-    }],
-    "results": [{
-      "name": "land-mine",
-      "amount": 4
-    }],
-    "iconUrl": "base/graphics/icons/land-mine.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 1
+      },
+      {
+        "name": "explosives",
+        "amount": 2
+      }
+    ],
+    "results": [
+      {
+        "name": "land-mine",
+        "amount": 4
+      }
+    ],
+    "iconUrl": "base/graphics/icons/land-mine.png",
+    "craftingCategory": "crafting"
   },
   "atomic-bomb": {
     "name": "atomic-bomb",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "processing-unit",
-      "amount": 20
-    },
-    {
-      "name": "explosives",
-      "amount": 10
-    },
-    {
-      "name": "uranium-235",
-      "amount": 30
-    }],
-    "results": [{
-      "name": "atomic-bomb",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/atomic-bomb.png"
+    "ingredients": [
+      {
+        "name": "processing-unit",
+        "amount": 20
+      },
+      {
+        "name": "explosives",
+        "amount": 10
+      },
+      {
+        "name": "uranium-235",
+        "amount": 30
+      }
+    ],
+    "results": [
+      {
+        "name": "atomic-bomb",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/atomic-bomb.png",
+    "craftingCategory": "crafting"
   },
   "effectivity-module-3": {
     "name": "effectivity-module-3",
     "groupName": "production",
-    "ingredients": [{
-      "name": "effectivity-module-2",
-      "amount": 5
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 5
-    },
-    {
-      "name": "processing-unit",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "effectivity-module-3",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/effectivity-module-3.png"
+    "ingredients": [
+      {
+        "name": "effectivity-module-2",
+        "amount": 5
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 5
+      },
+      {
+        "name": "processing-unit",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "effectivity-module-3",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/effectivity-module-3.png",
+    "craftingCategory": "crafting"
   },
   "burner-mining-drill": {
     "name": "burner-mining-drill",
     "groupName": "production",
-    "ingredients": [{
-      "name": "iron-gear-wheel",
-      "amount": 3
-    },
-    {
-      "name": "stone-furnace",
-      "amount": 1
-    },
-    {
-      "name": "iron-plate",
-      "amount": 3
-    }],
-    "results": [{
-      "name": "burner-mining-drill",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/burner-mining-drill.png"
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel",
+        "amount": 3
+      },
+      {
+        "name": "stone-furnace",
+        "amount": 1
+      },
+      {
+        "name": "iron-plate",
+        "amount": 3
+      }
+    ],
+    "results": [
+      {
+        "name": "burner-mining-drill",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/burner-mining-drill.png",
+    "craftingCategory": "crafting"
   },
   "fluid-wagon": {
     "name": "fluid-wagon",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "iron-gear-wheel",
-      "amount": 10
-    },
-    {
-      "name": "steel-plate",
-      "amount": 16
-    },
-    {
-      "name": "pipe",
-      "amount": 8
-    },
-    {
-      "name": "storage-tank",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "fluid-wagon",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/fluid-wagon.png"
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel",
+        "amount": 10
+      },
+      {
+        "name": "steel-plate",
+        "amount": 16
+      },
+      {
+        "name": "pipe",
+        "amount": 8
+      },
+      {
+        "name": "storage-tank",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "fluid-wagon",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/fluid-wagon.png",
+    "craftingCategory": "crafting"
   },
   "night-vision-equipment": {
     "name": "night-vision-equipment",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "advanced-circuit",
-      "amount": 5
-    },
-    {
-      "name": "steel-plate",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "night-vision-equipment",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/night-vision-equipment.png"
+    "ingredients": [
+      {
+        "name": "advanced-circuit",
+        "amount": 5
+      },
+      {
+        "name": "steel-plate",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "night-vision-equipment",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/night-vision-equipment.png",
+    "craftingCategory": "crafting"
   },
   "explosives": {
     "name": "explosives",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "sulfur",
-      "amount": 1
-    },
-    {
-      "name": "coal",
-      "amount": 1
-    },
-    {
-      "name": "water",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "explosives",
-      "amount": 2
-    }],
-    "iconUrl": "base/graphics/icons/explosives.png"
+    "ingredients": [
+      {
+        "name": "sulfur",
+        "amount": 1
+      },
+      {
+        "name": "coal",
+        "amount": 1
+      },
+      {
+        "name": "water",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "explosives",
+        "amount": 2
+      }
+    ],
+    "iconUrl": "base/graphics/icons/explosives.png",
+    "craftingCategory": "chemistry"
   },
   "lab": {
     "name": "lab",
     "groupName": "production",
-    "ingredients": [{
-      "name": "electronic-circuit",
-      "amount": 10
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 10
-    },
-    {
-      "name": "transport-belt",
-      "amount": 4
-    }],
-    "results": [{
-      "name": "lab",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/lab.png"
+    "ingredients": [
+      {
+        "name": "electronic-circuit",
+        "amount": 10
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 10
+      },
+      {
+        "name": "transport-belt",
+        "amount": 4
+      }
+    ],
+    "results": [
+      {
+        "name": "lab",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/lab.png",
+    "craftingCategory": "crafting"
   },
   "light-armor": {
     "name": "light-armor",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "iron-plate",
-      "amount": 40
-    }],
-    "results": [{
-      "name": "light-armor",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/light-armor.png"
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 40
+      }
+    ],
+    "results": [
+      {
+        "name": "light-armor",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/light-armor.png",
+    "craftingCategory": "crafting"
   },
   "military-science-pack": {
     "name": "military-science-pack",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "piercing-rounds-magazine",
-      "amount": 1
-    },
-    {
-      "name": "grenade",
-      "amount": 1
-    },
-    {
-      "name": "gun-turret",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "military-science-pack",
-      "amount": 2
-    }],
-    "iconUrl": "base/graphics/icons/military-science-pack.png"
+    "ingredients": [
+      {
+        "name": "piercing-rounds-magazine",
+        "amount": 1
+      },
+      {
+        "name": "grenade",
+        "amount": 1
+      },
+      {
+        "name": "gun-turret",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "military-science-pack",
+        "amount": 2
+      }
+    ],
+    "iconUrl": "base/graphics/icons/military-science-pack.png",
+    "craftingCategory": "crafting"
   },
   "solar-panel": {
     "name": "solar-panel",
     "groupName": "production",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 5
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 15
-    },
-    {
-      "name": "copper-plate",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "solar-panel",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/solar-panel.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 5
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 15
+      },
+      {
+        "name": "copper-plate",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "solar-panel",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/solar-panel.png",
+    "craftingCategory": "crafting"
   },
   "substation": {
     "name": "substation",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 10
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 5
-    },
-    {
-      "name": "copper-plate",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "substation",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/substation.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 10
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 5
+      },
+      {
+        "name": "copper-plate",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "substation",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/substation.png",
+    "craftingCategory": "crafting"
   },
   "construction-robot": {
     "name": "construction-robot",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "flying-robot-frame",
-      "amount": 1
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 2
-    }],
-    "results": [{
-      "name": "construction-robot",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/construction-robot.png"
+    "ingredients": [
+      {
+        "name": "flying-robot-frame",
+        "amount": 1
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 2
+      }
+    ],
+    "results": [
+      {
+        "name": "construction-robot",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/construction-robot.png",
+    "craftingCategory": "crafting"
   },
   "constant-combinator": {
     "name": "constant-combinator",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "copper-cable",
-      "amount": 5
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 2
-    }],
-    "results": [{
-      "name": "constant-combinator",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/constant-combinator.png"
+    "ingredients": [
+      {
+        "name": "copper-cable",
+        "amount": 5
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 2
+      }
+    ],
+    "results": [
+      {
+        "name": "constant-combinator",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/constant-combinator.png",
+    "craftingCategory": "crafting"
   },
   "pipe": {
     "name": "pipe",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "iron-plate",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "pipe",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/pipe.png"
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "pipe",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/pipe.png",
+    "craftingCategory": "crafting"
   },
   "player-port": {
     "name": "player-port",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "electronic-circuit",
-      "amount": 10
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 5
-    },
-    {
-      "name": "iron-plate",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "player-port",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/player-port.png"
+    "ingredients": [
+      {
+        "name": "electronic-circuit",
+        "amount": 10
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 5
+      },
+      {
+        "name": "iron-plate",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "player-port",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/player-port.png",
+    "craftingCategory": "crafting"
   },
   "low-density-structure": {
     "name": "low-density-structure",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 10
-    },
-    {
-      "name": "copper-plate",
-      "amount": 5
-    },
-    {
-      "name": "plastic-bar",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "low-density-structure",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/rocket-structure.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 10
+      },
+      {
+        "name": "copper-plate",
+        "amount": 5
+      },
+      {
+        "name": "plastic-bar",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "low-density-structure",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/rocket-structure.png",
+    "craftingCategory": "crafting"
   },
   "grenade": {
     "name": "grenade",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "iron-plate",
-      "amount": 5
-    },
-    {
-      "name": "coal",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "grenade",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/grenade.png"
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 5
+      },
+      {
+        "name": "coal",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "grenade",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/grenade.png",
+    "craftingCategory": "crafting"
   },
   "fast-underground-belt": {
     "name": "fast-underground-belt",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "iron-gear-wheel",
-      "amount": 40
-    },
-    {
-      "name": "underground-belt",
-      "amount": 2
-    }],
-    "results": [{
-      "name": "fast-underground-belt",
-      "amount": 2
-    }],
-    "iconUrl": "base/graphics/icons/fast-underground-belt.png"
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel",
+        "amount": 40
+      },
+      {
+        "name": "underground-belt",
+        "amount": 2
+      }
+    ],
+    "results": [
+      {
+        "name": "fast-underground-belt",
+        "amount": 2
+      }
+    ],
+    "iconUrl": "base/graphics/icons/fast-underground-belt.png",
+    "craftingCategory": "crafting"
   },
   "rail": {
     "name": "rail",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "stone",
-      "amount": 1
-    },
-    {
-      "name": "iron-stick",
-      "amount": 1
-    },
-    {
-      "name": "steel-plate",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "rail",
-      "amount": 2
-    }],
-    "iconUrl": "base/graphics/icons/rail.png"
+    "ingredients": [
+      {
+        "name": "stone",
+        "amount": 1
+      },
+      {
+        "name": "iron-stick",
+        "amount": 1
+      },
+      {
+        "name": "steel-plate",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "rail",
+        "amount": 2
+      }
+    ],
+    "iconUrl": "base/graphics/icons/rail.png",
+    "craftingCategory": "crafting"
   },
   "uranium-cannon-shell": {
     "name": "uranium-cannon-shell",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "cannon-shell",
-      "amount": 1
-    },
-    {
-      "name": "uranium-238",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "uranium-cannon-shell",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/uranium-cannon-shell.png"
+    "ingredients": [
+      {
+        "name": "cannon-shell",
+        "amount": 1
+      },
+      {
+        "name": "uranium-238",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "uranium-cannon-shell",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/uranium-cannon-shell.png",
+    "craftingCategory": "crafting"
   },
   "fast-inserter": {
     "name": "fast-inserter",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "electronic-circuit",
-      "amount": 2
-    },
-    {
-      "name": "iron-plate",
-      "amount": 2
-    },
-    {
-      "name": "inserter",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "fast-inserter",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/fast-inserter.png"
+    "ingredients": [
+      {
+        "name": "electronic-circuit",
+        "amount": 2
+      },
+      {
+        "name": "iron-plate",
+        "amount": 2
+      },
+      {
+        "name": "inserter",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "fast-inserter",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/fast-inserter.png",
+    "craftingCategory": "crafting"
   },
   "filter-inserter": {
     "name": "filter-inserter",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "fast-inserter",
-      "amount": 1
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 4
-    }],
-    "results": [{
-      "name": "filter-inserter",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/filter-inserter.png"
+    "ingredients": [
+      {
+        "name": "fast-inserter",
+        "amount": 1
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 4
+      }
+    ],
+    "results": [
+      {
+        "name": "filter-inserter",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/filter-inserter.png",
+    "craftingCategory": "crafting"
   },
   "solar-panel-equipment": {
     "name": "solar-panel-equipment",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "solar-panel",
-      "amount": 5
-    },
-    {
-      "name": "advanced-circuit",
-      "amount": 1
-    },
-    {
-      "name": "steel-plate",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "solar-panel-equipment",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/solar-panel-equipment.png"
+    "ingredients": [
+      {
+        "name": "solar-panel",
+        "amount": 5
+      },
+      {
+        "name": "advanced-circuit",
+        "amount": 1
+      },
+      {
+        "name": "steel-plate",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "solar-panel-equipment",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/solar-panel-equipment.png",
+    "craftingCategory": "crafting"
   },
   "steel-plate": {
     "name": "steel-plate",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "iron-plate",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "steel-plate",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/steel-plate.png"
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "steel-plate",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/steel-plate.png",
+    "craftingCategory": "smelting"
   },
   "rocket-fuel": {
     "name": "rocket-fuel",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "solid-fuel",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "rocket-fuel",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/rocket-fuel.png"
+    "ingredients": [
+      {
+        "name": "solid-fuel",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "rocket-fuel",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/rocket-fuel.png",
+    "craftingCategory": "crafting"
   },
   "accumulator": {
     "name": "accumulator",
     "groupName": "production",
-    "ingredients": [{
-      "name": "iron-plate",
-      "amount": 2
-    },
-    {
-      "name": "battery",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "accumulator",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/accumulator.png"
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 2
+      },
+      {
+        "name": "battery",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "accumulator",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/accumulator.png",
+    "craftingCategory": "crafting"
   },
   "concrete": {
     "name": "concrete",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "stone-brick",
-      "amount": 5
-    },
-    {
-      "name": "iron-ore",
-      "amount": 1
-    },
-    {
-      "name": "water",
-      "amount": 100
-    }],
-    "results": [{
-      "name": "concrete",
-      "amount": 10
-    }],
-    "iconUrl": "base/graphics/icons/concrete.png"
+    "ingredients": [
+      {
+        "name": "stone-brick",
+        "amount": 5
+      },
+      {
+        "name": "iron-ore",
+        "amount": 1
+      },
+      {
+        "name": "water",
+        "amount": 100
+      }
+    ],
+    "results": [
+      {
+        "name": "concrete",
+        "amount": 10
+      }
+    ],
+    "iconUrl": "base/graphics/icons/concrete.png",
+    "craftingCategory": "crafting-with-fluid"
   },
   "offshore-pump": {
     "name": "offshore-pump",
     "groupName": "production",
-    "ingredients": [{
-      "name": "electronic-circuit",
-      "amount": 2
-    },
-    {
-      "name": "pipe",
-      "amount": 1
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "offshore-pump",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/offshore-pump.png"
+    "ingredients": [
+      {
+        "name": "electronic-circuit",
+        "amount": 2
+      },
+      {
+        "name": "pipe",
+        "amount": 1
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "offshore-pump",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/offshore-pump.png",
+    "craftingCategory": "crafting"
   },
   "iron-gear-wheel": {
     "name": "iron-gear-wheel",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "iron-plate",
-      "amount": 2
-    }],
-    "results": [{
-      "name": "iron-gear-wheel",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/iron-gear-wheel.png"
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 2
+      }
+    ],
+    "results": [
+      {
+        "name": "iron-gear-wheel",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/iron-gear-wheel.png",
+    "craftingCategory": "crafting"
   },
   "discharge-defense-equipment": {
     "name": "discharge-defense-equipment",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "processing-unit",
-      "amount": 5
-    },
-    {
-      "name": "steel-plate",
-      "amount": 20
-    },
-    {
-      "name": "laser-turret",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "discharge-defense-equipment",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/discharge-defense-equipment.png"
+    "ingredients": [
+      {
+        "name": "processing-unit",
+        "amount": 5
+      },
+      {
+        "name": "steel-plate",
+        "amount": 20
+      },
+      {
+        "name": "laser-turret",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "discharge-defense-equipment",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/discharge-defense-equipment.png",
+    "craftingCategory": "crafting"
   },
   "car": {
     "name": "car",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "engine-unit",
-      "amount": 8
-    },
-    {
-      "name": "iron-plate",
-      "amount": 20
-    },
-    {
-      "name": "steel-plate",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "car",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/car.png"
+    "ingredients": [
+      {
+        "name": "engine-unit",
+        "amount": 8
+      },
+      {
+        "name": "iron-plate",
+        "amount": 20
+      },
+      {
+        "name": "steel-plate",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "car",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/car.png",
+    "craftingCategory": "crafting"
   },
   "flamethrower": {
     "name": "flamethrower",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 5
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "flamethrower",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/flamethrower.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 5
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "flamethrower",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/flamethrower.png",
+    "craftingCategory": "crafting"
   },
   "steam-turbine": {
     "name": "steam-turbine",
     "groupName": "production",
-    "ingredients": [{
-      "name": "iron-gear-wheel",
-      "amount": 50
-    },
-    {
-      "name": "copper-plate",
-      "amount": 50
-    },
-    {
-      "name": "pipe",
-      "amount": 20
-    }],
-    "results": [{
-      "name": "steam-turbine",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/steam-turbine.png"
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel",
+        "amount": 50
+      },
+      {
+        "name": "copper-plate",
+        "amount": 50
+      },
+      {
+        "name": "pipe",
+        "amount": 20
+      }
+    ],
+    "results": [
+      {
+        "name": "steam-turbine",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/steam-turbine.png",
+    "craftingCategory": "crafting"
   },
   "big-electric-pole": {
     "name": "big-electric-pole",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 5
-    },
-    {
-      "name": "copper-plate",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "big-electric-pole",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/big-electric-pole.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 5
+      },
+      {
+        "name": "copper-plate",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "big-electric-pole",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/big-electric-pole.png",
+    "craftingCategory": "crafting"
   },
   "heavy-oil-cracking": {
     "name": "heavy-oil-cracking",
     "groupName": "fluid-recipes",
-    "ingredients": [{
-      "name": "water",
-      "amount": 30
-    },
-    {
-      "name": "heavy-oil",
-      "amount": 40
-    }],
-    "results": [{
-      "name": "light-oil",
-      "amount": 30
-    }],
-    "iconUrl": "base/graphics/icons/fluid/heavy-oil-cracking.png"
+    "ingredients": [
+      {
+        "name": "water",
+        "amount": 30
+      },
+      {
+        "name": "heavy-oil",
+        "amount": 40
+      }
+    ],
+    "results": [
+      {
+        "name": "light-oil",
+        "amount": 30
+      }
+    ],
+    "iconUrl": "base/graphics/icons/fluid/heavy-oil-cracking.png",
+    "craftingCategory": "chemistry"
   },
   "energy-shield-mk2-equipment": {
     "name": "energy-shield-mk2-equipment",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "energy-shield-equipment",
-      "amount": 10
-    },
-    {
-      "name": "processing-unit",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "energy-shield-mk2-equipment",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/energy-shield-mk2-equipment.png"
+    "ingredients": [
+      {
+        "name": "energy-shield-equipment",
+        "amount": 10
+      },
+      {
+        "name": "processing-unit",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "energy-shield-mk2-equipment",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/energy-shield-mk2-equipment.png",
+    "craftingCategory": "crafting"
   },
   "iron-axe": {
     "name": "iron-axe",
     "groupName": "production",
-    "ingredients": [{
-      "name": "iron-stick",
-      "amount": 2
-    },
-    {
-      "name": "iron-plate",
-      "amount": 3
-    }],
-    "results": [{
-      "name": "iron-axe",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/iron-axe.png"
+    "ingredients": [
+      {
+        "name": "iron-stick",
+        "amount": 2
+      },
+      {
+        "name": "iron-plate",
+        "amount": 3
+      }
+    ],
+    "results": [
+      {
+        "name": "iron-axe",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/iron-axe.png",
+    "craftingCategory": "crafting"
   },
   "assembling-machine-1": {
     "name": "assembling-machine-1",
     "groupName": "production",
-    "ingredients": [{
-      "name": "electronic-circuit",
-      "amount": 3
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 5
-    },
-    {
-      "name": "iron-plate",
-      "amount": 9
-    }],
-    "results": [{
-      "name": "assembling-machine-1",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/assembling-machine-1.png"
+    "ingredients": [
+      {
+        "name": "electronic-circuit",
+        "amount": 3
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 5
+      },
+      {
+        "name": "iron-plate",
+        "amount": 9
+      }
+    ],
+    "results": [
+      {
+        "name": "assembling-machine-1",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/assembling-machine-1.png",
+    "craftingCategory": "crafting"
   },
   "artillery-shell": {
     "name": "artillery-shell",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "explosive-cannon-shell",
-      "amount": 4
-    },
-    {
-      "name": "radar",
-      "amount": 1
-    },
-    {
-      "name": "explosives",
-      "amount": 8
-    }],
-    "results": [{
-      "name": "artillery-shell",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/artillery-shell.png"
+    "ingredients": [
+      {
+        "name": "explosive-cannon-shell",
+        "amount": 4
+      },
+      {
+        "name": "radar",
+        "amount": 1
+      },
+      {
+        "name": "explosives",
+        "amount": 8
+      }
+    ],
+    "results": [
+      {
+        "name": "artillery-shell",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/artillery-shell.png",
+    "craftingCategory": "crafting"
   },
   "assembling-machine-3": {
     "name": "assembling-machine-3",
     "groupName": "production",
-    "ingredients": [{
-      "name": "speed-module",
-      "amount": 4
-    },
-    {
-      "name": "assembling-machine-2",
-      "amount": 2
-    }],
-    "results": [{
-      "name": "assembling-machine-3",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/assembling-machine-3.png"
+    "ingredients": [
+      {
+        "name": "speed-module",
+        "amount": 4
+      },
+      {
+        "name": "assembling-machine-2",
+        "amount": 2
+      }
+    ],
+    "results": [
+      {
+        "name": "assembling-machine-3",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/assembling-machine-3.png",
+    "craftingCategory": "crafting"
   },
   "assembling-machine-2": {
     "name": "assembling-machine-2",
     "groupName": "production",
-    "ingredients": [{
-      "name": "iron-plate",
-      "amount": 9
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 3
-    },
-    {
-      "name": "iron-gear-wheel",
-      "amount": 5
-    },
-    {
-      "name": "assembling-machine-1",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "assembling-machine-2",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/assembling-machine-2.png"
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 9
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 3
+      },
+      {
+        "name": "iron-gear-wheel",
+        "amount": 5
+      },
+      {
+        "name": "assembling-machine-1",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "assembling-machine-2",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/assembling-machine-2.png",
+    "craftingCategory": "crafting"
   },
   "productivity-module": {
     "name": "productivity-module",
     "groupName": "production",
-    "ingredients": [{
-      "name": "advanced-circuit",
-      "amount": 5
-    },
-    {
-      "name": "electronic-circuit",
-      "amount": 5
-    }],
-    "results": [{
-      "name": "productivity-module",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/productivity-module.png"
+    "ingredients": [
+      {
+        "name": "advanced-circuit",
+        "amount": 5
+      },
+      {
+        "name": "electronic-circuit",
+        "amount": 5
+      }
+    ],
+    "results": [
+      {
+        "name": "productivity-module",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/productivity-module.png",
+    "craftingCategory": "crafting"
   },
   "splitter": {
     "name": "splitter",
     "groupName": "logistics",
-    "ingredients": [{
-      "name": "electronic-circuit",
-      "amount": 5
-    },
-    {
-      "name": "iron-plate",
-      "amount": 5
-    },
-    {
-      "name": "transport-belt",
-      "amount": 4
-    }],
-    "results": [{
-      "name": "splitter",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/splitter.png"
+    "ingredients": [
+      {
+        "name": "electronic-circuit",
+        "amount": 5
+      },
+      {
+        "name": "iron-plate",
+        "amount": 5
+      },
+      {
+        "name": "transport-belt",
+        "amount": 4
+      }
+    ],
+    "results": [
+      {
+        "name": "splitter",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/splitter.png",
+    "craftingCategory": "crafting"
   },
   "steel-axe": {
     "name": "steel-axe",
     "groupName": "production",
-    "ingredients": [{
-      "name": "steel-plate",
-      "amount": 5
-    },
-    {
-      "name": "iron-stick",
-      "amount": 2
-    }],
-    "results": [{
-      "name": "steel-axe",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/steel-axe.png"
+    "ingredients": [
+      {
+        "name": "steel-plate",
+        "amount": 5
+      },
+      {
+        "name": "iron-stick",
+        "amount": 2
+      }
+    ],
+    "results": [
+      {
+        "name": "steel-axe",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/steel-axe.png",
+    "craftingCategory": "crafting"
   },
   "production-science-pack": {
     "name": "production-science-pack",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "electric-engine-unit",
-      "amount": 1
-    },
-    {
-      "name": "electric-furnace",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "production-science-pack",
-      "amount": 2
-    }],
-    "iconUrl": "base/graphics/icons/production-science-pack.png"
+    "ingredients": [
+      {
+        "name": "electric-engine-unit",
+        "amount": 1
+      },
+      {
+        "name": "electric-furnace",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "production-science-pack",
+        "amount": 2
+      }
+    ],
+    "iconUrl": "base/graphics/icons/production-science-pack.png",
+    "craftingCategory": "crafting"
   },
   "high-tech-science-pack": {
     "name": "high-tech-science-pack",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "battery",
-      "amount": 1
-    },
-    {
-      "name": "processing-unit",
-      "amount": 3
-    },
-    {
-      "name": "speed-module",
-      "amount": 1
-    },
-    {
-      "name": "copper-cable",
-      "amount": 30
-    }],
-    "results": [{
-      "name": "high-tech-science-pack",
-      "amount": 2
-    }],
-    "iconUrl": "base/graphics/icons/high-tech-science-pack.png"
+    "ingredients": [
+      {
+        "name": "battery",
+        "amount": 1
+      },
+      {
+        "name": "processing-unit",
+        "amount": 3
+      },
+      {
+        "name": "speed-module",
+        "amount": 1
+      },
+      {
+        "name": "copper-cable",
+        "amount": 30
+      }
+    ],
+    "results": [
+      {
+        "name": "high-tech-science-pack",
+        "amount": 2
+      }
+    ],
+    "iconUrl": "base/graphics/icons/high-tech-science-pack.png",
+    "craftingCategory": "crafting"
   },
   "rocket-part": {
     "name": "rocket-part",
     "groupName": "intermediate-products",
-    "ingredients": [{
-      "name": "rocket-control-unit",
-      "amount": 10
-    },
-    {
-      "name": "low-density-structure",
-      "amount": 10
-    },
-    {
-      "name": "rocket-fuel",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "rocket-part",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/rocket-part.png"
+    "ingredients": [
+      {
+        "name": "rocket-control-unit",
+        "amount": 10
+      },
+      {
+        "name": "low-density-structure",
+        "amount": 10
+      },
+      {
+        "name": "rocket-fuel",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "rocket-part",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/rocket-part.png",
+    "craftingCategory": "rocket-building"
   },
   "personal-roboport-mk2-equipment": {
     "name": "personal-roboport-mk2-equipment",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "personal-roboport-equipment",
-      "amount": 5
-    },
-    {
-      "name": "processing-unit",
-      "amount": 100
-    }],
-    "results": [{
-      "name": "personal-roboport-mk2-equipment",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/personal-roboport-mk2-equipment.png"
+    "ingredients": [
+      {
+        "name": "personal-roboport-equipment",
+        "amount": 5
+      },
+      {
+        "name": "processing-unit",
+        "amount": 100
+      }
+    ],
+    "results": [
+      {
+        "name": "personal-roboport-mk2-equipment",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/personal-roboport-mk2-equipment.png",
+    "craftingCategory": "crafting"
   },
   "uranium-rounds-magazine": {
     "name": "uranium-rounds-magazine",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "piercing-rounds-magazine",
-      "amount": 1
-    },
-    {
-      "name": "uranium-238",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "uranium-rounds-magazine",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/icons/uranium-rounds-magazine.png"
+    "ingredients": [
+      {
+        "name": "piercing-rounds-magazine",
+        "amount": 1
+      },
+      {
+        "name": "uranium-238",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "uranium-rounds-magazine",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/icons/uranium-rounds-magazine.png",
+    "craftingCategory": "crafting"
   },
   "discharge-defense-remote": {
     "name": "discharge-defense-remote",
     "groupName": "combat",
-    "ingredients": [{
-      "name": "electronic-circuit",
-      "amount": 1
-    }],
-    "results": [{
-      "name": "discharge-defense-remote",
-      "amount": 1
-    }],
-    "iconUrl": "base/graphics/equipment/discharge-defense-equipment-ability.png"
+    "ingredients": [
+      {
+        "name": "electronic-circuit",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "name": "discharge-defense-remote",
+        "amount": 1
+      }
+    ],
+    "iconUrl": "base/graphics/equipment/discharge-defense-equipment-ability.png",
+    "craftingCategory": "crafting"
   },
   "lubricant": {
     "name": "lubricant",
     "groupName": "fluid-recipes",
-    "ingredients": [{
-      "name": "heavy-oil",
-      "amount": 10
-    }],
-    "results": [{
-      "name": "lubricant",
-      "amount": 10
-    }],
-    "iconUrl": "base/graphics/icons/fluid/lubricant.png"
+    "ingredients": [
+      {
+        "name": "heavy-oil",
+        "amount": 10
+      }
+    ],
+    "results": [
+      {
+        "name": "lubricant",
+        "amount": 10
+      }
+    ],
+    "iconUrl": "base/graphics/icons/fluid/lubricant.png",
+    "craftingCategory": "chemistry"
   }
 }

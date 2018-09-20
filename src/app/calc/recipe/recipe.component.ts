@@ -22,17 +22,17 @@ export class RecipeComponent implements OnInit {
     const items = this.data.items;
 
     this.ingredients = this.recipe.ingredients.map(ingredient =>
-      this.buildQuantifiedItem(items.find(item => item.name === ingredient.name), ingredient)
+      this.buildQuantifiedItem(items[ingredient.name], ingredient)
     );
     this.results = this.recipe.results.map(result =>
-      this.buildQuantifiedItem(items.find(item => item.name === result.name), result)
+      this.buildQuantifiedItem(items[result.name], result)
     );
   }
 
   private buildQuantifiedItem(item: Item, ingredient: SimpleQuantifiedItem): QuantifiedItem {
     return {
       ...item,
-      quantity: ingredient.quantity
+      amount: ingredient.amount
     };
   }
 }

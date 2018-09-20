@@ -7,7 +7,7 @@ export interface RecipeObject {
   ingredients: Array<SimpleQuantifiedItem>;
   results: Array<SimpleQuantifiedItem>;
   energyRequired: number;
-  subGroup: string;
+  groupName: string;
 }
 
 export type Recipe = Readonly<RecipeObject>;

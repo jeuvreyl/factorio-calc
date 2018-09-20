@@ -12,7 +12,7 @@ export enum RecipeActionTypes {
 export class LoadRecipesSuccess implements Action {
   readonly type = RecipeActionTypes.LOAD_RECIPES_SUCCESS;
 
-  constructor(public payLoad: Recipe[]) {}
+  constructor(public payLoad: {[name: string]: Recipe}) {}
 }
 
 export class LoadRecipesFail implements Action {
@@ -22,17 +22,13 @@ export class LoadRecipesFail implements Action {
 export class SelectRecipe implements Action {
   readonly type = RecipeActionTypes.SELECT_RECIPE;
 
-  constructor(public payLoad: Recipe) {}
+  constructor(public payLoad: string) {}
 }
 
 export class DeselecRecipe implements Action {
   readonly type = RecipeActionTypes.DESELECT__RECIPE;
 
-  constructor(public payLoad: Recipe) {}
+  constructor(public payLoad: string) {}
 }
 
-export type RecipesActions =
-  LoadRecipesSuccess
-  | LoadRecipesFail
-  | SelectRecipe
-  | DeselecRecipe;
+export type RecipesActions = LoadRecipesSuccess | LoadRecipesFail | SelectRecipe | DeselecRecipe;

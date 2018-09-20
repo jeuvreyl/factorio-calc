@@ -9,7 +9,7 @@ import { QuantifiedItem } from '../shared/item.model';
 export class ResultsComponent implements OnInit {
 
   @Input()
-  items: QuantifiedItem[];
+  results: QuantifiedItem[];
 
   constructor() { }
 

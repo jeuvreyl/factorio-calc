@@ -1,3 +1,5 @@
-<div class="content result" *ngFor="let item of items">
-  <img [src]="item.iconUrl" />{{item.quantity}}
+<div class="result">
+  <div *ngFor="let result of results">
+    <app-icon [iconUrl]="result.iconUrl"></app-icon> <span>{{result.amount}}</span>
+  </div>
 </div>

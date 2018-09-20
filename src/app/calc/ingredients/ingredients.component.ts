@@ -9,7 +9,7 @@ import { QuantifiedItem } from '../shared/item.model';
 export class IngredientsComponent implements OnInit {
 
   @Input()
-  items: QuantifiedItem[];
+  ingredients: QuantifiedItem[];
 
   constructor() { }
 

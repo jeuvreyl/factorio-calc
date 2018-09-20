@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 export class ItemService {
   constructor(private http: HttpClient) {}
 
-  getItems(): Observable<Item[]> {
-    return this.http.get<Item[]>('./assets/dataset/items.json');
+  getItems(): Observable<{[name: string]: Item}> {
+    return this.http.get<{[name: string]: Item}>('./assets/dataset/items.json');
   }
 }

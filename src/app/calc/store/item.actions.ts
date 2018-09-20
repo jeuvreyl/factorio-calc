@@ -25,7 +25,7 @@ export class AskForItemRecipe implements Action {
 export class LoadItemsSuccess implements Action {
   readonly type = ItemActionTypes.LOAD_ITEMS_SUCCESS;
 
-  constructor(public payLoad: Item[]) {}
+  constructor(public payLoad: {[name: string]: Item}) {}
 }
 
 export class LoadItemsFail implements Action {

@@ -1,15 +1,16 @@
 import { Item, SimpleItem } from '../shared/item.model';
 import { ItemActionTypes, ItemActions } from './item.actions';
+import { createSelector } from '@ngrx/store';
 
 export interface ItemsConfigState {
-  items: Item[];
+  items: {[name: string]: Item};
   selectedItems: SimpleItem[];
   isLoading: boolean;
   loaded: boolean;
 }
 
 export const initialState: ItemsConfigState = {
-  items: [],
+  items: {},
   selectedItems: [],
   isLoading: false,
   loaded: false
@@ -44,3 +45,15 @@ export function reducer(state = initialState, action: ItemActions): ItemsConfigS
       return state;
   }
 }
+
+export const getItems = (store: ItemsConfigState) => store.items;
+export const getAllItems = (store: ItemsConfigState) => Object.keys(store.items).map(key => store.items[key]);
+export const getSelectedItems = (store: ItemsConfigState) => store.selectedItems;
+export const getSelectableItems = createSelector(
+  getAllItems,
+  getSelectedItems,
+  (items, selectedItems) => {
+    const selectedNames = selectedItems.map(selectedItem => selectedItem.name);
+    return items.filter(item => !selectedNames.includes(item.name));
+  }
+);
