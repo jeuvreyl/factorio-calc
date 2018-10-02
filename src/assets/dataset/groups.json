@@ -1,38 +1,77 @@
 {
   "intermediate-products": {
     "name": "intermediate-products",
-    "iconUrl": "base/graphics/item-group/intermediate-products.png"
+    "iconUrl": "base/graphics/item-group/intermediate-products.png",
+    "subGroups": [
+      "fluid-recipes",
+      "raw-resource",
+      "fill-barrel",
+      "science-pack",
+      "raw-material",
+      "empty-barrel",
+      "intermediate-product"
+    ]
   },
   "other": {
     "name": "other",
-    "iconUrl": "core/graphics/questionmark.png"
+    "iconUrl": "core/graphics/questionmark.png",
+    "subGroups": ["other"]
   },
   "environment": {
     "name": "environment",
-    "iconUrl": "core/graphics/treex64-provisional.png"
+    "iconUrl": "core/graphics/treex64-provisional.png",
+    "subGroups": ["cliffs", "creatures", "grass", "remnants", "wrecks", "corpses", "trees"]
   },
   "signals": {
     "name": "signals",
-    "iconUrl": "base/graphics/item-group/signals.png"
+    "iconUrl": "base/graphics/item-group/signals.png",
+    "subGroups": [
+      "virtual-signal-color",
+      "virtual-signal-number",
+      "virtual-signal",
+      "virtual-signal-letter",
+      "virtual-signal-special"
+    ]
   },
   "production": {
     "name": "production",
-    "iconUrl": "base/graphics/item-group/production.png"
+    "iconUrl": "base/graphics/item-group/production.png",
+    "subGroups": [
+      "extraction-machine",
+      "production-machine",
+      "module",
+      "smelting-machine",
+      "tool",
+      "energy"
+    ]
   },
   "logistics": {
     "name": "logistics",
-    "iconUrl": "base/graphics/item-group/logistics.png"
+    "iconUrl": "base/graphics/item-group/logistics.png",
+    "subGroups": [
+      "logistic-network",
+      "circuit-network",
+      "belt",
+      "energy-pipe-distribution",
+      "storage",
+      "transport",
+      "inserter",
+      "terrain"
+    ]
   },
   "combat": {
     "name": "combat",
-    "iconUrl": "base/graphics/item-group/military.png"
+    "iconUrl": "base/graphics/item-group/military.png",
+    "subGroups": ["gun", "capsule", "armor", "ammo", "defensive-structure", "equipment"]
   },
   "enemies": {
     "name": "enemies",
-    "iconUrl": "core/graphics/enemy-force-icon.png"
+    "iconUrl": "core/graphics/enemy-force-icon.png",
+    "subGroups": ["enemies"]
   },
   "fluids": {
     "name": "fluids",
-    "iconUrl": "base/graphics/item-group/fluids.png"
+    "iconUrl": "base/graphics/item-group/fluids.png",
+    "subGroups": ["fluid"]
   }
 }

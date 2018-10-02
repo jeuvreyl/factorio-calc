@@ -1,23 +1,31 @@
-<table mat-table [dataSource]=recipes>
+<table mat-table [dataSource]=displayedRecipes$>
 
   <ng-container matColumnDef="icon">
     <th mat-header-cell *matHeaderCellDef> Icon </th>
     <td mat-cell *matCellDef="let recipe">
-      <img [src]="recipe.iconUrl" />
+        <app-icon [iconUrl]="recipe.iconUrl"></app-icon>
     </td>
     <td mat-footer-cell *matFooterCellDef></td>
   </ng-container>
 
   <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef> Recipe name </th>
+    <th mat-header-cell *matHeaderCellDef> Name </th>
     <td mat-cell *matCellDef="let  recipe"> {{recipe.name}} </td>
     <td mat-footer-cell *matFooterCellDef></td>
   </ng-container>
 
-  <ng-container matColumnDef="ingredients">
-    <th mat-header-cell *matHeaderCellDef> Recipe ingredient </th>
+  <ng-container matColumnDef="results">
+    <th mat-header-cell *matHeaderCellDef>Output</th>
     <td mat-cell *matCellDef="let recipe ">
-      <app-ingredients [items]=" recipe.ingredients"></app-ingredients>
+      <app-ingredients [ingredients]="buildQuantifiedItems(recipe.results) | async"></app-ingredients>
+    </td>
+    <td mat-footer-cell *matFooterCellDef></td>
+  </ng-container>
+
+  <ng-container matColumnDef="ingredients">
+    <th mat-header-cell *matHeaderCellDef> Ingredients </th>
+    <td mat-cell *matCellDef="let recipe ">
+      <app-ingredients [ingredients]="buildQuantifiedItems(recipe.ingredients) | async"></app-ingredients>
     </td>
     <td mat-footer-cell *matFooterCellDef></td>
   </ng-container>

@@ -14,7 +14,7 @@ export class TooltipDirective {
   recipe: Recipe;
 
   @Input()
-  items: Item[];
+  items: {[name: string]: Item};
 
   constructor(
     private elmentRef: ElementRef,

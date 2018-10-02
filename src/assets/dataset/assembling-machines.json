@@ -1,0 +1,58 @@
+{
+  "centrifuge": {
+    "name": "centrifuge",
+    "iconUrl": "base/graphics/icons/centrifuge.png",
+    "craftingSpeed": 0.75,
+    "ingredientCount": 2,
+    "craftingCategories": ["centrifuging"],
+    "recipe": null
+  },
+  "oil-refinery": {
+    "name": "oil-refinery",
+    "iconUrl": "base/graphics/icons/oil-refinery.png",
+    "craftingSpeed": 1.0,
+    "ingredientCount": 4,
+    "craftingCategories": ["oil-processing"],
+    "recipe": null
+  },
+  "assembling-machine-3": {
+    "name": "assembling-machine-3",
+    "iconUrl": "base/graphics/icons/assembling-machine-3.png",
+    "craftingSpeed": 1.25,
+    "ingredientCount": 6,
+    "craftingCategories": ["crafting", "advanced-crafting", "crafting-with-fluid"],
+    "recipe": null
+  },
+  "assembling-machine-2": {
+    "name": "assembling-machine-2",
+    "iconUrl": "base/graphics/icons/assembling-machine-2.png",
+    "craftingSpeed": 0.75,
+    "ingredientCount": 4,
+    "craftingCategories": ["crafting", "advanced-crafting", "crafting-with-fluid"],
+    "recipe": null
+  },
+  "chemical-plant": {
+    "name": "chemical-plant",
+    "iconUrl": "base/graphics/icons/chemical-plant.png",
+    "craftingSpeed": 1.25,
+    "ingredientCount": 4,
+    "craftingCategories": ["chemistry"],
+    "recipe": null
+  },
+  "assembling-machine-1": {
+    "name": "assembling-machine-1",
+    "iconUrl": "base/graphics/icons/assembling-machine-1.png",
+    "craftingSpeed": 0.5,
+    "ingredientCount": 2,
+    "craftingCategories": ["crafting"],
+    "recipe": null
+  },
+  "rocket-silo": {
+    "name": "rocket-silo",
+    "iconUrl": "base/graphics/icons/rocket-silo.png",
+    "craftingSpeed": 1.0,
+    "ingredientCount": 3,
+    "craftingCategories": ["rocket-building"],
+    "recipe": "rocket-part"
+  }
+}

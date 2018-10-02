@@ -9,10 +9,9 @@ import { Item } from './item.model';
   providedIn: 'root'
 })
 export class TooltipService {
-
   constructor(private injector: Injector) {}
 
-  openRecipeDetail(overlayRef: OverlayRef, recipe: Recipe, items: Item[]) {
+  openRecipeDetail(overlayRef: OverlayRef, recipe: Recipe, items: { [name: string]: Item }) {
     const injectionTokens = new WeakMap<any, any>([
       [TOOLTIP_DATA, { recipe: recipe, items: items }]
     ]);

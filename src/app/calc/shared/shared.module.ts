@@ -11,6 +11,7 @@ import { OverlayModule } from '@angular/cdk/overlay';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '../../../../node_modules/@angular/forms';
 import { TooltipDirective } from './tooltip.directive';
+import { IconComponent } from './icon/icon.component';
 
 @NgModule({
   imports: [
@@ -27,7 +28,8 @@ import { TooltipDirective } from './tooltip.directive';
     BrowserAnimationsModule
   ],
   declarations: [
-    TooltipDirective
+    TooltipDirective,
+    IconComponent
   ],
   exports: [
     CommonModule,
@@ -42,6 +44,7 @@ import { TooltipDirective } from './tooltip.directive';
     OverlayModule,
     BrowserAnimationsModule,
     TooltipDirective,
+    IconComponent
   ]
 })
 export class SharedModule {}

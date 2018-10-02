@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class GroupService {
   constructor(private http: HttpClient) {}
 
-  getGroups(): Observable<Group[]> {
-    return this.http.get<Group[]>('./assets/dataset/groups.json');
+  getGroups(): Observable<{[name: string]: Group}> {
+    return this.http.get<{[name: string]: Group}>('./assets/dataset/groups.json');
   }
 }
