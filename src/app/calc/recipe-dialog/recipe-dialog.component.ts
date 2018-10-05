@@ -4,7 +4,7 @@ import { ItemDialogComponent } from '../item-dialog/item-dialog.component';
 import { Store, select } from '@ngrx/store';
 import { Item } from '../shared/item.model';
 import { Recipe, SimpleRecipe } from '../shared/recipe.model';
-import { SelectRecipe } from '../store/recipe.actions';
+import { SelectRecipe, AskForAssemblingMachine } from '../store/recipe.actions';
 import { Observable, Subject } from 'rxjs';
 import { Group } from '../shared/group.model';
 import { map, combineLatest, tap } from 'rxjs/operators';
@@ -61,6 +61,7 @@ export class RecipeDialogComponent implements OnInit {
 
   selectRecipe(recipe: Recipe) {
     this.store.dispatch(new SelectRecipe(recipe.name));
+    this.store.dispatch(new AskForAssemblingMachine({ recipeName: recipe.name }));
     this.dialogRef.close();
   }
 

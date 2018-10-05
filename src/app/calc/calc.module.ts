@@ -11,6 +11,8 @@ import { RecipeDialogComponent } from './recipe-dialog/recipe-dialog.component';
 import { RecipeComponent } from './recipe/recipe.component';
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { ResultsComponent } from './results/results.component';
+import { AssemblingMachineDialogComponent } from './assembling-machine-dialog/assembling-machine-dialog.component';
+import { AssemblingMachineComponent } from './assembling-machine/assembling-machine.component';
 
 @NgModule({
   imports: [SharedModule, EffectsModule.forFeature([ItemEffects])],
@@ -22,7 +24,9 @@ import { ResultsComponent } from './results/results.component';
     RecipeComponent,
     RecipesComponent,
     RecipeDialogComponent,
-    ResultsComponent
+    ResultsComponent,
+    AssemblingMachineDialogComponent,
+    AssemblingMachineComponent
   ],
   entryComponents: [
     ItemDialogComponent,
