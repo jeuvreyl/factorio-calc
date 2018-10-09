@@ -1,15 +1,15 @@
-import { Component, OnInit, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { Component, Inject, OnInit } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { select, Store } from '@ngrx/store';
+import { Observable, Subject } from 'rxjs';
+import { combineLatest, map } from 'rxjs/operators';
+import { getItems, getSelectableRecipes, State } from '../../reducers';
 import { ItemDialogComponent } from '../item-dialog/item-dialog.component';
-import { Store, select } from '@ngrx/store';
+import { Group } from '../shared/group.model';
+import { GroupService } from '../shared/group.service';
 import { Item } from '../shared/item.model';
 import { Recipe, SimpleRecipe } from '../shared/recipe.model';
-import { SelectRecipe, AskForAssemblingMachine } from '../store/recipe.actions';
-import { Observable, Subject } from 'rxjs';
-import { Group } from '../shared/group.model';
-import { map, combineLatest, tap } from 'rxjs/operators';
-import { State, getSelectableRecipes, getItems } from '../../reducers';
-import { GroupService } from '../shared/group.service';
+import { AskForAssemblingMachine } from '../store/recipe.actions';
 
 @Component({
   selector: 'app-recipe-dialog',
@@ -60,9 +60,8 @@ export class RecipeDialogComponent implements OnInit {
   }
 
   selectRecipe(recipe: Recipe) {
-    this.store.dispatch(new SelectRecipe(recipe.name));
-    this.store.dispatch(new AskForAssemblingMachine({ recipeName: recipe.name }));
     this.dialogRef.close();
+    this.store.dispatch(new AskForAssemblingMachine({ recipeName: recipe.name }));
   }
 
   selectCategory(categoryName: string) {

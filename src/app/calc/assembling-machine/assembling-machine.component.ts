@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { AssemblingMachine } from '../shared/assembling-machine.model';
 
 @Component({
   selector: 'app-assembling-machine',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./assembling-machine.component.css']
 })
 export class AssemblingMachineComponent implements OnInit {
+  @Input()
+  assemblingMachine: AssemblingMachine;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

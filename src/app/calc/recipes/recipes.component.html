@@ -30,6 +30,14 @@
     <td mat-footer-cell *matFooterCellDef></td>
   </ng-container>
 
+  <ng-container matColumnDef="machines">
+    <th mat-header-cell *matHeaderCellDef> Machine </th>
+    <td mat-cell *matCellDef="let recipe ">
+      <app-assembling-machine [assemblingMachine]="getSelectedMachine(recipe) | async" ></app-assembling-machine>
+    </td>
+    <td mat-footer-cell *matFooterCellDef></td>
+  </ng-container>
+
   <ng-container matColumnDef="actions">
     <th mat-header-cell *matHeaderCellDef> Actions </th>
     <td mat-cell *matCellDef="let recipe">

@@ -1,7 +1,7 @@
 <div mat-dialog-content>
   <mat-list>
     <mat-list-item *ngFor="let machine of availableMachines$ | async">
-      <app-icon (click)="selectAssemblingMachine(machine)" iconUrl="machine.iconUrl"></app-icon>
+      <app-icon (click)="selectAssemblingMachine(machine)" [iconUrl]="machine.iconUrl"></app-icon>
       <span>{{machine.name}}</span>
       <span>{{ machine.craftingSpeed}}</span>
     </mat-list-item>

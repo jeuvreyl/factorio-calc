@@ -2,12 +2,22 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable, of } from 'rxjs';
-import { catchError, combineLatest, filter, flatMap, map, startWith, tap } from 'rxjs/operators';
+import {
+  catchError,
+  combineLatest,
+  filter,
+  flatMap,
+  map,
+  share,
+  startWith,
+  tap
+} from 'rxjs/operators';
 import {
   getAllAssemblingMachines,
   getAssemblingMachines,
   getAssemblingMachinesLoaded,
   getRecipes,
+  getSelectedMachineForRecipe,
   State
 } from '../../reducers';
 import {
@@ -21,25 +31,24 @@ import { AssemblingMachine } from './assembling-machine.model';
   providedIn: 'root'
 })
 export class AssemblingMachineService {
-  private reloadData$;
+  private reloadData$ = this.store.select(getAssemblingMachinesLoaded).pipe(
+    filter(isLoaded => !isLoaded),
+    flatMap(() => this.getAssemblingMachinesFromhttp()),
+    tap(machines => this.store.dispatch(new LoadAssemblingMachineSuccess(machines))),
+    catchError(() => {
+      this.store.dispatch(new LoadAssemblingMachineFail());
+      return of({});
+    })
+  );
 
-  constructor(private http: HttpClient, private store: Store<State>) {
-    this.reloadData$ = this.store.select(getAssemblingMachinesLoaded).pipe(
-      filter(isLoaded => !isLoaded),
-      flatMap(() => this.getAssemblingMachinesFromhttp()),
-      tap(machines => this.store.dispatch(new LoadAssemblingMachineSuccess(machines))),
-      catchError(() => {
-        this.store.dispatch(new LoadAssemblingMachineFail());
-        return of({});
-      })
-    );
-  }
+  constructor(private http: HttpClient, private store: Store<State>) {}
 
   getAssemblingMachines(): Observable<{ [name: string]: AssemblingMachine }> {
     return this.reloadData$.pipe(
       startWith(null),
       combineLatest(this.store.select(getAssemblingMachines)),
-      map(([_, machines]) => machines)
+      map(([_, machines]) => machines),
+      share()
     );
   }
 
@@ -55,6 +64,14 @@ export class AssemblingMachineService {
           machine.craftingCategories.includes(recipe.craftingCategory)
         );
       })
+    );
+  }
+
+  getSelectedAssemblingMachine(recipeName: string): Observable<AssemblingMachine> {
+    return this.store.select(getSelectedMachineForRecipe).pipe(
+      map(selectedMachines => selectedMachines[recipeName]),
+      combineLatest(this.getAssemblingMachines()),
+      map(([machineName, machines]) => machines[machineName])
     );
   }
 

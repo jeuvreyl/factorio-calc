@@ -1,8 +1,5 @@
 import { AssemblingMachine } from '../shared/assembling-machine.model';
-import {
-  AssemblingMachineActions,
-  AssemblingMachineActionTypes
-} from './assembling-machine.actions';
+import { AssemblingMachineActions, AssemblingMachineActionTypes } from './assembling-machine.actions';
 
 export interface AssemblingMachineState {
   assemblingMachines: { [name: string]: AssemblingMachine };
@@ -41,7 +38,7 @@ export function reducer(
         ...state,
         selectedMachineForRecipe: {
           ...state.selectedMachineForRecipe,
-          ...action.payLoad
+          [action.payLoad.recipe]: action.payLoad.machine
         }
       };
     case AssemblingMachineActionTypes.DESELECT__ASSEMBLING_MACHINE:

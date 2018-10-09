@@ -1,12 +1,14 @@
-import { Component, OnInit, OnChanges } from '@angular/core';
-import { Recipe } from '../shared/recipe.model';
-import { Store, select } from '@ngrx/store';
-import { State, getRecipes, getSelectedRecipes, getItems } from '../../reducers';
-import { DeselecRecipe } from '../store/recipe.actions';
-import { SimpleQuantifiedItem, QuantifiedItem } from '../shared/item.model';
-import { AskForItemRecipe } from '../store/item.actions';
+import { Component, OnInit } from '@angular/core';
+import { select, Store } from '@ngrx/store';
 import { Observable, Subject } from 'rxjs';
-import { map, combineLatest } from 'rxjs/operators';
+import { combineLatest, map } from 'rxjs/operators';
+import { getItems, getRecipes, getSelectedRecipes, State } from '../../reducers';
+import { AssemblingMachine } from '../shared/assembling-machine.model';
+import { AssemblingMachineService } from '../shared/assembling-machine.service';
+import { QuantifiedItem, SimpleQuantifiedItem } from '../shared/item.model';
+import { Recipe } from '../shared/recipe.model';
+import { AskForItemRecipe } from '../store/item.actions';
+import { DeselecRecipe } from '../store/recipe.actions';
 
 @Component({
   selector: 'app-recipes',
@@ -21,9 +23,12 @@ export class RecipesComponent implements OnInit {
 
   displayedRecipes$: Observable<Recipe[]>;
 
-  columnsToDisplay = ['icon', 'name', 'results', 'ingredients', 'actions'];
+  columnsToDisplay = ['icon', 'name', 'results', 'ingredients', 'machines', 'actions'];
 
-  constructor(private store: Store<State>) {}
+  constructor(
+    private assemblingMachineService: AssemblingMachineService,
+    private store: Store<State>
+  ) {}
 
   ngOnInit() {
     this.displayedRecipes$ = this.store.pipe(
@@ -56,5 +61,9 @@ export class RecipesComponent implements OnInit {
         })
       )
     );
+  }
+
+  getSelectedMachine(recipe: Recipe): Observable<AssemblingMachine> {
+    return this.assemblingMachineService.getSelectedAssemblingMachine(recipe.name);
   }
 }
