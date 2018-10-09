@@ -1,6 +1,6 @@
 import { SimpleQuantifiedItem } from './item.model';
 
-export interface RecipeObject {
+interface RecipeObject {
   id: string;
   name: string;
   iconUrl: string;
@@ -8,6 +8,7 @@ export interface RecipeObject {
   results: Array<SimpleQuantifiedItem>;
   energyRequired: number;
   groupName: string;
+  craftingCategory: string;
 }
 
 export type Recipe = Readonly<RecipeObject>;
