@@ -1,5 +1,6 @@
 import { AssemblingMachine } from '../shared/assembling-machine.model';
 import { AssemblingMachineActions, AssemblingMachineActionTypes } from './assembling-machine.actions';
+import { createSelector } from '@ngrx/store';
 
 export interface AssemblingMachineState {
   assemblingMachines: { [name: string]: AssemblingMachine };
@@ -71,4 +72,5 @@ export const getAllAssemblingMachines = (store: AssemblingMachineState) =>
   Object.keys(store.assemblingMachines).map(key => store.assemblingMachines[key]);
 export const getSelectedMachineForRecipe = (store: AssemblingMachineState) =>
   store.selectedMachineForRecipe;
+
 export const getLoaded = (store: AssemblingMachineState) => store.loaded;

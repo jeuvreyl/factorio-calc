@@ -8,6 +8,7 @@ import { LoadItemsSuccess, LoadItemsFail } from './store/item.actions';
 import { LoadRecipesFail, LoadRecipesSuccess } from './store/recipe.actions';
 import { ItemService } from './shared/item.service';
 import { RecipeService } from './shared/recipe.service';
+import { PlanService } from './shared/plan.service';
 
 @Component({
   selector: 'app-calc',
@@ -22,6 +23,7 @@ export class CalcComponent implements OnInit {
   constructor(
     private store: Store<State>,
     private itemService: ItemService,
+    private planService: PlanService,
     private recipeService: RecipeService
   ) {}
 
@@ -46,5 +48,9 @@ export class CalcComponent implements OnInit {
       map(items => items.map(item => item as SimpleItem))
     );
     this.items$ = this.store.pipe(select(getItems));
+  }
+
+  updatePlan() {
+    this.planService.updatePlan();
   }
 }

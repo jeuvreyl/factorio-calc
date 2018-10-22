@@ -27,6 +27,7 @@
     "@ngrx/store": "^6.0.1",
     "@ngrx/store-devtools": "^6.0.1",
     "core-js": "^2.5.4",
+    "javascript-lp-solver": "^0.4.5",
     "rxjs": "^6.0.0",
     "zone.js": "~0.8.26"
   },
@@ -35,7 +36,7 @@
     "@angular/cli": "~6.1.1",
     "@angular/compiler-cli": "^6.1.0",
     "@angular/language-service": "^6.1.0",
-    "@ngrx/schematics": "github:ngrx/schematics-builds",
+    "@ngrx/schematics": "^6.1.0",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",

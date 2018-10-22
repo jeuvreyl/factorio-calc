@@ -38,6 +38,7 @@ export const getSelectableRecipes = createSelector(
   selectRecipeState,
   fromRecipe.getSelectableRecipes
 );
+export const getFullSelectedRecipes = createSelector(selectRecipeState, fromRecipe.getFullSelectedRecipes);
 
 export const getAssemblingMachines =  createSelector(selectAssemblingMachineState, fromAssemblingMachine.getAssemblingMachines);
 export const getAllAssemblingMachines = createSelector(selectAssemblingMachineState, fromAssemblingMachine.getAllAssemblingMachines);

@@ -75,6 +75,21 @@ export class AssemblingMachineService {
     );
   }
 
+  getSelectedAssemblingMachineByRecipe(): Observable<{ [recipeName: string]: AssemblingMachine }> {
+    return this.store.select(getSelectedMachineForRecipe).pipe(
+      combineLatest(this.getAssemblingMachines()),
+      map(([selectedMachineByRecipe, machines]) => {
+        const recipeNames = Object.keys(selectedMachineByRecipe);
+        const result = {};
+        for (const recipeName of recipeNames) {
+          const machineName = selectedMachineByRecipe[recipeName];
+          result[recipeName] = machines[machineName];
+        }
+        return result;
+      })
+    );
+  }
+
   selectAssemblingMachine(machineName: string, recipeName: string): void {
     this.store.dispatch(new SelectAssemblingMachine({ machine: machineName, recipe: recipeName }));
   }

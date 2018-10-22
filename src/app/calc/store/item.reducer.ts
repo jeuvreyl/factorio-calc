@@ -1,10 +1,10 @@
-import { Item, SimpleItem } from '../shared/item.model';
-import { ItemActionTypes, ItemActions } from './item.actions';
 import { createSelector } from '@ngrx/store';
+import { Item, QuantifiedItem } from '../shared/item.model';
+import { ItemActions, ItemActionTypes } from './item.actions';
 
 export interface ItemsConfigState {
   items: {[name: string]: Item};
-  selectedItems: SimpleItem[];
+  selectedItems: QuantifiedItem[];
   isLoading: boolean;
   loaded: boolean;
 }

@@ -49,7 +49,13 @@ export function reducer(state = initialState, action: RecipesActions): RecipesCo
 export const getRecipes = (store: RecipesConfigState) => store.recipes;
 export const getAllRecipes = (store: RecipesConfigState) => Object.keys(store.recipes).map(key => store.recipes[key]);
 export const getSelectedRecipes = (store: RecipesConfigState) => store.selectedRecipes;
-
+export const getFullSelectedRecipes = createSelector(
+  getAllRecipes,
+  getSelectedRecipes,
+  (recipes, selectedRecipes) => {
+    return recipes.filter(recipe => selectedRecipes.includes(recipe.name));
+  }
+);
 
 export const getSelectableRecipes = createSelector(
   getAllRecipes,
