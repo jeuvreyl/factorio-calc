@@ -582,6 +582,7 @@
   "electric-engine-unit": {
     "name": "electric-engine-unit",
     "groupName": "intermediate-products",
+    "energyRequired":10,
     "ingredients": [
       {
         "name": "engine-unit",
@@ -1538,6 +1539,7 @@
   "engine-unit": {
     "name": "engine-unit",
     "groupName": "intermediate-products",
+    "energyRequired":5,
     "ingredients": [
       {
         "name": "steel-plate",
@@ -2894,6 +2896,7 @@
   "flamethrower-turret": {
     "name": "flamethrower-turret",
     "groupName": "combat",
+    "energyRequired":5,
     "ingredients": [
       {
         "name": "steel-plate",
@@ -4018,6 +4021,7 @@
   "pipe": {
     "name": "pipe",
     "groupName": "logistics",
+    "energyRequired":0.5,
     "ingredients": [
       {
         "name": "iron-plate",
@@ -4364,6 +4368,7 @@
   "iron-gear-wheel": {
     "name": "iron-gear-wheel",
     "groupName": "intermediate-products",
+    "energyRequired":0.5,
     "ingredients": [
       {
         "name": "iron-plate",

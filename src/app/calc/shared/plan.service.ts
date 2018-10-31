@@ -1,12 +1,26 @@
 import { Injectable } from '@angular/core';
 import { Store } from '@ngrx/store';
-import * as Solver from 'node_modules/javascript-lp-solver';
 import { combineLatest, map } from 'rxjs/operators';
-import { getFullSelectedRecipes, getRecipes, getSelectedItems, State } from 'src/app/reducers';
+import * as SimpleSimplex from 'simple-simplex';
+import { getFullSelectedRecipes, getSelectedItems, State } from 'src/app/reducers';
 import { AssemblingMachine } from './assembling-machine.model';
 import { AssemblingMachineService } from './assembling-machine.service';
-import { QuantifiedItem } from './item.model';
 import { Recipe } from './recipe.model';
+import { QuantifiedItem } from './item.model';
+
+interface Model {
+  objective: {
+    [recipeName: string]: number;
+  };
+  constraints: Array<{
+    namedVector: {
+      [recipeName: string]: number;
+    };
+    constraints: string;
+    constant: number;
+  }>;
+  optimizationType: string;
+}
 
 @Injectable({
   providedIn: 'root'
@@ -18,14 +32,14 @@ export class PlanService {
   private plan$ = this.selectedItems$.pipe(
     combineLatest(this.fullSelectedRecipes$, this.selectedAssemblingMachineByRecipe$),
     map(([targetItems, recipes, assemblingMachineByRecipe]) => {
-      const model = {
-        optimize: this.buildOptimizeClause(recipes, targetItems),
-        opType: 'min',
-        constraints: this.buildConstraintsClause(targetItems),
-        variables: this.buildVariablesClause(recipes, assemblingMachineByRecipe)
-      };
-      console.log(model);
-      const result = Solver.MultiObjective (model);
+      const solver = new SimpleSimplex(
+        this.buildModel(recipes, assemblingMachineByRecipe, targetItems)
+      );
+      console.log(solver);
+      const result = solver.solve({
+        methodName: 'simplex'
+      });
+
       console.log(result);
     })
   );
@@ -39,81 +53,106 @@ export class PlanService {
     this.plan$.subscribe();
   }
 
-  /**
-   * Constraints will be selected items with the desired amounts
-   * @param targetItems items we want to produce
-   */
-  private buildConstraintsClause(targetItems: QuantifiedItem[]) {
-    const constraintClause = {};
-    for (const item of targetItems) {
-      constraintClause[item.name] = { equal: item.amount };
-    }
-
-    return constraintClause;
-  }
-
-  /**
-   * Optimize clause will be ingredients which are not produced by intermediate recipes and are not in items we want to produce.
-   * @param recipes list of recipes to conside
-   * @param targetItems items we want to produce
-   */
-  private buildOptimizeClause(
+  private buildModel(
     recipes: Recipe[],
+    assemblingMachineByRecipe: { [recipeName: string]: AssemblingMachine },
     targetItems: QuantifiedItem[]
-  ): { [ingredient: string]: string } {
-    const ingredients = recipes
-      .map(recipe => recipe.ingredients)
-      .reduce((acc, ingredient) => acc.concat(ingredient))
-      .map(ingredient => ingredient.name);
-
-    const products = recipes
-      .map(recipe => recipe.results)
-      .reduce((acc, result) => acc.concat(result))
-      .map(result => result.name);
-
-    const targetItemsName = targetItems.map(item => item.name);
-
-    const ingredientsToMinimize = ingredients
-      .filter(ingredient => !products.includes(ingredient))
-      .filter(ingredient => !targetItemsName.includes(ingredient));
-
-    const optimizeClause = {};
-    for (const ingredient of ingredientsToMinimize) {
-      optimizeClause[ingredient] = 'min';
-    }
-
-    return optimizeClause;
+  ): Model {
+    return {
+      optimizationType: 'min',
+      objective: this.buildObjective(recipes),
+      constraints: this.buildConstraints(recipes, assemblingMachineByRecipe, targetItems)
+    };
   }
 
-  /**
-   * Variable clause will be sets of selected recipe where ingredients and product amounts
-   * will take account of the corresponding machine crafting speed.
-   * @param recipes chosen recipes
-   * @param assemblingMachineByRecipe chose machine by recipe
-   */
-  private buildVariablesClause(
+  private buildConstraints(
     recipes: Recipe[],
-    assemblingMachineByRecipe: { [recipeName: string]: AssemblingMachine }
+    assemblingMachineByRecipe: { [recipeName: string]: AssemblingMachine },
+    targetItems: QuantifiedItem[]
   ) {
-    const variablesClause = {};
-    for (const recipe of recipes) {
-      const assemblingMachine = assemblingMachineByRecipe[recipe.name];
-      variablesClause[recipe.name] = {
-        ...this.buildIngredients(recipe, assemblingMachine),
-        ...this.buildProducts(recipe, assemblingMachine)
-      };
+    const itemsWithTotalAmountByRecipe = recipes
+      .map(recipe => {
+        const assemblingMachine = assemblingMachineByRecipe[recipe.name];
+        const ingredients = this.buildIngredients(recipe, assemblingMachine);
+        const results = this.buildProducts(recipe, assemblingMachine);
+
+        const itemsWithTotalAmount = {};
+        for (const key of Object.keys(ingredients)) {
+          const ingredientAmount = ingredients[key];
+          const resultAmount = results[key];
+          let amount;
+          if (resultAmount) {
+            amount = ingredientAmount + resultAmount;
+          } else {
+            amount = ingredientAmount;
+          }
+          itemsWithTotalAmount[key] = {
+            recipeName: recipe.name,
+            amount: amount
+          };
+        }
+        const knownItems = Object.keys(itemsWithTotalAmount);
+        for (const product of recipe.results) {
+          const productName = product.name;
+          if (!knownItems.includes(productName)) {
+            itemsWithTotalAmount[productName] = {
+              recipeName: recipe.name,
+              amount: product.amount
+            };
+          }
+        }
+
+        return itemsWithTotalAmount;
+      })
+      .reduce((acc, itemsWithTotalAmount) => {
+        for (const itemName of Object.keys(itemsWithTotalAmount)) {
+          const recipeNameWithAmount = itemsWithTotalAmount[itemName];
+          const currentRecipWithAmountForItem = acc[itemName];
+
+          acc[itemName] = {
+            ...currentRecipWithAmountForItem,
+            [recipeNameWithAmount.recipeName]: recipeNameWithAmount.amount
+          };
+        }
+        return acc;
+      }, {});
+
+    const constraints = [];
+    const constraint = '<=';
+    const itemNames = Object.keys(itemsWithTotalAmountByRecipe);
+    for (const itemName of itemNames) {
+      const targetItem = targetItems.find(item => itemName === item.name);
+      let constant;
+      if (targetItem) {
+        constant = targetItem.amount;
+      } else {
+        constant = 0;
+      }
+      constraints.push({
+        namedVector: itemsWithTotalAmountByRecipe[itemName],
+        constraint: constraint,
+        constant: constant
+      });
     }
 
-    return variablesClause;
+    return constraints;
   }
 
+  private buildObjective(recipes: Recipe[]): { [recipeName: string]: number } {
+    return recipes.map(recipe => ({ [recipe.name]: 1 })).reduce((acc, objective) => {
+      return {
+        ...acc,
+        ...objective
+      };
+    }, {});
+  }
   private buildIngredients(
     recipe: Recipe,
     assemblingMachine: AssemblingMachine
   ): { [ingredientName: string]: number } {
     const result = {};
     for (const item of recipe.ingredients) {
-      result[item.name] = item.amount / (recipe.energyRequired / assemblingMachine.craftingSpeed);
+      result[item.name] = -item.amount / (recipe.energyRequired / assemblingMachine.craftingSpeed);
     }
 
     return result;
@@ -125,7 +164,7 @@ export class PlanService {
   ): { [product: string]: number } {
     const result = {};
     for (const item of recipe.results) {
-      result[item.name] = -item.amount / (recipe.energyRequired / assemblingMachine.craftingSpeed);
+      result[item.name] = item.amount / (recipe.energyRequired / assemblingMachine.craftingSpeed);
     }
 
     return result;

@@ -17,12 +17,15 @@ import { DeselecRecipe } from '../store/recipe.actions';
 })
 export class RecipesComponent implements OnInit {
   selectedRecipes$ = this.store.pipe(select(getSelectedRecipes));
-  itemsMap = this.store.pipe(select(getItems));
-
-  recipes$ = new Subject<string[]>();
-
-  displayedRecipes$: Observable<Recipe[]>;
-
+  itemsMap$ = this.store.pipe(select(getItems));
+  displayedRecipes$: Observable<Recipe[]> = this.store.pipe(
+    select(getRecipes),
+    combineLatest(this.selectedRecipes$),
+    map(([recipesMap, selectedRecipes]) =>
+      selectedRecipes.map(recipeName => recipesMap[recipeName])
+    )
+  );
+  displayRecipeSelection$ = new Subject<void>();
   columnsToDisplay = ['icon', 'name', 'results', 'ingredients', 'machines', 'actions'];
 
   constructor(
@@ -31,19 +34,21 @@ export class RecipesComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.displayedRecipes$ = this.store.pipe(
-      select(getRecipes),
-      combineLatest(this.selectedRecipes$),
-      map(([recipesMap, selectedRecipes]) =>
-        selectedRecipes.map(recipeName => recipesMap[recipeName])
+    this.displayRecipeSelection$
+      .pipe(
+        combineLatest(this.itemsMap$, this.displayedRecipes$),
+      map(([_, items, recipes]) => {
+        const ingredients = recipes.map(recipe => recipe.ingredients)
+          .reduce((acc, result) => acc.concat(result))
+          .map(ingredient => ingredient.name);
+          return Object.keys(items).map(key => items[key]).filter(item => ingredients.includes(item.name));
+        })
       )
-    );
+      .subscribe(items => this.store.dispatch(new AskForItemRecipe(items)));
   }
 
   openRecipeSelection() {
-    this.store.dispatch(
-      new AskForItemRecipe(Object.keys(this.itemsMap).map(key => this.itemsMap[key]))
-    );
+    this.displayRecipeSelection$.next();
   }
 
   removeRecipe(recipe: Recipe) {
@@ -51,7 +56,7 @@ export class RecipesComponent implements OnInit {
   }
 
   buildQuantifiedItems(ingredients: SimpleQuantifiedItem[]): Observable<QuantifiedItem[]> {
-    return this.itemsMap.pipe(
+    return this.itemsMap$.pipe(
       map(itemMap =>
         ingredients.map(ingredient => {
           return {
